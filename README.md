@@ -10,9 +10,9 @@ Curso de Udemy en Java
 
 ¿ Cómo las defino? <br>
 
-1ro: indico el **tipo** de variable. (int, float)<br>
-2do: nombro a la variable con **camelCase**.<br>
-3ro: asigno su valor mediante el operador de asignación: **=**.<br>
+1ro : indico el **tipo** de variable. (int, float)<br>
+2do : **nombro** a la variable con **camelCase**.<br>
+3ro : **asigno** su valor mediante el operador de asignación: **=**.<br>
 
 Puedo reasignar valores a la variable, por ejemplo: <br>
 
@@ -27,4 +27,10 @@ public class MiPrimerVariable {
     System.out.println(miVariableEntera);   // Se va a imprimir 3
   }
 }
+```
+Una variable que fue definada dentro de un **método**, en este caso dle método main, no va a poder ser usada fuera del mismo. Esto es el **alcance (scope)** de la variable. No vamos a poder acceder a ella desde cualquier parte dle programa, sino que va a depender dónde fue definida.<br>
+
+Un ejemplo de variable de tipo **String**, que no es de tipo rpimitivo, sino de clase: <br>
+```
+String miVariableCadena = "Saludos";
 ```
