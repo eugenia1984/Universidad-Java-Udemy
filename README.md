@@ -11,6 +11,6 @@ Curso de Udemy en Java
 ¿ Cómo las defino? <br>
 
 1ro: indico el **tipo** de variable. (int, float)<br>
-2do: nombro a la variable con **cmelCAse**.<br>
+2do: nombro a la variable con **camelCAse**.<br>
 3ro: asigno su valor mediante el operador de asignación: **=**.<br>
 
