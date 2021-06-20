@@ -74,7 +74,7 @@ public class ConcatenacionCadenas {
  
 }
 ```
-## Concetenación de números y cadenas y números
+## Concatenación de números y cadenas y números
 
 ```
 public class ConcatenacionCadenasNumeros {
@@ -99,11 +99,16 @@ public class ConcatenacionCadenasNumeros {
 
 ## Caracteres especiales
 
-\n : salto de línea <br>
-\t : tabulador  <br> 
-\b: retroceso, recorre un caracter hacia atrás, retrocedo una posiciñon. Si por ejemplo tengo: \b\b entonces retrocedo dos posiciones.  <br> 
-\' : comilla simple. <br> 
-\": comilla doble. <br>
+**\n** : salto de línea <br>
+**\t** : tabulador  <br> 
+**\b**: retroceso, recorre un caracter hacia atrás, retrocedo una posiciñon. Si por ejemplo tengo: \b\b entonces retrocedo dos posiciones.  <br> 
+**\'** : comilla simple. <br> 
+**\"** : comilla doble. <br>
 
+---
+
+## Clase Scanner
+
+La usamos para capturar la información que escribe el usuario. <br>
 
 
