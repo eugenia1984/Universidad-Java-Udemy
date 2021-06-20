@@ -124,4 +124,25 @@ Pedimos el nombre, lo leemos y lo imprimirmos: <br>
         System.out.println("usuario1 = " + usuario1);
 ```
 
+Ejercicio practico pedir el titulo y autor del libro y mostrarlo
 
+```
+
+import java.util.Scanner;
+
+public class ConcatenacionCadenas {
+
+    public static void main(String args[]) {
+    
+        Scanner consola = new Scanner(System.in);
+        
+        System.out.println("Escribe el titulo del libro : ");
+        String libro = consola.nextLine();
+        System.out.println("Escribe el autor del libro: ");
+        String autor = consola.nextLine();
+        System.out.println(titulo + " fue escrito por " + autor);
+
+    }
+
+}
+```
