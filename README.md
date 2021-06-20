@@ -56,6 +56,7 @@ System.out.print.ln("El nuevo valor de mi variable miVariableCadena es : " + miV
   
 Algunos ejemplos: miVariable , _miVariable, $miVariable.  
 
+:heavy_check_mark:     **Ver el archivo HolaMundo.java**
 ---
 
 ## Concatenación de cadenas
@@ -95,6 +96,7 @@ public class ConcatenacionCadenasNumeros {
  }   
 ```        
 
+:heavy_check_mark:     **Ver el archivo ConcatenacionCadena.java**
 ---
 
 ## Caracteres especiales
@@ -149,7 +151,7 @@ public class ConcatenacionCadenas {
 
 ---
 
-## Tipos primitivos en Java : ENTEROS
+## Tipos primitivos en Java : ENTEROS, SHORT, INTEGER, LONG
 
    * byte : 8 bits . Default : 0 .  -128 al 127
    * short : 16 bits . Default : 0 . -32768 al 32767
@@ -187,6 +189,30 @@ public class Enteros {
     }
 }
 ```
+
+:heavy_check_mark:    **Ver el archivo Eneteros.java** 
+---
+
+## Tipos primitivos : FLOAT , DOUBLE
+
+   * float: 32 bits . Default: 0.0 . Del 3.4028235E38 al 1.4E-45
+```
+public class FloatDouble {
+     public static void main(String args[])  {
+         
+        System.out.println("Valor minimo tipo float : " + Float.MAX_VALUE);  // 3.4028235E38
+        System.out.println("Valor maximo float : " + Float.MIN_VALUE);  // 1.4E-45
+     }
+}
+```
+   
+   * double : 64 bits . Default: 0.0
+
+```
+
+```
+
+:heavy_check_mark:     **Ver el archivo FloatDouble.java**
 ---
 
 ## Tipo primitivo Java: ENTERO
@@ -200,9 +226,4 @@ public class Enteros {
 El tipo boolean también es un tipo primitivo y puede almacenar solo el valor de **true** o **false**. <br>
 Su valor por default es false. <br>
 
----
 
-## Tipos : FLOAT
-
-   * float: 32 bits . Default: 0.0
-   * double : 64 bits . Default: 0.0
