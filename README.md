@@ -60,6 +60,32 @@ Algunos ejemplos: miVariable , _miVariable, $miVariable.
 
 ---
 
+## Palabra reservada var
+
+Al utilizar **var** ya no se necesita definir el tipo de variable, pero si se debe asignar un valor para que se entienda de qué tipo es. <br>
+
+```
+var miVariableEntera2 = 25;
+var miVariableCadena2 = "Nueva cadena";
+```
+
+---
+
+## Modo DEBUG
+
+Primero hay que poner un **breakpoint** dando click en el número de línea donde quiero que se detenga. <br>
+Y para que se ejecute paso a paso, hacemos **Click derecho + Debug File** . <br>
+Y se inicia la ejecución paso a paso. <br>
+Debajo hay varias ventanas, nos interesa el de **Variables** . <br>
+Si no la vemos o se nos cerró, arribe de todo: **Window** -> **Debugging** -> **Variables** . En este lugar tenemos todas las opciones. <br>
+Sino tenemos el shortcut **ALT + SHIFT + 1** . <br>
+En la sección **Variables** se ve el **tipo de dato** de la variable. <br>
+Para seguir la próximo paaso: **F8** (step over). <br>
+Arriba de todo está el boton verde con el icono de play, al  hacerle click se termina de ejecutar el programa. <br>
+Si queremos sacar el breakpoint, directamente hacemos click sobre el. <br>
+
+---
+
 ## Concatenación de cadenas
 
 ```
@@ -76,6 +102,10 @@ public class ConcatenacionCadenas {
  
 }
 ```
+
+---
+
+
 ## Concatenación de números y cadenas y números
 
 ```
@@ -153,12 +183,16 @@ public class ConcatenacionCadenas {
 
 ---
 
-## Tipos primitivos en Java : ENTEROS, SHORT, INTEGER, LONG
+## Tipos primitivos en Java : BYTE , SHORT, INTEGER, LONG
 
    * byte : 8 bits . Default : 0 .  -128 al 127
    * short : 16 bits . Default : 0 . -32768 al 32767
    * int : 32 bits . Default : 0 . -2147483648 al  2147483647
    * long : 64 bits . Default: 0 . -9223372036854775808 al  9223372036854775807
+   
+ Un ejemplo de número long: <br>
+ var numeroLong = 922337203685477580L;
+ **Con LONG puedo indicar con L al final, solo con long, con los demás tipo de números no debo indicar con la letra al final.**
 
 ```
 public class Enteros {
@@ -199,6 +233,10 @@ public class Enteros {
 ## Tipos primitivos : FLOAT , DOUBLE
 
    * float: 32 bits . Default: 0.0 . Del 3.4028235E38 al 1.4E-45
+   
+Un ejemplo de FLOAT : var numeroFLotante = 10.0F; <br>
+**Puedo indicar con una F al final que es flotante.** <br>
+
 ```
 public class FloatDouble {
      public static void main(String args[])  {
@@ -209,7 +247,10 @@ public class FloatDouble {
 }
 ```
    
-   * double : 64 bits . Default: 0.0. Desde 1.7976931348623157E308 al  4.9E-324
+   * double : 64 bits . Default: 0.0. Desde 1.7976931348623157E308 al  4.9E-324. Tienen un . para indicar cuando comienza el decimal.
+  
+Un ejemplo de DOUBLE : var numeroDouble = 1.7976931348623157E308D . <br>  
+**Puedo indicar con una D que es de tipo double**. <br>
 
 ```
 public class FloatDouble {
@@ -227,7 +268,33 @@ public class FloatDouble {
 
 ## Tipo primitivo Java: ENTERO
 
-   * char : 16 bits . Default: \u0000
+   * char : 16 bits . Default: \u0000 . Es solamente un cracter, se usan comillas simples. Son los caracteres uniocode. También se puede usar el valor decimal, tiene 16 bits, mismo tamaño que un short.
+   
+```
+public class Char {
+    public static void main(String args[])  {
+        
+        char miCaracter = 'a';
+        System.out.println("miCaracter = " + miCaracter); 
+        
+        char varChar = '\u0021';
+        System.out.println("varChar = " + varChar);  // imprime: varChar = !
+        
+        char varCharDecimal = 33;  // Para hacer una conversion
+        System.out.println("varCharDecimal = " + varCharDecimal);  //imprime: varCharDecimal = !
+        
+         char varSimbolo = '!';
+        System.out.println("varSimbolo = " + varSimbolo);  //imprime: varSimbolo = !
+        
+         //un tipo char puede convertirse a entero
+        int VaraibleEnteraSimbolo = '!';
+        System.out.println("VaraibleEnteraSimbolo = " + VaraibleEnteraSimbolo);  //Pero me imprime 33, se convierte a su codigo decimal
+    }
+    
+}
+```
+
+:heavy_check_mark:   **ver el archivo Char.java**
    
 ---
 
