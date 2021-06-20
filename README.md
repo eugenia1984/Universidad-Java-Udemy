@@ -206,10 +206,16 @@ public class FloatDouble {
 }
 ```
    
-   * double : 64 bits . Default: 0.0
+   * double : 64 bits . Default: 0.0. Desde 1.7976931348623157E308 al  4.9E-324
 
 ```
-
+public class FloatDouble {
+     public static void main(String args[])  {
+        //Double
+        System.out.println("Valor minimo tipo double: " + Double.MAX_VALUE);//  1.7976931348623157E308
+        System.out.println("Valor maximo double: " + Double.MIN_VALUE); //  4.9E-324
+        }
+}        
 ```
 
 :heavy_check_mark:     **Ver el archivo FloatDouble.java**
