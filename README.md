@@ -74,4 +74,21 @@ public class ConcatenacionCadenas {
  
 }
 ```
+## Concetenación de números y cadenas y números
 
+```
+public class ConcatenacionCadenasNumeros {
+    
+    public static void main(String args[]) {
+        // Defino dos variables de tipo entero
+        int numero1 = 3;
+        int numero2 = 4;
+        //+ en vez de concatenar realiza la suma
+        System.out.println(numero1 + numero2);  //imprime : 7
+        //primero hace la suma y luego concatena
+        System.out.println(numero1 + numero2 + usuario); //Imprime : 7Juan
+        //Ejemplo de contexto cadena, de izq a der si encuentra cadena todo el resto lo trata ocmo cadena
+        System.out.println(usuario + numero1 + numero2);  //imprime : Juan34
+    }
+ }   
+```        
