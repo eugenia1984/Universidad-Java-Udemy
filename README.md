@@ -38,7 +38,7 @@ También puedo reasignarle valor: <br>
 ```
 String miVariableCadena = "Adios"";
 ```
-Y puedo imprimir concetanando String con variable usando + : <br>
+Y puedo imprimir concatanando String con variable usando + : <br>
 ```
 System.out.print.ln("El nuevo valor de mi variable miVariableCadena es : " + miVariableCadena);
 ```
