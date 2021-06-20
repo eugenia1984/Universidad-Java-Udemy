@@ -6,7 +6,9 @@ Curso de Udemy en Java
 
 -Permiten guardar información. <br>
 
--Son de tipo: PRIMITIVOS (entreros, flotantes) ó REFERENCIADOS - TIPO OBJETOS - (clases, intefases, arreglos). <br>
+-Son de tipo: 
+   * **PRIMITIVOS** : entreros, flotantes 
+   * **REFERENCIADOS - TIPO OBJETOS -** : clases, intefases, arreglos. <br>
 
 ¿ Cómo las defino? <br>
 
