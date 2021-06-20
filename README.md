@@ -64,10 +64,10 @@ Algunos ejemplos: miVariable , _miVariable, $miVariable.
 public class ConcatenacionCadenas {
     
     public static void main(String args[]) {
-        String usuario = " Juan";
+        String usuario = "Juan";
         String titulo = "Ingeniero";
-        String union = titulo + usuario;
-        System.out.println("union : " + union);   // Ingeniero Juan
+        String union = titulo + " " + usuario;  //" " es para concatenar un espacio en blanco
+        System.out.println("union : " + union);  // Ingeniero Juan
     
     
     }
