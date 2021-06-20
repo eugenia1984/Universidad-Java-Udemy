@@ -94,3 +94,16 @@ public class ConcatenacionCadenasNumeros {
     }
  }   
 ```        
+
+---
+
+## Caracteres especiales
+
+\n : salto de línea <br>
+\t : tabulador  <br> 
+\b: retroceso, recorre un caracter hacia atrás, retrocedo una posiciñon. Si por ejemplo tengo: \b\b entonces retrocedo dos posiciones.  <br> 
+\' : comilla simple. <br> 
+\": comilla doble. <br>
+
+
+
