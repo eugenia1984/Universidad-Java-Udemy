@@ -57,6 +57,7 @@ System.out.print.ln("El nuevo valor de mi variable miVariableCadena es : " + miV
 Algunos ejemplos: miVariable , _miVariable, $miVariable.  
 
 :heavy_check_mark:     **Ver el archivo HolaMundo.java**
+
 ---
 
 ## Concatenación de cadenas
@@ -97,6 +98,7 @@ public class ConcatenacionCadenasNumeros {
 ```        
 
 :heavy_check_mark:     **Ver el archivo ConcatenacionCadena.java**
+
 ---
 
 ## Caracteres especiales
@@ -191,6 +193,7 @@ public class Enteros {
 ```
 
 :heavy_check_mark:    **Ver el archivo Eneteros.java** 
+
 ---
 
 ## Tipos primitivos : FLOAT , DOUBLE
@@ -219,6 +222,7 @@ public class FloatDouble {
 ```
 
 :heavy_check_mark:     **Ver el archivo FloatDouble.java**
+
 ---
 
 ## Tipo primitivo Java: ENTERO
