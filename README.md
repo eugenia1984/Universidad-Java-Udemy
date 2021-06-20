@@ -50,7 +50,7 @@ System.out.print.ln("El nuevo valor de mi variable miVariableCadena es : " + miV
 
 ### Reglas para definir una variable:
 
-  * La primer letra en minúscula, luego siempre la primer letra de las demás palabras en mayúscula - **camelCase** -
+  * La primer letra en minúscula, luego siempre la primer letra de las demás palabras en mayúscula -**camelCase**-
   * No puede tener caracteres especiales, tampoco es recomendable usar acentos.
   * Puede empezar con **_** o son **$**
   
