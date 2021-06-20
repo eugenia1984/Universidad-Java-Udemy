@@ -110,5 +110,18 @@ public class ConcatenacionCadenasNumeros {
 ## Clase Scanner
 
 La usamos para capturar la información que escribe el usuario. <br>
+Exportamos: <br>
+```
+import java.util.Scanner;
+```
+Pedimos el nombre, lo leemos y lo imprimirmos: <br>
+```
+//Clase Scanner
+        //Instanciamos a nuestro clase Scanner creando un nuevo obcjeto consola
+        Scanner consola = new Scanner(System.in);
+        System.out.println(" Escribe tu nombre: ");
+        String usuario1 = consola.nextLine();
+        System.out.println("usuario1 = " + usuario1);
+```
 
 
