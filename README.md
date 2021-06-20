@@ -89,6 +89,8 @@ public class ConcatenacionCadenasNumeros {
         System.out.println(numero1 + numero2 + usuario); //Imprime : 7Juan
         //Ejemplo de contexto cadena, de izq a der si encuentra cadena todo el resto lo trata como cadena
         System.out.println(usuario + numero1 + numero2);  //imprime : Juan34
+        //Los parentesis modifican la prioridad en la evaluacion, primero realiza la suma y luego concatena el string con el int
+        System.out.println(usuario + (numero1 + numero2)); //imprime: Juan7  
     }
  }   
 ```        
