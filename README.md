@@ -117,7 +117,7 @@ import java.util.Scanner;
 Pedimos el nombre, lo leemos y lo imprimirmos: <br>
 ```
 //Clase Scanner
-        //Instanciamos a nuestro clase Scanner creando un nuevo obcjeto consola
+//Instanciamos a nuestro clase Scanner creando un nuevo objeto consola, para leer lo que ingrese el usuario por consola
         Scanner consola = new Scanner(System.in);
         System.out.println(" Escribe tu nombre: ");
         String usuario1 = consola.nextLine();
