@@ -56,3 +56,22 @@ System.out.print.ln("El nuevo valor de mi variable miVariableCadena es : " + miV
   
 Algunos ejemplos: miVariable , _miVariable, $miVariable.  
 
+---
+
+## Concatenación de cadenas
+
+```
+public class ConcatenacionCadenas {
+    
+    public static void main(String args[]) {
+        String usuario = " Juan";
+        String titulo = "Ingeniero";
+        String union = titulo + usuario;
+        System.out.println("union : " + union);   // Ingeniero Juan
+    
+    
+    }
+ 
+}
+```
+
