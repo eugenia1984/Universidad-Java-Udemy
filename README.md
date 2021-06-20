@@ -146,3 +146,32 @@ public class ConcatenacionCadenas {
 
 }
 ```
+
+---
+
+## Tipos primitivos en Java : ENTEROS
+
+   * byte : 8 bits . Default : 0
+   * short : 16 bits . Default : 0
+   * int : 32 bits . Default : 0
+   * long : 64 bits . Default: 0
+
+---
+
+## Tipo primitivo Java: ENTERO
+
+   * char : 16 bits . Default: \u0000
+   
+---
+
+## Tipos primitivos en Java: BOOLEAN
+
+El tipo boolean también es un tipo primitivo y puede almacenar solo el valor de **true** o **false**. <br>
+Su valor por default es false. <br>
+
+---
+
+## Tipos : FLOAT
+
+   * float: 32 bits . Default: 0.0
+   * double : 64 bits . Default: 0.0
