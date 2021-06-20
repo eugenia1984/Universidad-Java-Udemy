@@ -33,7 +33,7 @@ public class MiPrimerVariable {
   }
 }
 ```
-Una variable que fue definada dentro de un **método**, en este caso dle método main, no va a poder ser usada fuera del mismo. Esto es el **alcance (scope)** de la variable. No vamos a poder acceder a ella desde cualquier parte dle programa, sino que va a depender dónde fue definida.<br>
+Una variable que fue definada dentro de un **método**, en este caso del método main, no va a poder ser usada fuera del mismo. Esto es el **alcance (scope)** de la variable. No vamos a poder acceder a ella desde cualquier parte dle programa, sino que va a depender dónde fue definida.<br>
 
 Un ejemplo de variable de tipo **String**, que no es de tipo primitivo, sino de clase: <br>
 ```
