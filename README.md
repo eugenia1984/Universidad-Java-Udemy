@@ -345,4 +345,31 @@ public class Boolean {
 
 :heavy_check_mark:     **Ver el archivo Boolean.java**
 
+---
+
+## Conversión de tipo Entero a String y vice versa
+
+Para convertir de **String** a **Entero** uso el método **.parseInt()**. <br>
+
+```
+public class ConversionTipoPrimitivos {
+    
+    public static void main( String args[]) {
+        
+        //Convertir un tipo STRING en un tipo INT
+        //Metodo .parseInt() de la clase Integer
+        int edad = Integer.parseInt("20");
+        System.out.println("edad más 1 = " + (edad + 1));
+        
+        
+    }
+}
+```
+
+:heavy_check_mark:     **Ver el archivo ConversionTipoPrimitivos.java**
+
+---
+
+
+
 
