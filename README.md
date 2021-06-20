@@ -302,5 +302,47 @@ public class Char {
 
 El tipo boolean también es un tipo primitivo y puede almacenar solo el valor de **true** o **false**. <br>
 Su valor por default es false. <br>
+Valores de tipo bandera, si está en verde (true) podemos continuar, si está en rojo (false) no. Por eso se los conoce como **tipo de datos bandera** . <br>
+
+```
+public class Boolean {
+    
+    public static void main( String args[]) {
+    
+        boolean varBoolean = true;
+        System.out.println("varBoolean = " + varBoolean);
+    }
+}
+```
+
+Se usan mucho en los **algoritmos**. <br>
+
+```
+public class Boolean {
+    
+    public static void main( String args[]) {
+    
+        boolean varBoolean = true;
+        
+        //varBoolean ya se entiende que es true, es como poner varBoolean ==true
+        if (varBoolean) {
+            System.out.println("La bandera es verdadera. ");
+        } else {
+            System.out.println("La bandera es falsa.");
+        }
+        
+         //Otro ejemplo de algoritmo viendo si una persona es mayor de eddad
+        int edad = 30;
+        boolean esAdulto = edad >= 18; 
+        if (esAdulto) {
+            System.out.println("Tiene : " + edad + " Es meyor de edad");
+        } else {
+            System.out.println("Tiene: " + edad + "Es menor de edad");
+        }
+    }
+}
+```
+
+:heavy_check_mark:     **Ver el archivo Boolean.java**
 
 
