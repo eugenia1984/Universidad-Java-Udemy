@@ -87,7 +87,7 @@ public class ConcatenacionCadenasNumeros {
         System.out.println(numero1 + numero2);  //imprime : 7
         //primero hace la suma y luego concatena
         System.out.println(numero1 + numero2 + usuario); //Imprime : 7Juan
-        //Ejemplo de contexto cadena, de izq a der si encuentra cadena todo el resto lo trata ocmo cadena
+        //Ejemplo de contexto cadena, de izq a der si encuentra cadena todo el resto lo trata como cadena
         System.out.println(usuario + numero1 + numero2);  //imprime : Juan34
     }
  }   
