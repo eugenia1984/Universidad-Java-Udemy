@@ -151,11 +151,32 @@ public class ConcatenacionCadenas {
 
 ## Tipos primitivos en Java : ENTEROS
 
-   * byte : 8 bits . Default : 0
-   * short : 16 bits . Default : 0
+   * byte : 8 bits . Default : 0 .  -128 al 127
+   * short : 16 bits . Default : 0 . -32768 al 32767
    * int : 32 bits . Default : 0
    * long : 64 bits . Default: 0
 
+```
+public class Enteros {
+    
+    public static void main(String args[])  {
+    
+    byte numeroByte = 10;
+    byte numeroByte2 = (byte)129;  //para pasarlo a byte
+    
+    System.out.println("Valor variable numeroByte2 : " + numeroByte2);  //-127
+    System.out.println(" Valor minimo byte : " + Byte.MIN_VALUE );  //-128
+    System.out.println(" Valor maximo byte : " + Byte.MAX_VALUE );  //127
+    
+    short numeroShort = 32000;
+    System.out.println("numeroShort = " + numeroShort);
+    System.out.println(" Valor minimo short : " + Short.MIN_VALUE );  //-32768
+    System.out.println(" Valor maximo short : " + Short.MAX_VALUE );  //32767
+    
+    
+    }
+}
+```
 ---
 
 ## Tipo primitivo Java: ENTERO
