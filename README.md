@@ -45,3 +45,11 @@ Y puedo imprimir concatanando String con variable usando + : <br>
 System.out.print.ln("El nuevo valor de mi variable miVariableCadena es : " + miVariableCadena);
 ```
 
+### Reglas para definir una varaible:
+
+  * La primer letra en minúscula, luego siempre la primer letra de las demás palabras en mayúscula - **camelCase** -
+  * No puede tener caracteres especiales
+  * Puede empezar con **_** o son **$**
+  
+Algunos ejemplos: miVariable , _miVariable, $miVariable.  
+
