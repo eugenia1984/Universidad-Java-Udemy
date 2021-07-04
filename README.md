@@ -1,375 +1,511 @@
-# Universidad-Java-Udemy
+# Universidad Java Udemy
 
 Curso de Udemy en Java
 
 ---
 
+# Contenido
 
-## Variables
+## Nivel 1. Fundamentos de Java 
 
--Permiten guardar información. <br>
+**Lección 1 - Comenzando con la Tecnología Java** <br>
+El asombroso mundo de la programación en Java <br>
+Qué es la tecnología Java (desde un enfoque práctico) <br>
+Nuestro primer programa en Java desde cero <br>
 
--Son de tipo: 
-   * **PRIMITIVOS** : entreros, flotantes 
-   * **REFERENCIADOS - TIPO OBJETOS -** : clases, intefases, arreglos. <br>
 
-¿ Cómo las defino? <br>
+### Lección 2 - Variables y Operadores en Java
 
-1ro : indico el **tipo** de variable. (int, float)<br>
-2do : **nombro** a la variable con **camelCase**.<br>
-3ro : **asigno** su valor mediante el operador de asignación: **=**.<br>
+Uso de Variables en Java y para qué las utilizamos <br>
+Tipos de Datos en Java y cómo se clasifican <br>
+Manejo y Clasificación de operadores en Java <br>
 
-Puedo reasignar valores a la variable, por ejemplo: <br>
+### Lección 3 - Sentencias de Control en Java
 
-```
+Uso de la estructura if-else y dónde utilizarla <br>
+Manejo de la esctrutura switch y cuando aplicarla <br>
 
-public class MiPrimerVariable {
-  
-  public static void main (String args [] ) {
-    
-    int miVariableEntera = 10 ;      //Defino mi variable de tipo INTEGER(entera), la nombro 'miVariableEntera' y le asigno el valor 10
-    miVaraibleEntera = 3;       //Le reasigno su valor a 3
-    System.out.println(miVariableEntera);   // Se va a imprimir 3
-  }
-}
-```
-Una variable que fue definada dentro de un **método**, en este caso del método main, no va a poder ser usada fuera del mismo. Esto es el **alcance (scope)** de la variable. No vamos a poder acceder a ella desde cualquier parte dle programa, sino que va a depender dónde fue definida.<br>
+### Lección 4 - Manejo de Ciclos en Java
 
-Un ejemplo de variable de tipo **String**, que no es de tipo primitivo, sino de clase: <br>
-```
-String miVariableCadena = "Saludos";
-```
-También puedo reasignarle valor: <br>
-```
-String miVariableCadena = "Adios"";
-```
-Y puedo imprimir concatenando String con variable usando + : <br>
-```
-System.out.print.ln("El nuevo valor de mi variable miVariableCadena es : " + miVariableCadena);
-```
+Uso del ciclo for y su uso <br>
+Uso del ciclo while y cómo aplicarlo <br>
+Uso del ciclo do-while y cuando utilizarlo <br>
 
-### Reglas para definir una variable:
+### Lección 5 - Programación Orientada a Objetos
 
-  * La primer letra en minúscula, luego siempre la primer letra de las demás palabras en mayúscula -**camelCase**-
-  * No puede tener caracteres especiales, tampoco es recomendable usar acentos.
-  * Puede empezar con **_** o son **$**
-  
-Algunos ejemplos: miVariable , _miVariable, $miVariable.  
+**Introducción a la Programación Orientada a Objetos (POO)** <br>
 
-:heavy_check_mark:     **Ver el archivo HolaMundo.java**
+Manejo de Clases en Java <br>
+Uso de Objetos en Java <br>
 
----
+### Lección 6 - Funciones en Java
 
-## Palabra reservada var
+Declaración de Métodos o Funciones en Java <br>
+Uso y llamado de Funciones en Java <br>
 
-Al utilizar **var** ya no se necesita definir el tipo de variable, pero si se debe asignar un valor para que se entienda de qué tipo es. <br>
+### Lección 7 - Manejo de Datos en Java
 
-```
-var miVariableEntera2 = 25;
-var miVariableCadena2 = "Nueva cadena";
-```
+Uso de Arreglos en Java <br>
+Manejo de Matrices en Java<br>
+
+### Lección 8 - Herencia en Java
+
+Manejo de Herencia en Java <br>
+Uso de superclases y subclases en Java <br>
+
+**Laboratorio Final del Nivel** <br>
+
+Ejercicio Final donde se integra todo lo aprendido en este Nivel <br>
 
 ---
 
-## Modo DEBUG
+## Nivel 2. Programación con Java
 
-Primero hay que poner un **breakpoint** dando click en el número de línea donde quiero que se detenga. <br>
-Y para que se ejecute paso a paso, hacemos **Click derecho + Debug File** . <br>
-Y se inicia la ejecución paso a paso. <br>
-Debajo hay varias ventanas, nos interesa el de **Variables** . <br>
-Si no la vemos o se nos cerró, arribe de todo: **Window** -> **Debugging** -> **Variables** . En este lugar tenemos todas las opciones. <br>
-Sino tenemos el shortcut **ALT + SHIFT + 1** . <br>
-En la sección **Variables** se ve el **tipo de dato** de la variable. <br>
-Para seguir la próximo paaso: **F8** (step over). <br>
-Arriba de todo está el boton verde con el icono de play, al  hacerle click se termina de ejecutar el programa. <br>
-Si queremos sacar el breakpoint, directamente hacemos click sobre el. <br>
+### Lección 1 - Polimorfismo en Java
 
----
+Qué es el polimorfismo y su aplicación <br>
+Sobreescritura en Java y su uso <br>
 
-## Concatenación de cadenas
+### Lección 2 - Manejo Avanzado de Objetos en Java
 
-```
-public class ConcatenacionCadenas {
-    
-    public static void main(String args[]) {
-        String usuario = "Juan";
-        String titulo = "Ingeniero";
-        String union = titulo + " " + usuario;  //" " es para concatenar un espacio en blanco
-        System.out.println("union : " + union);  // Ingeniero Juan
-    
-    
-    }
- 
-}
-```
+Conversión de Objetos (cast) <br>
+Identificando el tipo de objeto con el operador instanceof <br>
+La importancia y uso del operador this <br>
 
----
+### Lección 3 - Manejo de Bloques de Código en Java
 
+Alcance de Variables (Scope) <br>
+Uso de bloques estáticos y no estáticos <br>
 
-## Concatenación de números y cadenas y números
+### Lección 4 - Uso de Clases Abstractas e Interfaces en Java
 
-```
-public class ConcatenacionCadenasNumeros {
-    
-    public static void main(String args[]) {
-        // Defino dos variables de tipo entero
-        int numero1 = 3;
-        int numero2 = 4;
-        //+ en vez de concatenar realiza la suma
-        System.out.println(numero1 + numero2);  //imprime : 7
-        //primero hace la suma y luego concatena
-        System.out.println(numero1 + numero2 + usuario); //Imprime : 7Juan
-        //Ejemplo de contexto cadena, de izq a der si encuentra cadena todo el resto lo trata como cadena
-        System.out.println(usuario + numero1 + numero2);  //imprime : Juan34
-        //Los parentesis modifican la prioridad en la evaluacion, primero realiza la suma y luego concatena el string con el int
-        System.out.println(usuario + (numero1 + numero2)); //imprime: Juan7  
-    }
- }   
-```        
+Diferencias entre Clases Abstractas e Interfaces <br>
+Declaración y uso de Clases Abstractas <br>
+Manejo de Interfaces en Java y cuándo utilizarlas <br>
 
-:heavy_check_mark:     **Ver el archivo ConcatenacionCadena.java**
+### Lección 5 - Manejo de Excepciones en Java
+
+Procesando las excepciones en Java <br>
+Uso de try-catch y propagación de Excepciones <br>
+
+### Módulo 6 - Manejo de Colecciones en Java
+
+Uso de las colecciones en Java <br>
+Manejo de List, Set y Map y la aplicación de cada estructura <br>
+
+### Módulo 7 - Manejo de Archivos en Java
+
+Manejo y uso de archivos en Java <br>
+Manejo de Streams en Java y sus usos <br>
+
+**Laboratorio Final del Nivel** <br>
+
+Ejercicio Final donde se aplica todo lo aprendido en este nivel <br>
 
 ---
 
-## Caracteres especiales
+## Nivel 3. Conexión a Bases de Datos con JDBC
 
-**\n** : salto de línea <br>
-**\t** : tabulador  <br> 
-**\b**: retroceso, recorre un caracter hacia atrás, retrocedo una posiciñon. Si por ejemplo tengo: \b\b entonces retrocedo dos posiciones.  <br> 
-\ ' : comilla simple. <br> 
-\ " : comilla doble. <br>
+### Lección 1 - Comenzando con JDBC (Java Database Connectivity)
 
----
+La necesidad de una base de datos <br>
+Instalando MySql y Oracle <br>
+Descarga de controladores (drivers) para conectarnos a la base <br>
 
-## Clase Scanner
+### Lección 2 - Conectando a la Base de Datos (BD)
 
-La usamos para capturar la información que escribe el usuario. <br>
-Exportamos: <br>
-```
-import java.util.Scanner;
-```
-Pedimos el nombre, lo leemos y lo imprimirmos: <br>
-```
-//Clase Scanner
-//Instanciamos a nuestro clase Scanner creando un nuevo objeto consola, para leer lo que ingrese el usuario por consola
-        Scanner consola = new Scanner(System.in);
-        System.out.println(" Escribe tu nombre: ");
-        String usuario1 = consola.nextLine();
-        System.out.println("usuario1 = " + usuario1);
-```
+Pasos para conectarnos a una base de datos relacional<br>
+Código JDBC para conectarnos a la base de datos <br>
 
-Ejercicio practico pedir el titulo y autor del libro y mostrarlo
+### Lección 3 - Sentencia Select
 
-```
+Pasos para ejecutar la sentencia Select de SQL con JDBC <br>
+Uso de la sentencia select para leer la información de la BD <br>
 
-import java.util.Scanner;
+### Lección 4 - Manipulando Datos con JDBC
 
-public class ConcatenacionCadenas {
+Pasos para ejecutar las sentencias insert, update y delete <br>
+Uso de las sentencias insert,update y delete para manipular información <br>
+Separación de funciones select, insert, update y delete con JDBC <br>
 
-    public static void main(String args[]) {
-    
-        Scanner consola = new Scanner(System.in);
-        
-        System.out.println("Escribe el titulo del libro : ");
-        String libro = consola.nextLine();
-        System.out.println("Escribe el autor del libro: ");
-        String autor = consola.nextLine();
-        System.out.println(titulo + " fue escrito por " + autor);
+### Lección 5 - Metadatos con JDBC
 
-    }
+Conocimiendo la estructura de las tablas de BD con JDBC <br>
+La importancia del uso de Metadatos en JDBC <br>
 
-}
-```
+### Lección 6 - Patrones de Diseño
+
+Patrón de Diseño DAO (Data Access Object) <br>
+Patrón de Diseño DTO (Data Transfer Object) o VO (Value Object) <br>
+
+**Laboratorio Final con la integración de todo lo visto en este Nivel**
 
 ---
 
-## Tipos primitivos en Java : BYTE , SHORT, INTEGER, LONG
+## Nivel 4 - Servlets y JSPs
 
-   * byte : 8 bits . Default : 0 .  -128 al 127
-   * short : 16 bits . Default : 0 . -32768 al 32767
-   * int : 32 bits . Default : 0 . -2147483648 al  2147483647
-   * long : 64 bits . Default: 0 . -9223372036854775808 al  9223372036854775807
-   
- Un ejemplo de número long: <br>
- var numeroLong = 922337203685477580L;
- **Con LONG puedo indicar con L al final, solo con long, con los demás tipo de números no debo indicar con la letra al final.**
+### Lección 1 - Introducción a la Tecnología Web con Java
 
-```
-public class Enteros {
-    
-    public static void main(String args[])  {
-    
-    byte numeroByte = 10;
-    byte numeroByte2 = (byte)129;  //para pasarlo a byte
-    
-    //Byte
-    System.out.println("Valor variable numeroByte2 : " + numeroByte2);  //-127
-    System.out.println(" Valor minimo byte : " + Byte.MIN_VALUE );  //-128
-    System.out.println(" Valor maximo byte : " + Byte.MAX_VALUE );  //127
-    
-    //short 
-    short numeroShort = 32000;
-    System.out.println("numeroShort = " + numeroShort);
-    System.out.println(" Valor minimo short : " + Short.MIN_VALUE );  //-32768
-    System.out.println(" Valor maximo short : " + Short.MAX_VALUE );  //32767
-    
-    //Int
-    System.out.println(" Valor minimo int : " + Integer.MIN_VALUE );  //  -2147483648
-    System.out.println(" Valor maximo int : " + Integer.MAX_VALUE );  // 2147483647
-    
-    //Long
-     System.out.println(" Valor minimo long : " + Long.MIN_VALUE );  //  -9223372036854775808
-    System.out.println(" Valor maximo long : " + Long.MAX_VALUE );  // 9223372036854775807
-    
-    
-    }
-}
-```
+El asombroso mundo de la tecnología Web con Java <br>
+La revolución de las aplicaciones Web y cómo aprovecharla <br>
+El servidor de aplicaciones Glassfish y cómo utilizarlo <br>
 
-:heavy_check_mark:    **Ver el archivo Eneteros.java** 
+### Lección 2 - Conceptos Básicos de los Servlets
+
+Sin misterios: qué es la tecnología de los Servlets <br>
+Elementos y ciclo de vida de un Servlet <br>
+
+### Lección 3 - Manejo de Sesiones con Servlets
+
+Implementación del concepto de Sesiones con Servlets <br>
+Aprenderemos el uso del objeto HttpSession <br>
+Implementaremos un carrito de compras Web <br>
+
+### Lección 4 - Conceptos Básicos de los JSPs
+
+Estudiaremos cómo crear páginas Web dinámicas con JSPs <br>
+Aprenderemos los elementos fundamentales de los JSPs <br>
+
+### Lección 5 - Conceptos Avanzados de Servlets y JSPs
+
+Veremos cómo crear una aplicación Web integrando los Servlets y JSPs <br>
+Procesamiento de datos con Servlets y despliegue de información con JSPs<br>
+
+### Lección 6 - JSTL y EL (Expression Language) en JSPs
+
+Entenderemos las etiquetas JSTL para facilitar el uso de JSPs <br>
+Veremos el poder de EL (Expression Language) en los JSPs <br>
+
+### Lección 7 - Patrón de Diseño MVC (Model View Controller)
+
+Estudiaremos una arquitectura multicapas del mundo real con Servlets y JSPs <br>
+Aplicaremos el patrón de diseño MVC con Servlets y JSPs <br>
+
+### Lección 8 - Aplicación SGA (Sistema de Gestión de Alumnos)
+
+Integración de los primeros 5 niveles en un proyecto final (SGA)<br>
+Análisis, Diseño y Desarrollo de la aplicación SGA <br>
+Este nivel les permite conseguir empleo desde becario o programador Java Jr <br>
+
+--- 
+
+Nivel 5 - Java Server Faces
+
+### Lección 1 - Introducción a JavaServer Faces
+
+Qué es JSF y su rol en Java EE <br>
+Conceptos básicos de JSF y MVC <br>
+HolaMundo con JSF <br>
+
+### Lección 2 - ManagedBeans en JSF
+
+Concepto de ManagedBeans en JSF <br>
+Uso de ModelManagedBeans en JSF <br>
+Expression Language (EL) en JSF <br>
+Cocepto de BackingBeans en JSF <br>
+Manejo de Alcances (Scopes) en JSF
+
+### Lección 3 - Reglas de Navegación en JSF
+
+Reglas de Navegación en JSF <br>
+Ciclo de Vida en JSF <br>
+
+### Lección 4 - Validadores en JSF
+
+Manejo de Validadores en JSF <br>
+Uso de Convertidores en JSF <br>
+Manejo de Mensajes e Internacionalización en JSF <br>
+
+### Lección 5 - Manejo de Eventos en JSF 
+
+Uso de Value Change Listener <br>
+Manejo de ActionListener y ActionEvent en JSF <br>
+Uso de librería estándar y SelectItems en JSF<br>
+
+### Lección 6 - Manejo de Facelets
+
+La evolución de JSP y el uso de Facelets <br>
+El uso y la importancia de Faceltes en JSF <br>
+
 
 ---
 
-## Tipos primitivos : FLOAT , DOUBLE
+## Nivel 6 - Java EE (ncluye EJB's y JPA, Web Services y Seguridad)
 
-   * float: 32 bits . Default: 0.0 . Del 3.4028235E38 al 1.4E-45
-   
-Un ejemplo de FLOAT : var numeroFLotante = 10.0F; <br>
-**Puedo indicar con una F al final que es flotante.** <br>
+### Lección 1 - Introducción a Java EE
 
-```
-public class FloatDouble {
-     public static void main(String args[])  {
-         
-        System.out.println("Valor minimo tipo float : " + Float.MAX_VALUE);  // 3.4028235E38
-        System.out.println("Valor maximo float : " + Float.MIN_VALUE);  // 1.4E-45
-     }
-}
-```
-   
-   * double : 64 bits . Default: 0.0. Desde 1.7976931348623157E308 al  4.9E-324. Tienen un . para indicar cuando comienza el decimal.
-  
-Un ejemplo de DOUBLE : var numeroDouble = 1.7976931348623157E308D . <br>  
-**Puedo indicar con una D que es de tipo double**. <br>
+Introducción al mundo Java Empresarial (Java EE) <br>
+Stack de Tecnologías Java EE <br>
+Arquitectura Multicapas en Java EE <br>
+Instalación de las Herramientas (Eclipse, MySql) <br>
+Instalación del Servidor de Aplicaciones Glassfish <br>
+Uso de Maven y JavaEE <br>
+HolaMundo con JavaEE <br>
 
-```
-public class FloatDouble {
-     public static void main(String args[])  {
-        //Double
-        System.out.println("Valor minimo tipo double: " + Double.MAX_VALUE);//  1.7976931348623157E308
-        System.out.println("Valor maximo double: " + Double.MIN_VALUE); //  4.9E-324
-        }
-}        
-```
+### Lección 2 - Enterprise Java Beans (EJB)
 
-:heavy_check_mark:     **Ver el archivo FloatDouble.java**
+Introducción a los EJB <br>
+Tipos y Configuración de un EJB <br>
+Inyección de Dependencias en Java EE <br>
+Empaquetamiento y Contenedores empresariales <br>
 
----
+### Lección 3 - Introducción a Java Persistence API (JPA)
 
-## Tipo primitivo Java: ENTERO
+Introducción a Java Persistence API (JPA) <br>
+Entenidimiento de las clases de Entidad en JPA <br>
+Manejo de EntityManager y Persistence Unit <br>
+Uso de JUnit y JPA <br>
 
-   * char : 16 bits . Default: \u0000 . Es solamente un cracter, se usan comillas simples. Son los caracteres uniocode. También se puede usar el valor decimal, tiene 16 bits, mismo tamaño que un short.
-   
-```
-public class Char {
-    public static void main(String args[])  {
-        
-        char miCaracter = 'a';
-        System.out.println("miCaracter = " + miCaracter); 
-        
-        char varChar = '\u0021';
-        System.out.println("varChar = " + varChar);  // imprime: varChar = !
-        
-        char varCharDecimal = 33;  // Para hacer una conversion
-        System.out.println("varCharDecimal = " + varCharDecimal);  //imprime: varCharDecimal = !
-        
-         char varSimbolo = '!';
-        System.out.println("varSimbolo = " + varSimbolo);  //imprime: varSimbolo = !
-        
-         //un tipo char puede convertirse a entero
-        int VaraibleEnteraSimbolo = '!';
-        System.out.println("VaraibleEnteraSimbolo = " + VaraibleEnteraSimbolo);  //Pero me imprime 33, se convierte a su codigo decimal
-    }
-    
-}
-```
+### Lección 4 - Consultas con JPA
 
-:heavy_check_mark:   **ver el archivo Char.java**
-   
----
+Ciclo de Vida en JPA <br>
+Tipos de Relaciones en JPA <br>
+Consultas JPQL en JPA <br>
+Uso del API de Criteria en JPA <br>
+Manejo de Transacciones en JPA <br>
 
-## Tipos primitivos en Java: BOOLEAN
+### Lección 5 - Rol de JSF
 
-El tipo boolean también es un tipo primitivo y puede almacenar solo el valor de **true** o **false**. <br>
-Su valor por default es false. <br>
-Valores de tipo bandera, si está en verde (true) podemos continuar, si está en rojo (false) no. Por eso se los conoce como **tipo de datos bandera** . <br>
+Rol de JSF en Java EE <br>
+Ajax en JSF  <br>
+PrimeFaces y JSF  <br>
+Integración JSF, PrimeFaces, AJAX, EJB y JPA <br>
 
-```
-public class Boolean {
-    
-    public static void main( String args[]) {
-    
-        boolean varBoolean = true;
-        System.out.println("varBoolean = " + varBoolean);
-    }
-}
-```
+### Lección 6 - WebServices y JavaEE
 
-Se usan mucho en los **algoritmos**. <br>
+Introducción a los Web Services <br>
+Tipos de Web Services JAX-WS y JAX-RS <br>
+Qué es un Documento WSDL <br>
+Uso de Documentos XML y XSD (XML Scheme) <br>
+Manejo del API de JAXB <br>
+Estrategias de Generación de Web Services <br>
+Despliegue de Web Services <br>
+Creación del Cliente del Servicio Web <br>
 
-```
-public class Boolean {
-    
-    public static void main( String args[]) {
-    
-        boolean varBoolean = true;
-        
-        //varBoolean ya se entiende que es true, es como poner varBoolean ==true
-        if (varBoolean) {
-            System.out.println("La bandera es verdadera. ");
-        } else {
-            System.out.println("La bandera es falsa.");
-        }
-        
-         //Otro ejemplo de algoritmo viendo si una persona es mayor de eddad
-        int edad = 30;
-        boolean esAdulto = edad >= 18; 
-        if (esAdulto) {
-            System.out.println("Tiene : " + edad + " Es meyor de edad");
-        } else {
-            System.out.println("Tiene: " + edad + "Es menor de edad");
-        }
-    }
-}
-```
+### Lección 7 - REST Web Services
 
-:heavy_check_mark:     **Ver el archivo Boolean.java**
+Introducción a REST Web Services <br>
+Análisis de Peticiones HTTP <br>
+Anotaciones del API JAX-RS<br>
+Integración de EJB y JAX-RS <br>
+Creación de un Cliente REST<br>
+Documento WADL y XSD del REST Web Service <br>
+Despliegue de un REST Web Service<br>
+Creación Cliente REST Web Service<br>
+
+### Lección 8 - Seguridad en Java EE
+
+Introducción a la Seguridad en Java EE <br>
+Autenticación y Autorización en Java EE <br>
+Seguridad en la Capa Web en Java EE <br>
+Seguridad en Capa EJB en Java EE <br>
+Autenticación de Clientes en Java EE <br>
+Autenticación del Cliente Web <br>
+Autenticación del Cliente SOAP y REST Web Service <br>
+
+**Ejercicio Final con la integración de todo lo aprendido** <br> 
 
 ---
 
-## Conversión de tipo Entero a String y vice versa
+## Nivel - Struts Framework 
 
-Para convertir de **String** a **Entero** uso el método **.parseInt()**. <br>
+###Lección 1 - Introducción a Struts Framework
 
-```
-public class ConversionTipoPrimitivos {
-    
-    public static void main( String args[]) {
-        
-        //Convertir un tipo STRING en un tipo INT
-        //Metodo .parseInt() de la clase Integer
-        int edad = Integer.parseInt("20");
-        System.out.println("edad más 1 = " + (edad + 1));
-        
-        
-    }
-}
-```
+¿Qué es un Struts Framework?<br>
+Instalación de Herramientas del Curso <br>
 
-:heavy_check_mark:     **Ver el archivo ConversionTipoPrimitivos.java**
+### Lección 2 - HolaMundo con Struts
+
+Creación del proyecto Web con Struts Framework <br>
+HolaMundo con Struts. <br>
+
+### Lección 3 - Manejo de Acciones con Struts
+
+Acciones con Struts <br>
+Ejercicio Acciones con Struts <br>
+Más ejercicios de Acciones con Stu <br>
+
+### Lección 4 - Manejo de Formas con Struts
+
+FormBeans con Struts <br>
+Ejercicio con FormBeans <br>
+Llenado de Formularios con Struts <br>
+
+### Lección 5 - Acciones Avanzadas con Struts
+
+Formas Avanzadas con Struts <br>
+Ejercicio Formas Avanzadas con Struts <br>
+
+### Lección 6 - Internacionalización con Struts
+
+Manejo de Internacionalización con Struts <br>
+Ejercicio manejo de Mensajes con Struts <br>
+Ejercicio manejo de Internacionalización con Struts <br>
+
+### Lección 7 - Manejo de Excepciones con Struts
+
+Manejo de Excepciones con Struts <br>
+Ejercicio Manejo de Excepciones con Struts <br>
+
+### Lección 8 - Validación Manual con Struts
+
+Validación Manual con Struts <br>
+Ejerciciodas Validación Manual con Struts <br>
+
+### Lección 9 - Validación Automática con Struts
+
+Validación Automática con Struts <br>
+Ejercicio Validación Automática <br>
+
+### Lección 10 - Manejo de Tiles (Plantillas) con Struts
+
+Uso de Tiles (Plantillas) con Struts <br>
+Ejercicio Plantillas con Struts <br>
+Laboratorio Final <br>
+Conclusión del Curso con Struts <br>
+
+
+---
+
+## Nivel - Hibernate Framework y JPA (JavaPersistence API)
+
+### Lección 1 - Introducción a Hibernate Framework
+
+¿Qué es un ORM - Object Relational Mapping? <br>
+Cómo Hibernate me ayuda en un diseño multicapas empresarial <br>
+Cómo ser mucho más productivo en la capa de datos con Hibernate <br>
+
+### Lección 2 - Configuración de Hibernate
+
+Revisaremos de los Patrones de Diseño DAO y DTO <br>
+Pondremos en práctica las operaciones básicas con Hibernate. <br>
+Crearemos una aplicación Web con JSPs, Servlets y Hibernate. <br>
+
+### Lección 3 - Manejo de Relaciones con Hibernate
+
+Estudiaremos los tipos de Asociaciones en Hibernate <br>
+Veremos las relaciones uno-uno, uno-muchos y muchos-muchos <br>
+Estudiaremos el concepto de Clases de Entidad que nos ofrece Hibernate <br>
+
+### Lección 4 - Ciclo Vida en Objetos de Entidad
+
+Estudiaremos el concepto del Ciclo de Vida en Objetos de Entidad <br>
+Aprenderemos el concepto de Persistencia y Persistencia en Cascada <br>
+
+### Lección 5 - Consultas con HQL
+
+Aprenderemos el lenguaje HQL (Hibernate Query Language)  <br>
+Estudiaremos el concepto de JOINS en HQL <br>
+Analizaremos el concepto de Lazy Loading y Fetch en HIbernate <br>
+
+### Lección 6 - Consultas API Criteria
+
+Estudiaremos el API de Criteria y cómo aplicarlo en Hibernate <br>
+Analizaremos en qué casos aplicar HQL o el API de Criteria <br>
+
+### Lección 7 - Query by Example
+
+Aprenderemos a aplicar Criteria Join y Fetch <br>
+Utilizaremos Query by Example para crear queries avanzados <br>
+
+### Lección 8 - Sistema SGA con Hibernate
+
+Construiremos el sistema SGA con Hibernate <br>
+La capa de datos la construiremos utilizando Hibernate <br>
+Crearemos consultas avanzadas con Hibernate <br>
+Aplicaremos todo lo aprendido en este Nivel <br>
 
 ---
 
 
+## Nivel - Spring Framework
 
+### Lección 1. Introducción a Spring Framework y la Universidad Spring:
 
+Adquiere los fundamentos necesarios sobre el Framework Spring y Spring Boot a las últimas versiones. <br>
+Este framework te permitirá agilizar y simplificar en gran medida el desarrollo de aplicaciones Java empresariales. <br>
+
+### Lección 2. Configuración de Spring  con Spring Boot y Apache Netbeans
+
+Realizaremos el proyecto de Hola Mundo con Spring Boot, de esta manera ya no será necesario realizar configuraciones complejas para inciar con Spring, al día de hoy es de lo más sencillo crear aplicaciones Web con Spring Framework apoyándonos de Spring Boot. <br>
+
+### Lección 3. Thymeleaf y Spring MVC
+
+En esta lección aprenderemos a utilizar Thymeleaf que es la tecnología que sustituye a los JSPs para la creación de los componetes de la vista. Así mismo aplicaremos el patrón de diseño MVC utilizando Spring y veremos cómo Spring aplica este patrón de una manera muy sencilla. <br>
+
+### Lección 4:   Spring Data, Hibernate y JPA
+
+En esta lección aprederemos a integrar nuestras aplicaciones Spring con Hibernate y JPA, de igual manera veremos lo sencillo que es al día de hoy integrar estas tecnologías y podremos evitar la mayoría de las configuraciones que anteriormente eran necesarias, además con Spring Boot prácticamente todas las configuraciones ya vienen por default, y sólo tendremos que realizar modificaciones mínimas para integrar nuestras aplicaciones de Spring con bases de datos.<br>
+
+### Lección 5. Manejo de Transacciones 
+
+Estudiaremos el tema de transacciones y lo simple que es aplicarlo al día de hoy con la última versión de Spring Framework y Spring Boot.<br>
+
+### Lección 6.  Creación de una aplicación CRUD completa con Spring Framework y Spring Boot
+
+Crearemos nuestra primera aplicación CRUD completa, aplicando todos los conceptos vistos hasta el momento y así pondrás en práctica lo más rápido posible la creación de Aplicaciones Web con Spring Framework, Thymeleaf, Spring Boot y Spring Data utilizando Hibernate/JPA. <br>
+
+### Lección 7. Validaciones con Spring Framework
+
+Agregaremos el concepto de validaciones a nuestros formularios Web con Thymeleaf y el framework de Validation de Java Empresarial aplicado a Spring Framework. <br>
+
+### Lección 8. Manejo de Plantillas con Thymeleaf
+
+Estudiaremos el concepto de Plantillas con Thymeleaf y así evitar la repetición de código HTML, CSS o JavaScript en nuestras aplicaciones Web con Spring Framework <br>
+
+### Lección 9.  Manejo de Mensajes e Internacionalización
+
+En esta lección veremos cómo preparar nuestra aplicación Web para el manejo de varios idiomas aplicando el concepto de mensajes dentro de archivos de propiedades y el manejo de internacionalización (i18n) <br>
+
+### Lección 10.  Seguridad con Spring Framework y Spring Security
+
+En esta lección aprenderemos a integrar seguridad a nuestra aplicación Web, primero de la manera más simple sin utilizar una base de datos, y posteriormente conectandonos a una base de datos para agregar el concepto de seguridad, usuarios y roles, entre más temas relacionados a la seguridad de nuestras aplicaciones Web tales como autenticación y autorización con Spring Security. <br>
+
+### Lección 11. Aplicación Final con Spring Framework utilizando Spring Boot y Bootstrap
+
+Mejoraremos visualmente nuestra aplicación, aplicando todos los conceptos aprendidos hasta el momento para crear una aplicación Web empresarial con todas las capas y patrones de diseño, las capas son Presentación, Negocio y Datos. Los patrones de diseño son MVC en la capa de presentación, DAO (Data Access Object) en la capa de datos, DTO (Data Transfere Object) en los objetos de Dominio o Entidad, entre varios temas más, con esto estaremos listos para crear cualquier aplicación Web del mundo real utilizando Spring Framework y Spring Boot. <br>
+
+---
+
+Además hemos incluido:
+
+Angular con Java EE, esta integración de tecnologías te permitirá convertirte en un Full Stack Java Developer. <br>
+
+---
+
+Y por si fuera poco, te obsequiamos como bono de regalo los cursos de "Angular, HTML, CSS y JavaScript", "HTML5 y CSS3", y "Android con Java y Kotlin", los cuales están incluidos de manera gratuita en este curso e incluye lo siguiente: <br>
+
+---
+
+# Bono Regalo: HTML, CSS y JavaScript
+
+### Lección 1 - Introducción a HTML
+
+Estudiaremos una introducción a la tecnología HTML <br>
+Enteniendo el papel de HTML en el mundo de las aplicaciones Web <br>
+
+### Lección 2 - Componentes en HTML
+
+Los componentes de HTML y cómo se estructura una página Web <br>
+Componentes de Texto, Fuentes, Preformato y más en HTML <br>
+
+### Lección 3 - Introducción a CSS
+
+Introducción a las Hojas de Estilo CSS <br>
+Los aspectos más importantes a considerar al utilizar CSS <br>
+Uso de clases e indentificadores en CSS <br>
+
+### Lección 4 - Formularios en HTML
+
+Elementos a considerar al crear Formularios HTML <br>
+Componentes para la creación de Formularios HTML <br>
+
+### Lección 5 - Introducción a JavaScript
+
+Qué es JavaScript y cómo aplicarlo en nuestras páginas HTML <br>
+Elementos básicos del lenguaje JavaScript <br>
+
+### Lección 6 - Validación de Formularios HTML
+
+Integración de Formularios HTML y JavaScript <br>
+Validación de Formularios con JavaScript <br>
