@@ -30,7 +30,7 @@ modificarNombre(nombre : String ) <br>
 modificarGenero( genero : String )<br>
 modificarOcupacion( ocupacion: String ) <br>
 
-:computer: ver la clase **Persona.java** del paquete **clase** . <br>
+:computer: ver la clase **Persona.java**  y **PruebaPersona** (donde está el método main) del paquete **clase** . <br>
 
 ---
 
