@@ -404,11 +404,16 @@ Envio Gratuito: envioGratuito <br>
 ```
    
    
-## OPERADORES UNITARIOS
+## OPERADORES UNARIOS
 
 ```
-~
+-
+!
+++
+--
 ``` 
+
+:heavy_check_mark:  **ver OperadoresUnarios.java** <br>
 
 
 ## OPERADORES A NIVEL DE BITS
