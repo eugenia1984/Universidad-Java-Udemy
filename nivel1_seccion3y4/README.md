@@ -27,6 +27,8 @@ En cada caso, luego de ejecutar la sentencia tengo un BREAK, para cortar el cicl
 
 
 :computer:   Ver **SentenciasDeControlSwitch.java** <br>
+
+
 ---
 
 # Lección 4 - Manejo de Ciclos en Java
