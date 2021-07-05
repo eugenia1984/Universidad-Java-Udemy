@@ -403,6 +403,8 @@ Envio Gratuito: envioGratuito <br>
 ||   //or, con que uno sea true ya es True
 !    //not
 ```
+
+:heavy_check_mark:  **ver OperadoresCondicionales.java** <br>   
    
    
 ## OPERADORES UNARIOS
