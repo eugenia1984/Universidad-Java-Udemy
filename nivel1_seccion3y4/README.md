@@ -47,7 +47,7 @@ Se revisa una **condición**, si es **verdadera (True)** se ejecuta el código, 
 Se revisa la CONDICION, se ejecuta la LÍNEA DE CÓDIGO, hay un INCREMENTO / DECREMENTO, y se vuelve a evaluar. Cuando al condición es FALSE termina de ejecutarse. <br>
 
 El CONTADOR va a estar dentro de la condición del FOR, donde tengo: <br>
-inicialización <br>
+inicialización ( esta variable es de alcance LOCAL, no se puede ejecutar fuera del for) <br>
 condicion <br>
 incremento/decremento <br>
 
