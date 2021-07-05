@@ -3,7 +3,7 @@
 # Uso de la estructura if-else y dónde utilizarla
 
 
-INICIO -> EXPRESION A EVALUAR (boleana, tengo dos caminos ) : <br>
+INICIO -> EXPRESION A EVALUAR (tengo dos caminos ) : <br>
 
 -> TRUE ( por bloque if ) -> SENTENCIA1 -> FIN <br>
 
@@ -12,7 +12,10 @@ INICIO -> EXPRESION A EVALUAR (boleana, tengo dos caminos ) : <br>
 También tengo la opción de : **IF / ELSE IF / ELSE** <br>
 Puedo tener tantos ELSE IF como necesite, pero si son varios, tal vez conviene usar SWITCH. <br>
 
+La expreción a evaluar es **boolean** . <br>
+
 :computer:   Ver **SentenciasDeControl.java** <br>
+
 
 # Manejo de la esctrutura switch y cuando aplicarla
 
@@ -24,6 +27,8 @@ INICIO -> EXPRESION A EVALUAR ( tengo varios caminos ) : <br>
 
 La sentencia DEFAULT es como el ELSE , va a ejecutarse cuando no coincida con ninguno de los demás casos. <br>
 En cada caso, luego de ejecutar la sentencia tengo un BREAK, para cortar el ciclo y salir del switch. <br>
+
+La expresión a evaluar es de tipo **numérica** o **String o Char** . <br>
 
 
 :computer:   Ver **SentenciasDeControlSwitch.java** <br>
