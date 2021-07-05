@@ -346,7 +346,7 @@ caracter = consola.nextLine().charAt(0);
 
 ---
 
-#Trabajo integrador con lo visto
+# Trabajo integrador con lo visto
 
 Se solicita capturar la siguiente información de una tienda de libros: <br>
 nombre (String) <br>
@@ -372,68 +372,84 @@ Envio Gratuito: envioGratuito <br>
 
 ## OPERADORES ARITMÉTICOS
 
-+ SUMA <br>
-- RESTA <br>
-* MULTIPLICACION <br>
-/ DIVISION <br>
-% MODULO  <br>
+```
++     // SUMA 
+-     // RESTA 
+*     // MULTIPLICACION 
+/     // DIVISION
+%     // MODULO  
+```
 
 :heavy_check_mark:  **ver OperadorAritmetico.java** <br>
 
 
 ## OPERADORES DE RELACION
 
-< menor <br> 
-< =  menor igual <br>
->  mayor <br>
-> =  mayor igual <br>
-! =  distinto <br>
-= =  igual    <br>         
-            
+```
+<      //menor  
+< =    //menor igual 
+>      //mayor 
+> =    //mayor igual 
+! =    //distinto 
+= =    //igual             
+```
+
 :heavy_check_mark:  **ver OperadorDeRelacion.java** <br>
 
 ## OPERADORES LÓGICOS
 
-   * && and
-   * || or
-   * ! not
+```
+&&   //and, deben ser ambos True para ser True.
+||   //or, con que uno sea true ya es True
+!    //not
+```
    
    
 ## OPERADORES UNITARIOS
 
-   * ~
-   * 
+```
+~
+``` 
 
 
 ## OPERADORES A NIVEL DE BITS
 
-   * &
-   * |
-   * >>
-   * <<
+```
+&
+|
+>>
+<<
+```
 
 
 ## OPERADORES DE ASIGNACIÓN
 
-   * ++
-   * --
-   * =
-   * *=
-   * /=
-   * %=
-   * +=
-   * -=
-   * >>=
-   * <<=
-   * >>>=
-   * >>>=
-   * &=
-   * |=
-   
+```
+++
+--
+=
+*=
+/=
+%=
++=
+-=
+>>=
+<<=
+>>>=
+>>>=
+&=
+|=
+```
+
+
 ## OPERADOR CONDICIONAL
 
-   / ?:
+```
+?:
+```
 
 ## PRIORIDAD EN EL ORDEN DE EVALUACION
 
+```
 () [] . - ~! ++ -- new (tipo) expresion - << >> < <= > >= != == & || ?:
+```
