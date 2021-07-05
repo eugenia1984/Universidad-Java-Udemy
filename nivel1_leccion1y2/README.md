@@ -4,16 +4,17 @@
 
 # Lección 1 - Comenzando con la Tecnología Java
 
-## El asombroso mundo de la programación en Java 
+### El asombroso mundo de la programación en Java 
 
-## Qué es la tecnología Java (desde un enfoque práctico) 
+### Qué es la tecnología Java (desde un enfoque práctico) 
 
-## Nuestro primer programa en Java desde cero 
+### Nuestro primer programa en Java desde cero 
 
 ---
 
 # Lección 2 - Variables y Operadores en Java
 
+# VARIABLES
 
 ## Uso de Variables en Java y para qué las utilizamos 
 
@@ -364,5 +365,69 @@ Envio Gratuito: envioGratuito <br>
 
 :heavy_check_mark:  **ver Tarea.java** <br>
   
-  ---
   
+---
+
+# OPERADORES
+
+## OPERADORES ARITMÉTICOS
+
+   * +suma
+   * -resta
+   * *multiplicacion
+   * /division
+   * %modulo
+
+
+## OPERADORES DE RELACION
+
+   * <menor
+   * <=menor igual
+   * >mayor
+   * >=mayor igual
+   * !=distinto
+   * ==igual            
+            
+
+## OPERADORES LÓGICOS
+
+   * && and
+   * || or
+   * ! not
+   
+## OPERADORES UNITARIOS
+
+   * ~
+   * 
+
+## OPERADORES A NIVEL DE BITS
+
+   * &
+   * |
+   * >>
+   * <<
+
+## OPERADORES DE ASIGNACIÓN
+
+   * ++
+   * --
+   * =
+   * *=
+   * /=
+   * %=
+   * +=
+   * -=
+   * >>=
+   * <<=
+   * >>>=
+   * >>>=
+   * &=
+   * |=
+   
+## OPERADOR CONDICIONAL
+
+   / ?:
+
+## PRIORIDAD EN EL ORDEN DE EVALUACION
+
+() [] . - ~! ++ -- new (tipo) expresion - << >> < <= > >= != == & || ?:
