@@ -48,10 +48,16 @@ public static void main(String[] args) {
 Tengo otra CLASE en la cual están los atributos y métodos (constructores, getters, setters, y métodos). <br>
 
 
-:computer: ver la carpeta **clase** que tiene el paquete CLASE con los clases:  **Persona.java**  y **PruebaPersona** (donde está el método main) . <br>
 
 ---
 
 ## Uso de Objetos en Java
+
+
+Los OBJETOS son instancias de mi clase, teiene sus atributos y métodos, pero son independientes, por ejemplo tengo la persona1 con el nombre Maria Eugenia y el apellido Costa y la persona2 con el nombre Ana y el apellido Baez, si bien ambas tieen nombre y apellido, cada una tiene su propio valor. <br>
+
+---
+
+:computer: ver la carpeta **clase** que tiene el paquete CLASE con los clases:  **Persona.java**  y **PruebaPersona** (donde está el método main) . <br>
 
 ---
