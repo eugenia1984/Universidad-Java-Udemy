@@ -394,6 +394,7 @@ Envio Gratuito: envioGratuito <br>
 = =    //igual             
 ```
 
+:heavy_check_mark:  **ver OperadoresDeIgualdadYRelacionales.java** <br>
 
 ## OPERADORES LÓGICOS
 
