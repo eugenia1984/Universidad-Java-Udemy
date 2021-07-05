@@ -394,7 +394,6 @@ Envio Gratuito: envioGratuito <br>
 = =    //igual             
 ```
 
-:heavy_check_mark:  **ver OperadorDeRelacion.java** <br>
 
 ## OPERADORES LÓGICOS
 
@@ -441,6 +440,7 @@ Envio Gratuito: envioGratuito <br>
 |=
 ```
 
+:heavy_check_mark:  **ver OperadorDeAsignacion.java** <br>
 
 ## OPERADOR CONDICIONAL
 
