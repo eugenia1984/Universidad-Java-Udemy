@@ -39,8 +39,18 @@ La expresión a evaluar es de tipo **numérica** o **String o Char** . <br>
 
 # Lección 4 - Manejo de Ciclos en Java
 
+Son repetición de líneas de código. <br>
+Se revisa una **condición**, si es **verdadera (True)** se ejecuta el código, y se vuelve a evaluar al condición, mientras siga siendo verdadera se ejecutará el código; cuando pasa a **Falsa (False)** se llega al fin del ciclo.<br>
+
 ## Uso del ciclo for y su uso
 
 ## Uso del ciclo while y cómo aplicarlo
 
+Tiene una **variable** que es un **contador** que se va a ir modificando para en un momento pasar a False. <br>
+Siempre PRIMERO EVALUA LA CONDICIÓN  y si es TRUE se ejecuta, es decir que si desde el principio la condición es False el bloque de código nunca se ejecutará. <br>
+
 ## Uso del ciclo do-while y cuando utilizarlo
+
+Va a ejecutar el bloque de código AL MENOS UNA VEZ, por más que la condición sea FALSE; ya que siempre primero se ejecuta y luego ve si se cumple la condición. <br>
+
+:computer:   Ver **Ciclos.java** <br>
