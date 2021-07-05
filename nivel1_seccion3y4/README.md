@@ -26,7 +26,8 @@ INICIO -> EXPRESION A EVALUAR ( tengo varios caminos ) : <br>
 -> DEFAULT -> SENTENCIA DEFAULT - > FIN <br>
 
 La sentencia DEFAULT es como el ELSE , va a ejecutarse cuando no coincida con ninguno de los demás casos. <br>
-En cada caso, luego de ejecutar la sentencia tengo un BREAK, para cortar el ciclo y salir del switch. <br>
+En cada caso, luego de ejecutar la sentencia tengo un BREAK, para cortar el ciclo y salir del switch (no sigue evaluando los demás casos, ahorra memoria). <br>
+Se usa cuando se tiene entre 3 a 5 opciones <br>
 
 La expresión a evaluar es de tipo **numérica** o **String o Char** . <br>
 
