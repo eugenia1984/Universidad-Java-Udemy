@@ -345,3 +345,24 @@ caracter = consola.nextLine().charAt(0);
 
 ---
 
+#Trabajo integrador con lo visto
+
+Se solicita capturar la siguiente información de una tienda de libros: <br>
+nombre (String) <br>
+id (int) <br>
+precio (double) <br>
+envioGratuito (boolean) <br>
+
+Tu tarea es imprimir un mensaje en el siguiente formato: <br>
+Proporciona el nombre: <br>
+Proporciona el id: <br>
+Proporciona el precio: <br>
+Proporciona el envio gratuito: <br>
+<nombre> #<id>  <br>
+Precio: <simbolo><precio>  <br>
+Envio Gratuito: <envioGratuito> <br>
+
+:heavy_check_mark:  **ver Tarea.java** <br>
+  
+  ---
+  
