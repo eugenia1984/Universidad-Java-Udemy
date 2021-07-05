@@ -455,6 +455,9 @@ Envio Gratuito: envioGratuito <br>
 ```
 ?:
 ```
+condicion ? ejecuto_si_es_true : ejecuto_si_es_false; <br>
+
+:heavy_check_mark:  **ver OperadorTernario.java** <br>
 
 ## PRIORIDAD EN EL ORDEN DE EVALUACION
 
