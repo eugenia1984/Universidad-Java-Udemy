@@ -30,11 +30,25 @@ modificarNombre(nombre : String ) <br>
 modificarGenero( genero : String )<br>
 modificarOcupacion( ocupacion: String ) <br>
 
-:computer: ver la clase **Persona.java**  y **PruebaPersona** (donde está el método main) del paquete **clase** . <br>
 
 ---
 
 ## Manejo de Clases en Java
+
+
+En la **CLASE MAIN** voy a ejecutar mi programa, acá vy a instanciar nuevos OBJETOS de mi clase y les puedo asignar valores. <br>
+La clase main la distingo porque tengo: <br>
+
+```
+public static void main(String[] args) {
+
+}
+```
+
+Tengo otra CLASE en la cual están los atributos y métodos (constructores, getters, setters, y métodos) . <br>
+
+
+:computer: ver la carpeta **clase** que tiene el paquete CLASE con los clases:  **Persona.java**  y **PruebaPersona** (donde está el método main) . <br>
 
 ---
 
