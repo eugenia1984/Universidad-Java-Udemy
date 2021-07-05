@@ -358,9 +358,9 @@ Proporciona el nombre: <br>
 Proporciona el id: <br>
 Proporciona el precio: <br>
 Proporciona el envio gratuito: <br>
-<nombre> #<id>  <br>
-Precio: <simbolo><precio>  <br>
-Envio Gratuito: <envioGratuito> <br>
+nombre # id  <br>
+Precio: simbolo precio  <br>
+Envio Gratuito: envioGratuito <br>
 
 :heavy_check_mark:  **ver Tarea.java** <br>
   
