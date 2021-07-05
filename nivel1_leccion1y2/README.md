@@ -372,22 +372,25 @@ Envio Gratuito: envioGratuito <br>
 
 ## OPERADORES ARITMÉTICOS
 
-   * +suma
-   * -resta
-   * *multiplicacion
-   * /division
-   * %modulo
++ SUMA <br>
+- RESTA <br>
+* MULTIPLICACION <br>
+/ DIVISION <br>
+% MODULO  <br>
+
+:heavy_check_mark:  **ver OperadorAritmetico.java** <br>
 
 
 ## OPERADORES DE RELACION
 
-   * <menor
-   * <=menor igual
-   * >mayor
-   * >=mayor igual
-   * !=distinto
-   * ==igual            
+< menor <br> 
+< =  menor igual <br>
+>  mayor <br>
+> =  mayor igual <br>
+! =  distinto <br>
+= =  igual    <br>         
             
+:heavy_check_mark:  **ver OperadorDeRelacion.java** <br>
 
 ## OPERADORES LÓGICOS
 
@@ -395,10 +398,12 @@ Envio Gratuito: envioGratuito <br>
    * || or
    * ! not
    
+   
 ## OPERADORES UNITARIOS
 
    * ~
    * 
+
 
 ## OPERADORES A NIVEL DE BITS
 
@@ -406,6 +411,7 @@ Envio Gratuito: envioGratuito <br>
    * |
    * >>
    * <<
+
 
 ## OPERADORES DE ASIGNACIÓN
 
