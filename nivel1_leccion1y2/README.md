@@ -464,3 +464,23 @@ condicion ? ejecuto_si_es_true : ejecuto_si_es_false; <br>
 ```
 () [] . - ~! ++ -- new (tipo) expresion - << >> < <= > >= != == & || ?:
 ```
+
+---
+
+## Practica 1:
+
+Pedir que se ingrese por pantalla el alto y ancho de un rectángulo para calcular y mostrar su área y perímetro. <br>
+
+:heavy_check_mark:  **ver AreaYPerimetro.java** <br>
+
+
+---
+
+## Practica 2:
+
+Pedir que se ingresen por pantalla dos números e indicar cuál es el mayor.<br>
+En este caso utilice un IF/ ELSE IF / ELSe anidado, para poner como primer condición del IF que son iguales, y luego si comparo si son mayor o menor. <br>
+
+:heavy_check_mark:  **ver NumeroMayor.java** <br>
+
+---
