@@ -303,7 +303,45 @@ public class ConversionTipoPrimitivos {
 }
 ```
 
-:heavy_check_mark:     **Ver el archivo ConversionTipoPrimitivos.java**
+:heavy_check_mark:     **Ver el archivo ConversionTipoPrimitivos.java** <br>
+
+
+Y para pasar de **String** a **Double** con **Double.parseDouble()**  <br>
+
+```
+var valorPI = Double.parseDouble("3.1416");
+System.out.println("Valor "  + valorPI );         // pasa 3.1416 a double
+```
+
+Cuando se pide un dato por consola, ingresa como **String** y hay que pasalo a **int**  con **Integer.parseInt()** <br>
+
+```
+var consola = new Scanner(System.in);
+system.out.println("Indica tu edad - en números : " );
+edad = Integer.parseInt( consola.nextLine() );
+System.out.println("edad : "  +  edad); 
+```
+
+Como al momento no manejamos excepciones, si ingresa algo distinto a números da un error.
+
+Convertir de **int** a **String**  con **valueOf** <br>
+
+```
+var edadtexto = String.valueOf(10);
+```
+
+Convertir de **String** a **char** con **.charAt()** <br>
+
+```
+var caracter = "hola".charAt(0);  //imprimie h
+```
+
+Cuando se ingresan los datos por consola entran como **String**, para pasrlo a **char** : <br>
+
+```
+Systemo.out.println("Ingresa una palabra para mostrar la primer letra: ");
+caracter = consola.nextLine().charAt(0);
+```
 
 ---
 
