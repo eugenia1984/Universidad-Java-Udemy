@@ -51,6 +51,8 @@ inicialización ( esta variable es de alcance LOCAL, no se puede ejecutar fuera 
 condicion <br>
 incremento/decremento <br>
 
+La variable de inicialización solo se ejecuta en el primer ciclo, luego se va evaluando su valor moficiado conel incremento o decremento. <br>
+
 ## Uso del ciclo while y cómo aplicarlo
 
 Tiene una **variable** que es un **contador** que se va a ir modificando para en un momento pasar a False. <br>
