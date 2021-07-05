@@ -62,4 +62,28 @@ Siempre PRIMERO EVALUA LA CONDICIÓN  y si es TRUE se ejecuta, es decir que si d
 
 Va a ejecutar el bloque de código AL MENOS UNA VEZ, por más que la condición sea FALSE; ya que siempre primero se ejecuta y luego ve si se cumple la condición. <br>
 
+## Break
+
+Nos corta el ciclo, hace que salgamos del mismo, como en el caso del Switch. <br> 
+
+## Continue
+
+No ejecuta y nos manda a la siguiente iteración del ciclo. <br>
+
+## Etiquetas
+
+Permite indicar a las palabras CONTINUE y BREAK ir a un lugar particular del programa. <br>
+No es tan recomendable utilizarlo, puede romper nuestra lógica dle programa, no es buena práctica, pero se muestra por si se la ve, entenderla.<br>
+
+```
+inicio:
+for (int contador = 0; contador < 3; contador++ ) {
+  if( contador % 2 != 0 ) {
+    continue inicio;
+  }
+  System.out.println("contador: " + contador);
+}
+```
+
+
 :computer:   Ver **Ciclos.java** <br>
