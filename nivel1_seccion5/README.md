@@ -45,7 +45,7 @@ public static void main(String[] args) {
 }
 ```
 
-Tengo otra CLASE en la cual están los atributos y métodos (constructores, getters, setters, y métodos) . <br>
+Tengo otra CLASE en la cual están los atributos y métodos (constructores, getters, setters, y métodos). <br>
 
 
 :computer: ver la carpeta **clase** que tiene el paquete CLASE con los clases:  **Persona.java**  y **PruebaPersona** (donde está el método main) . <br>
