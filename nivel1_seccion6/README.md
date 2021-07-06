@@ -38,7 +38,7 @@ En este caso 5 y 8 son PARAMETROS, que s envian al método sumarConArgumentos qu
 
 ---
 
-## THIS
+## This
 
 Con el método **this** se puede acceder a los atributos y los métodos del objeto. <br>
 Hay que estar dentro de la clase para poder utilizarlo, solo existe dentro de la clase. <br>
@@ -57,7 +57,7 @@ En **this.a** tengo un ATRIBUTO de mi clase y en (**int a**) tengo un ARGUMENTO 
 
 ---
 
-# CONSTRUCTORES
+## Constructores
 
 Se crea un objeto sin icializar valores con **CONSTRUCTOR VACIO**. Por ejemplo: <br>
 
@@ -120,4 +120,7 @@ System.out.println("aritmetica2 b:" + aritmetica1.b);
 
 ---
 
+Si no tenemos ningún constructor el sistema agregar por default el constructor vaío, pero si ya tengo otros constructores con argumentos el sistema no me va a agregar el constructor vacío (aca lo tengo que agregar yo).
+
+---
 
