@@ -124,3 +124,13 @@ Si no tenemos ningún constructor el sistema agregar por default el constructor 
 
 ---
 
+Las **VARIABLES** que se definen DENTRO de los metodos son **LOCALES**.<br>
+
+La palabra reservada **VAR** no se puede utilizar cuando se declaran las variables que son **ATRIBUTOS** de la clase, si se pueden utilizar dentro de los argumentos de MÉTODOS.<br>
+
+Las mismas varaibles que defino como atributos las puedo utilizar en los métodos, me puedo referir a ellas con **.this**, más que nada si tengo varaibles locales y variables que se refieren a atributos de mi clase. <br>
+
+Los MÉTODOS deben ser ESTÁTICOS para poder ser llamados desde el método main que también es ESTÁTICO.<br>
+
+---
+
