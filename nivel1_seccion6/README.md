@@ -2,7 +2,7 @@
 
 ---
 
-## Declaración de Métodos o Funciones en Java
+## DECLARACIÓN DE MÉTODOS ( FUNCIONES )
 
 Los **métodos** los declaro en mi clase, y luego en la calse main, donde ejecuto el programa, voy primero a instanciar con la clase nuevos objetos, y a estos le asigno los valores y ejecuto los métodos. <br>
 
@@ -32,13 +32,13 @@ En este caso 5 y 8 son PARAMETROS, que s envian al método sumarConArgumentos qu
 
 ---
 
-## Uso y llamado de Funciones en Java
+## USO Y LLAMADO A FUNCIONES 
 
 :computer: Ver los ejemplos en la carpeta **operaciones** tengo la clase principal **PruebaAritmetica.java** y la clase **Aritmetica.java** donde tengo mi clase con sus atributos y métodos. <br>
 
 ---
 
-## This
+## THIS
 
 Con el método **this** se puede acceder a los atributos y los métodos del objeto. <br>
 Hay que estar dentro de la clase para poder utilizarlo, solo existe dentro de la clase. <br>
@@ -57,7 +57,7 @@ En **this.a** tengo un ATRIBUTO de mi clase y en (**int a**) tengo un ARGUMENTO 
 
 ---
 
-## Constructores
+## CONSTRUCTORES
 
 Se crea un objeto sin icializar valores con **CONSTRUCTOR VACIO**. Por ejemplo: <br>
 
@@ -134,6 +134,8 @@ Las mismas varaibles que defino como atributos las puedo utilizar en los método
 
 Los MÉTODOS deben ser ESTÁTICOS para poder ser llamados desde el método main que también es ESTÁTICO.<br>
 
+---
+
 
 ## MEMORIA STACK Y HEAP 
 
@@ -172,7 +174,7 @@ Persona <br>
 ## PASO POR VALOR
 
 Son los métodos ( las funciones ) que reciben argumentos.<br>
-Los argumentos son de tipo primitivo. <br>
+Los argumentos son de tipo **primitivo**. <br>
 
 Un ejemplo: <br>
 
@@ -198,5 +200,28 @@ public class PasoPorValor {
 
 Ambas variables ( X y argumento1 ) van a imprimir el mismo valor (10), ya que se pasa por variable X hacia el argumento1. <br>
 
+Se pasa una copia del valor de la variable al método al que se manda a llamar, el método no puede cambiar el valor de la variable original. <br>
+
+---
+
+## PASO POR REFERENCIA
+
+Voy a reusar la clase persona que ya tenía armada que tiene el atributo nombre , el atributo apellido y el método desplegarInformacion() que muestra los atributos. <br>
+
+```
+
+import clases.Ppersona;
+
+public class PasoPorReferencia {
+
+ public static void main(String[] args) {
+    Persona persona1 = new Persona();
+ }
+
+}
+```
+
+
+---
 
 ---
