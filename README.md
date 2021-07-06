@@ -53,9 +53,11 @@ Manejo de Matrices en Java<br>
 Manejo de Herencia en Java <br>
 Uso de superclases y subclases en Java <br>
 
-**Laboratorio Final del Nivel** <br>
+## Laboratorio Final del Nivel <br>
 
 Ejercicio Final donde se integra todo lo aprendido en este Nivel <br>
+
+:computer: ver el directorio: **proyecto_laboratorio1** <br>
 
 ---
 
