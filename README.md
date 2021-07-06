@@ -8,7 +8,7 @@ Curso de Udemy en Java
 
 ## Nivel 1. Fundamentos de Java 
 
-**Lección 1 - Comenzando con la Tecnología Java** <br>
+### Lección 1 - Comenzando con la Tecnología Java
 El asombroso mundo de la programación en Java <br>
 Qué es la tecnología Java (desde un enfoque práctico) <br>
 Nuestro primer programa en Java desde cero <br>
