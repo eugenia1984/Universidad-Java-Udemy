@@ -169,3 +169,34 @@ Persona <br>
 
 ---
 
+## PASO POR VALOR
+
+Son los métodos ( las funciones ) que reciben argumentos.<br>
+Los argumentos son de tipo primitivo. <br>
+
+Un ejemplo: <br>
+
+```
+
+public class PasoPorValor {
+
+   public static void main(String[] args){
+  
+      int x = 10;
+      System.out.println(" x = " + x);
+      cambioValor(x);
+    
+    }
+    
+    public static void cambioValor(int argumento1){
+      System.out.println("argumento1 = " + argumento1);
+    }
+  
+
+}
+```
+
+Ambas variables ( X y argumento1 ) van a imprimir el mismo valor (10), ya que se pasa por variable X hacia el argumento1. <br>
+
+
+---
