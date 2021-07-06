@@ -124,6 +124,8 @@ Si no tenemos ningún constructor el sistema agregar por default el constructor 
 
 ---
 
+## VARIABLES
+
 Las **VARIABLES** que se definen DENTRO de los metodos son **LOCALES**.<br>
 
 La palabra reservada **VAR** no se puede utilizar cuando se declaran las variables que son **ATRIBUTOS** de la clase, si se pueden utilizar dentro de los argumentos de MÉTODOS.<br>
@@ -131,6 +133,39 @@ La palabra reservada **VAR** no se puede utilizar cuando se declaran las variabl
 Las mismas varaibles que defino como atributos las puedo utilizar en los métodos, me puedo referir a ellas con **.this**, más que nada si tengo varaibles locales y variables que se refieren a atributos de mi clase. <br>
 
 Los MÉTODOS deben ser ESTÁTICOS para poder ser llamados desde el método main que también es ESTÁTICO.<br>
+
+
+## MEMORIA STACK Y HEAP 
+
+Por ejemplo: <br>
+
+```
+Persona p1 = new Persona();
+int x = 10;
+```
+
+### MEMORIAS LOCALES DEFINIDAS DENTRO DE UN MÉTODO (STACK)
+
+Almacenan la referencia del objeto.  <br>
+Se crean y se destruyen cuando termina este método.  <br>
+
+Por ejemplo: <br>
+
+p1 = 0x333; <br>
+x = 10; <br>
+
+
+### MEMORIAS TIPO OBJECT (HEAP)
+
+No se destruyen de manera automática, solo se destruyen cuando termina la ejecución completa del programa.  <br>
+Los atributos d ela clase también se guardan en al memoria heap. <br>
+
+Por ejemplo : <br>
+
+Persona <br>
+(ox333) <br>
+-nombre<br>
+-apellido<br>
 
 ---
 
