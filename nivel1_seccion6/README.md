@@ -55,6 +55,69 @@ public int sumarConArgumentos(int a, int b) {
 En **this.a** tengo un ATRIBUTO de mi clase y en (**int a**) tengo un ARGUMENTO que estoy recibiendo en el método. <br>
 
 
+otro ejemplo: <br>
+
+```
+public class PalabraThis {
+
+  public static void main(String[] args) {
+  
+    //creo un nuevo objeto de la clase y le paso por argumento 
+    Persona pesona new Persona("Analia", "Carrizo");   
+    
+    //mando a imprimir el objeto persona
+    System.out.println("persona = " + persona);
+    //Y por consola veo persoan=palabrathis.Perona@(aca me indica la posicion de memoria)
+    
+    system.out.println("persona nombre : " + persona.nombre);
+    system.out.println("persona apellido : " + persona.apellido);
+     //Y veo por consola: 
+     //persona nombre: Analia 
+     //persona apellido: Carrizo
+  }
+  
+}
+
+
+//CONSTRUCTOR DE LA CLASE PERSONA
+
+class Persona {
+  String nombre;
+  String apellido;
+  
+  Persona(String nombre, String apellido) {
+    this.nombre= nombre;
+    this.apellido= apellido;
+    System.out.println("Objeto persona usando this: " + this);
+    
+    //Creo el objeto imprimir, es igual a : Imprimir imprimir 0 new Imprimir();
+    new Imprimir().imprimir(this);
+    
+  }
+}
+
+//Creo la ultima clase: IMPRIMIR
+
+class Imprimir{
+
+  public void imprimir(Persona persona){
+    
+    System.out.println(" persona desde imprimir: " + persona);
+    System.outprnitln("impresion del objeto actual(thist)" + this);
+  }
+
+}
+
+```
+
+Como agregue en mi **constructor de persona** a **System.out.println("Objeto persona usando this: " + this);** , lo primero que se va a imprimir es eto, porque siempre primero se ejecuta el constructor, entonces voy a ver por consola: <br>
+Objeto persona usando this:palabrathis.Persona@(el lugar de memoria que ocupa)  <br>
+
+Esto sucede porque en el constructor Persona primero se llama a **super()**, se hace una llamada de la clase Padre (object).  Y es el encargado de crear el espacio de memoria y hacer referencia. <br>
+ 
+Al final creo el método **Imprimir** y me va a imprimir con **this** el objeto que ejecuta en ese momento, es decir de tipo Imprimir. <br> 
+ 
+ 
 ---
 
 ## CONSTRUCTORES
@@ -216,12 +279,63 @@ public class PasoPorReferencia {
 
  public static void main(String[] args) {
     Persona persona1 = new Persona();
+    persona1.nombre = "Eugenia";
+    System.outprintln(" persona1 nombre : " + persona1.nombre);
  }
 
 }
 ```
 
+De este modo accedemos al atributo nombre, lo modificamos y lo imprimimos. <br>
+Y creo le método cambiaValor: <br>
+
+```
+public static void cambiaValor(Persona persona) {
+  persona.nombre = " Maria";
+}
+```
+
+Y lo aplico en mi clase principal: <br>
+
+```
+cambiarValor(persona1);
+```
+
+Por lo cual si ahora mando a imprimir persona1.nombre voy a ver Maria en vez de Eugenia. <br>
+Porque en este caso realizo el cambio por medio de un método que modifica el atributo nombre como valor del objeto. <br>
+
+Se llama también **paso por valor con referencia** ( con referencia al objeto al cual está apuntando) . <br>
+
+A los objetos podemos acceder desde otros métodos. <br>
 
 ---
+
+
+## USO DE LA PALABRA RETURN
+
+Cuando en vez de necesitar un tipo primitivo necesito que regrese un objeto: <br>
+Entonces mi método cambiarvalor, sería:
+
+```
+public static Persona cambiaValor(Persona persona) {
+  persona.nombre = " Maria";
+  return persona;
+}
+```
+
+Se regresa el tipo persona que se recibió como argumento y fue modificado en su atributo nombre. <br>
+
+Y en mi clase, cuando llamo al método para modificar el valor: <br>
+
+```
+persona1 cambiarValor(persona1);
+```
+
+**return** devuelve una referencia de un **objeto** . <br>
+
+Si el método es **void** implícitamente Java nos agrega al final de todo el **return** .<br>
+
+Siempre que esté el **return** finaliza el método, y se pasa al sigueinte bloque de código, terminando el método. <br>
+
 
 ---
