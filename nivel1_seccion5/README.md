@@ -61,3 +61,16 @@ Los OBJETOS son instancias de mi clase, teiene sus atributos y métodos, pero so
 :computer: ver la carpeta **clase** que tiene el paquete CLASE con los clases:  **Persona.java**  y **PruebaPersona** (donde está el método main) . <br>
 
 ---
+
+## Encapsulamiento
+
+Se usa el **modificador de acceso** **PRIVATE** lo que va a evitar que se pueda acceder a los datos.<br>
+
+Se van a necesitar los **método de acceso** es decir los **GETTERS** y los **SETTERS**.<br>
+Con **get** se obtiene la información del atributo . <br>
+Con **set** se puede modificar el atributo. <br>
+
+:computer: ver el ejemplo del paquete **dominio** con la calse **Persona**.
+
+---
+
