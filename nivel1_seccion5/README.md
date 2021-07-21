@@ -121,5 +121,12 @@ return "Persona ( nombre" + this.nombre +
 }
 ```
 
+El método println ya trae toStrig() asi que solo puedo poner: <br>
+
+```
+System.out.println("persona1 : " +persona1);
+```
+
+Porque como en mi clase Persona ya tengo el método toString() al tener printLn es lo mismo : persona1 que persona1.toString(); <br>
 
 ---
