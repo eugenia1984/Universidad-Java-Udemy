@@ -70,7 +70,7 @@ Se van a necesitar los **método de acceso** es decir los **GETTERS** y los **SE
 Con **get** se obtiene la información del atributo . <br>
 Con **set** se puede modificar el atributo. <br>
 
-:computer: ver el ejemplo del archivo **dominio** con la clase **Persona.java**.
+:computer: ver el ejemplo del archivo **dominio** con los paquetes : **dominio** y la clase **Persona.java** y **test** y la clase **PersonaPrueba.java** .
 
 ---
 
