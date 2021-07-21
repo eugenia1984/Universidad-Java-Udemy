@@ -74,3 +74,19 @@ Con **set** se puede modificar el atributo. <br>
 
 ---
 
+## Método toString()
+
+Nos permite imprimir el estado del objeto en todo momento, podremos vero los valores de los atributos que mandemos a imprimir por el método toString. <br>
+El método convierte a cadena cada uno de los métodos que tengo de mi clase. <br>
+Para el ejemplo de la clase Persona: <br>
+
+```
+public String toString(){
+return "Persona ( nombre" + this.nombre + 
+        ", sueldo: " + this.sueldo +
+        ", eliminado : " + this.eliminado;
+}
+```
+
+
+---
