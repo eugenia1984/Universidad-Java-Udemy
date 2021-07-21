@@ -70,6 +70,39 @@ Se van a necesitar los **método de acceso** es decir los **GETTERS** y los **SE
 Con **get** se obtiene la información del atributo . <br>
 Con **set** se puede modificar el atributo. <br>
 
+
+```
+public class Persona {
+
+    private String nombre;
+    private boolean eliminado;
+    
+    //constructor
+    public Persona(String nombre, boolean eliminado) {
+        this.nombre = nombre;
+        this.eliminado = eliminado;
+    }
+    
+    //Metodos getters y setter del atributo nombre
+    public String getNombre(){
+        return this.nombre;
+    }
+    
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+        
+    //Metodos getters(IS por ser booleano) y setter del atributo eliminado
+    public boolean isEliminado(){
+        return this.eliminado;
+    }
+    
+    public void setEliminado(Boolean eliminado){
+        this.eliminado = eliminado;
+    }
+}
+
+```
 :computer: ver el ejemplo con los paquetes : **dominio** y la clase **Persona.java** y **test** y la clase **PersonaPrueba.java** .
 
 ---
