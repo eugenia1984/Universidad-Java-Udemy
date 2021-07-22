@@ -130,3 +130,93 @@ System.out.println("persona1 : " +persona1);
 Porque como en mi clase Persona ya tengo el método toString() al tener printLn es lo mismo : persona1 que persona1.toString(); <br>
 
 ---
+
+## Contexto estático y contexto dinámico
+
+El *contexto estático* está asociado a una clase. <br>
+El contexto estático NO puede ACCEDER al contexto dinamico, porque necesita que las clases ya estén creadas para poder crear objetos.<br>
+
+El *contexto dinámico* está asociado a un objeto, porque ya creamos a partir de la clase que ya está en memoria.<br>
+En cambio el contexto dinámico si puede acceder al contexto estático. <br>
+
+**static** se asocia a la *clase* no a los *objetos*, los objetos comparten los atributos y métodos estáticos. Si los atributos son estáticos, cada vez que se crea un objeto este tiene su propio atributo no estático.<br>
+
+Ejemplo en código: <br>
+
+Tengo la clase Persona en **Persona.java** en el paquete **domain**: <br>
+
+```
+package domain;
+
+public class Persona {
+  private int idPersona;
+  private String nombre;
+  private static int contadorPersona;
+  
+  public Persona(String nombre) {
+    this.nombre = nombre;
+  //incrementar el contador por cada objeto nuevo  
+  Persona.contadorPersona++;
+  //asignar el nuevo valor a la variable idPersona
+  this.idPersona = Persona.contador++;
+  }
+  
+  //Getters y Setters
+  public int getIdPersona(){
+    return idPersona;
+  }
+  
+  public void setIdPersona(int idPersona) {
+    this.idPersona = idPersona;
+  }
+  
+  public int getNombre() {
+    return nombre;
+  }
+  
+  public void setNombre(Strinf nombre) {
+    this.nombre = nombre;
+  }
+  
+  public static int getContadorPersonas() {
+    return contadorPersonas;
+  }
+  
+  public static void setContadorPersonas(int ContadorPersonas) {
+    contadorPersonas = aContadorPersonas;
+  }
+  
+  @Override
+  public String toString() {
+    return "Persona {" + "idPersona" + idPersona + ", nombre=" + nombre + "]";
+  }
+
+}
+
+```
+La **clase Persona** extiende desde el **Objeto** que es una clase que tiene definido el método **toString**. Y como lo modificamos desde la clase persona tenemos **@Override**.<br>
+
+Como ya tengo creada mi **clase persona** ahora creo un nuevo paquete **test** con la clase **PersonaPrueba.java**.<br>
+
+```
+package test;
+
+import domian.Persona;
+
+public class PersonaPrueba {
+  public static void main(String[] args) {
+  
+    Persona persona1 = new Persona("Juan");
+    
+    System.out.print("persona1 = "+ persona1);
+  //Imprime por consola: Persona1 = Persona{ idPersona=1, nombre=Juan}  
+    
+    Persona persona2 = new Persona("Karla");
+    System.out.print("persona2 = "+ persona2);
+  //Imprime por consola: Persona2 = Persona{ idPersona=2, nombre=Karla} 
+  
+  }
+}
+
+```
+
