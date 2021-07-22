@@ -207,15 +207,18 @@ public class PersonaPrueba {
   public static void main(String[] args) {
   
     Persona persona1 = new Persona("Juan");
-    
-    System.out.print("persona1 = "+ persona1);
-  //Imprime por consola: Persona1 = Persona{ idPersona=1, nombre=Juan}  
-    
     Persona persona2 = new Persona("Karla");
-    System.out.print("persona2 = "+ persona2);
-  //Imprime por consola: Persona2 = Persona{ idPersona=2, nombre=Karla} 
-  
+   
+     imprimir(persona1);
+     //Imprime por consola: Persona1 = Persona{ idPersona=1, nombre=Juan}  
+     imprimir(persona2);
+     //Imprime por consola: Persona2 = Persona{ idPersona=2, nombre=Karla}  
   }
+  
+  public static void imprimir(Persona persona){
+     System.out.print("persona = " + persona );
+  }
+  
 }
 
 ```
