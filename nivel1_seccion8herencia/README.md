@@ -130,7 +130,9 @@ También puedo anteponer el nombre de la clase para saber que es una variable es
 
 
 1-La clase Cliente con su constructor **super** que inicializa la inforamación de la clase padre.
-2-Los atributos particulares de la clase Cliente. <br>
+2-Los atributos particulares de la clase Cliente (la clase hija). <br>
+
+Si no tiene una clase padre se va a llamar al constructor dela clase**Object**. <br>
 
 ---
 
