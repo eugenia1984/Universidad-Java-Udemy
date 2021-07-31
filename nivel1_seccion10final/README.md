@@ -119,4 +119,53 @@ public void imprimir(){
 
 ---
 
+## Uso de la palabra FINAL con OBJETOS
 
+En mi clase Persona creo un atributo privado de tipo String: *nombre*. <br>
+
+```
+public class Persona {
+     
+    //Atributo privado
+    private String nombre;
+    
+    //Getter y Setter del atributo nombre
+     public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+}
+```
+
+Y en mi clase *TestFinal* creo una variable **final** de tipo **Persona** llamada **persona1** que es una nueva insancia de la clase Persona, que al no tener los constructores con parámetros se crea con el constructor por defecto. <br>
+Al ser de tipo final, si le quiero agregar una nueva referencia de un nuevo objeto, no puedo. <br>
+
+Lo que si puedo hacer es settear el atributo nombre, que por default es null, y mandarlo a imprimir por consola con el getter. <br>
+Es decir que se puede modificar el contenido al objeto al cual esta apuntando. <br>
+
+```
+package test;
+
+import domain.Persona;
+
+
+public class TestFinal {
+    
+    public static void main(String[] args) {
+        
+        final Persona persona1 = new Persona();
+        //persona1 = newPersona();
+        persona1.setNombre("Eugenia");
+        System.out.println("persona1 nombre: " + persona1.getNombre());
+        
+        //Y le puedo settear un nuevo nombre
+        persona1.setNombre("Ana");
+        System.out.println("persona1 nombre modificado: " + persona1.getNombre())
+        
+    }
+    
+}
+```
