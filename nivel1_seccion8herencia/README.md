@@ -86,7 +86,7 @@ Y como los atributos son de la clase padre, puedo directamente contatenar sus at
         StringBuilder sb = new StringBuilder();
         sb.append("Empleado{id Empleado =").append(idEmpleado);
         sb.append(", sueldo=").append(this.getSueldo());
-        sb.append(", Persona{=").append(super.toString()).append("}");
+        sb.append(", ").append(super.toString()).append("}");
         sb.append('}');
         return sb.toString();
     }
