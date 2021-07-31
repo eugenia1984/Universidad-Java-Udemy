@@ -50,4 +50,11 @@ setVip(boolean): void<br>
 
 ## Manejo de Herencia en Java
 
+```
+///EXTENDS me indica que hereda de persona
+public class Empleado extends Persona{
+
+}
+```
+
 ## Uso de superclases y subclases en Java
