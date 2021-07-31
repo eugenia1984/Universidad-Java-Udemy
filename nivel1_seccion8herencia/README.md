@@ -175,6 +175,8 @@ Y también se puede ver el modelo UML. <br>
 Es definir dos o más veces el método a utilizar, pero poniendo el mismo nombre. <br>
 Y para hacer diferencia, ya que se llaman iguales, la diferencia lo hace la cantidad de argumentos. <br>
 
+Tengo un primer método, y luego debe tener al menos un segundo método, para el cual el tipo de retorno puede variar y también el modificador de acceso (public), lo que si no puede ser más restrictivo, si mi primer método es *public* entonces mi segundo método debe ser *public* (no puede ser private / protected / defualt , sería más restrictivo).  Y el tipo de retorno puede variar. Lo que si debe cambiar es el **tipo de dato**.<br>
+
 ---
 
 💻 Se puede ver todo el ejercicio en código en la carpeta **SobrecargaMetodos** en el paquete **operaciones** y en la clase **Operaciones.java**. <br>
