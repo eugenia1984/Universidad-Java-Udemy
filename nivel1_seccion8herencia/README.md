@@ -50,6 +50,10 @@ setVip(boolean): void<br>
 
 ## Manejo de Herencia en Java
 
+En Java solo hay **herencia simple**, no hay *herencia multiple* como en otros lenguajes. <br>
+
+De este modo todas las propiedades de Persona son disponibles en Empleado. <br>
+
 ```
 ///EXTENDS me indica que Empleado hereda de Persona
 public class Empleado extends Persona{
