@@ -126,4 +126,5 @@ También puedo anteponer el nombre de la clase para saber que es una variable es
 
 
 💻 Se puede ver todo el ejercicio en código en la carpeta **herencia** donde tenemos a la **clase padre** *Persona* y a sus clases hijas *cliente* y *empleado*. <br>
+Y la carpeta **test** con la clase **TestHerencia** donde instancio un nuevo Empleado y lo mando a imprimir. <br>
 
