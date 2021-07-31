@@ -75,5 +75,13 @@ Y así cada constructor que deseamos utilizar. <br>
 Si una clase va a ser **clase padre** entonces sus atributos son **protected** para que sean heredados por sus **clases hijas**. <br>
 
 
+Si en la **clase hija** quiero tener un *constructor* con lso atributos de la **clase padre**, entonces debo utilizar la palabra reservada *super*.
+
+```
+public Empleado(String nombre, char genero, int edad, String direccion) {
+        super(nombre, genero, edad, direccion);
+    }
+```
+
 💻 Se puede ver todo el ejercicio en código en la carpeta **herencia** donde tenemos a la **clase padre** *Persona* y a sus clases hijas *cliente* y *empleado*. <br>
 
