@@ -72,7 +72,12 @@ Sobrecarga de constructores. <br>
 
 ### Lección 9 - Paquetes
 
-:computer: ver el directorio: **nivel1_seccion9paquetes** <br>
+:computer: ver el directorio: **nivel_seccion9paquetes** <br>
+
+### Lección 10 - Uso de la palabra final
+
+:computer: ver le directorio: **nivel1_seccion10final** <br>
+
 
 ## Laboratorio Final del Nivel <br>
 
