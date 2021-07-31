@@ -46,7 +46,7 @@ idVip(): boolean;<br>
 setVip(boolean): void<br>
 
 
-💻 Se puede ver todo el ejercicio en código en la carpeta **herencia**
+
 
 ## Manejo de Herencia en Java
 
@@ -71,3 +71,9 @@ Y dependiendo de los argumentos que se pasen por *super* es el constructor que s
 -Si no se pasan argumentos se utiliza el constructor de la clase padre vacío. <br>
 -Si se pasa un argumento se utiliza el constructor de la clase padre con un argumento. <br>
 Y así cada constructor que deseamos utilizar. <br>
+
+Si una clase va a ser **clase padre** entonces sus atributos son **protected** para que sean heredados por sus **clases hijas**. <br>
+
+
+💻 Se puede ver todo el ejercicio en código en la carpeta **herencia** donde tenemos a la **clase padre** *Persona* y a sus clases hijas *cliente* y *empleado*. <br>
+
