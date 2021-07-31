@@ -70,6 +70,9 @@ Sobrecarga de constructores. <br>
 
 :computer: ver el directorio: **nivel1_seccion8herencia** <br>
 
+### Lección 9 - Paquetes
+
+:computer: ver el directorio: **nivel1_seccion9paquetes** <br>
 
 ## Laboratorio Final del Nivel <br>
 
