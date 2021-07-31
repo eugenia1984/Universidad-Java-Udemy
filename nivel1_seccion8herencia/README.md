@@ -83,5 +83,15 @@ public Empleado(String nombre, char genero, int edad, String direccion) {
     }
 ```
 
+Utilizo el constructor con un argumento (nombre) para poder inicializarlo. Se recibe el argumento, desde la clase *empleado* y a su vez el argumento de nombre se va a propagar hacia la clase padre.<br>
+
+```
+   public Empleado(String nombre, double sueldo) {
+       super(nombre);
+        this.sueldo = sueldo;
+    }
+```
+
+
 💻 Se puede ver todo el ejercicio en código en la carpeta **herencia** donde tenemos a la **clase padre** *Persona* y a sus clases hijas *cliente* y *empleado*. <br>
 
