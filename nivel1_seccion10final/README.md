@@ -58,6 +58,26 @@ public void imprimir(){
 Voy a tener **error** porque justamente no puedo sobreescribirlo al tener FINAL en su clase padre. <br>
 
 
+en cambio si el método de mi clase padre no tiene final: <br>
+
+```
+public class Persona {
+    
+    public void imprimir(){
+        System.out.println("Método imprimir");
+    }
+}
+```
+
+Mi clase hija Empleado si puede sobreescribir el método. <br>
+
+```
+public void imprimir(){
+        System.out.println("Método imprimir desde clase hija");
+    }
+    
+```
+
 💻 ver la carpeta **PalabraFinal** con el proyecto *PalabraFinal* y el paquete *domain* con su clase *Persona.java* y *Empleado.java* que hereda de la clase persona. <br>
 
 ---
