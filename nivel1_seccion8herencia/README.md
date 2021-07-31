@@ -51,7 +51,7 @@ setVip(boolean): void<br>
 ## Manejo de Herencia en Java
 
 ```
-///EXTENDS me indica que hereda de persona
+///EXTENDS me indica que Empleado hereda de Persona
 public class Empleado extends Persona{
 
 }
