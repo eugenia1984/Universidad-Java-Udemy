@@ -9,9 +9,40 @@ Si por ejemplo defino: <br>
 ```
 final int miVariable = 10;
 ```
+
 Al tener *final* no puedo reasignarle un nuevo valor, si lo intento voy a tener un error. <br>
 
-💻 ver la carpeta **PalabraFinal** con el proyecto *PalabraFinal* y el paquete *test* con su clase *TestFinal.java*. <br>
+Otro ejemplo es en mi clase padre *Persona* tengo el atributo MI_CONSTANTE que es una constante de tipo entera: <br>
+
+```
+public class Persona {
+    
+    public final static int MI_CONSTANTE = 1;
+    
+ }   
+```
+
+Entonces desde la clase de prueba *TestFinal.java* si llamo a mi clase Persona, se me va a importar domain.Persona, pero al intentar reasignarle un valor a la constante voy a tener **error**. <br>
+
+Lo que si puedo hacer es llamar a mi clase *Persona* y llamar a *MI_CONSTANTE* e imprimirla tal cual la tengo, sin modificarla: <br>
+
+
+```
+package test;
+
+import domain.Persona;
+
+public class TestFinal {
+    
+    public static void main(String[] args) {
+        
+        //Persona.MI_CONSTANTE = 5;
+        
+        System.out.println("Mi constante: " + Persona.MI_CONSTANTE); 
+    }
+    
+}
+```
 
 
 -**en clases**: evita que se cree una subclase. No va a tener clases hijas.<br>
@@ -77,6 +108,12 @@ public void imprimir(){
     }
     
 ```
+
+---
+
+💻 ver la carpeta **PalabraFinal** con el proyecto *PalabraFinal* y el paquete *test* con su clase *TestFinal.java*. <br>
+
+---
 
 💻 ver la carpeta **PalabraFinal** con el proyecto *PalabraFinal* y el paquete *domain* con su clase *Persona.java* y *Empleado.java* que hereda de la clase persona. <br>
 
