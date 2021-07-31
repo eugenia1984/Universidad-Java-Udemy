@@ -167,3 +167,16 @@ public class Empleado extends Persona {
 Y la carpeta **test** con la clase **TestHerencia** donde instancio un nuevo Empleado y lo mando a imprimir. <br>
 Y también se puede ver el modelo UML. <br>
 
+---
+
+
+# Sobrecarga de métodos
+
+Es definir dos o más veces el método a utilizar, pero poniendo el mismo nombre. <br>
+Y para ahcer diferencia, ya que se llaman iguales, la diferencia lo hace la cantidad de argumentos. <br>
+
+---
+
+💻 Se puede ver todo el ejercicio en código en la carpeta **SobrecargaMetodos** en el paquete **operaciones** y en la clase **Operaciones.java**. <br>
+
+
