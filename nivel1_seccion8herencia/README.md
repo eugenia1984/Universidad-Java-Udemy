@@ -61,7 +61,36 @@ public class Empleado extends Persona{
 }
 ```
 
+En mi **clase Empleado** en vez de utilizar *toString* puedo utilizar **String Builder** podria modificarlo. <br>
 
+Si quiero utilizar:  **sb.append(", sueldo=").append(this.getSueldo());** puedo hacerlo porque el método se hereda porque es publico en la clase padre. <br>
+Pero lo más común es que los **atributos de la clase padre estén marcados como protegidos** asi que podemos acceder directamente desde las clases hijas, entonces tengo: **  sb.append(", sueldo=").append(this.sueldo);**
+
+```
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Empleado{id Empleado =").append(idEmpleado);
+        sb.append(", nombre=").append(this.getNombre());
+        sb.append(", sueldo=").append(this.getSueldo());
+        sb.append('}');
+        return sb.toString();
+    }
+```
+
+Y como los atributos son de la clase padre, puedo directamente contatenar sus atributos. <br>
+
+```
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Empleado{id Empleado =").append(idEmpleado);
+        sb.append(", sueldo=").append(this.getSueldo());
+        sb.append(", Persona{=").append(super.toString()).append("}");
+        sb.append('}');
+        return sb.toString();
+    }
+```
 
 ## Uso de superclases y subclases en Java
 
