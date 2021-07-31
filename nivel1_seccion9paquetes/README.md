@@ -38,3 +38,19 @@ public class TestUtileria {
     }
 }
 ```
+
+Y también está la sintaxis conocida como el **nombre completamente calificado**. <br>
+Se pueden usar las clases sin necesidad de usar import, pero se debe usar el nombre completamente calificado de la clase. <br>
+
+
+```
+package test;
+
+public class TestUtileria {
+    public static void main(String[] args) {
+        
+        mx.com.globalmentoring.Utileria.imprimir("Hola Mundo!");
+    }
+}
+
+```
