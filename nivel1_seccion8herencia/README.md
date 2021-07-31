@@ -136,6 +136,33 @@ Si no tiene una clase padre se va a llamar al constructor dela clase**Object**. 
 
 ---
 
+# Sobrecarga de constructores
+
+Cuando tenemos más de un constructor. Por ejemplo cuando tengo el constructor vacío y el constructor con argumentos, puedo tener más de un constructor con argumentos.<br>
+
+```
+public class Empleado extends Persona {
+
+    private int idEmpleado;
+    private double sueldo;
+    private static int contadorEmpleado;
+    
+    public Empleado(){
+    //super();
+    this.idEmpleado = ++Emplado.contadorEmpleado;
+    }
+    
+    public Empleado(String nombre, double sueldo){
+    //super(nombre);
+    this();
+    this.nombre=nombre;
+    this.sueldo= sueldo;
+    }
+}
+```
+
+---
+
 💻 Se puede ver todo el ejercicio en código en la carpeta **herencia** donde tenemos a la **clase padre** *Persona* y a sus clases hijas *cliente* y *empleado*. <br>
 Y la carpeta **test** con la clase **TestHerencia** donde instancio un nuevo Empleado y lo mando a imprimir. <br>
 Y también se puede ver el modelo UML. <br>
