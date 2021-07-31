@@ -17,7 +17,8 @@ Al tener *final* no puedo reasignarle un nuevo valor, si lo intento voy a tener 
 
 -**en clases**: evita que se cree una subclase. No va a tener clases hijas.<br>
 
-💻 ver la carpeta **PalabraFinal** con el proyecto *PalabraFinal* y el paquete *domain* con su clase *Persona.java*. <br>
+💻 ver la carpeta **PalabraFinal** con el proyecto *PalabraFinal* y el paquete *domain* con su clase *Persona.java* y *Empleado.java* que hereda de la clase persona. <br>
+
 ---
 
 
