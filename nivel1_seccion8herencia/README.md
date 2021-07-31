@@ -85,10 +85,13 @@ public Empleado(String nombre, char genero, int edad, String direccion) {
 
 Utilizo el constructor con un argumento (nombre) para poder inicializarlo. Se recibe el argumento, desde la clase *empleado* y a su vez el argumento de nombre se va a propagar hacia la clase padre.<br>
 
+El atributo contadorEmpelado es *static* por lo que se asocia a la clase, no a los objetos. <br>
+También puedo anteponer el nombre de la clase para saber que es una variable estática. <br> 
 ```
    public Empleado(String nombre, double sueldo) {
        super(nombre);
-        this.sueldo = sueldo;
+       this.idEmpleado = ++Empleado.contadorEmpleado; 
+       this.sueldo = sueldo;
     }
 ```
 
