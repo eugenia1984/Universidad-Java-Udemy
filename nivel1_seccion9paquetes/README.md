@@ -1,6 +1,6 @@
 # Paquetes
 
-Se nombran al reves que la url, si por ejempplo tengo globalmentoring.com.mx, voy a nombrar al paquete : <br>
+Se nombran al reves que la url, si por ejemplo tengo globalmentoring.com.mx, voy a nombrar al paquete : <br>
 **mx.com.globalmentoring**<br>
 Y voy a tneer la carpeta **mx** con la subcarpeta **com** con la subcarpeta **globalmentoring** <br>
 
@@ -54,3 +54,8 @@ public class TestUtileria {
 }
 
 ```
+
+---
+
+
+💻 Ejemplo en la crpeta **Paquetes**
