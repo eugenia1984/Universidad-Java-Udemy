@@ -177,6 +177,53 @@ Y para hacer diferencia, ya que se llaman iguales, la diferencia lo hace la cant
 
 Tengo un primer método, y luego debe tener al menos un segundo método, para el cual el tipo de retorno puede variar y también el modificador de acceso (public), lo que si no puede ser más restrictivo, si mi primer método es *public* entonces mi segundo método debe ser *public* (no puede ser private / protected / defualt , sería más restrictivo).  Y el tipo de retorno puede variar. Lo que si debe cambiar es el **tipo de dato**.<br>
 
+
+En mi clase **Operaciones** tengo dos métodos **sumar** pero uno recibe como parámetros números **enteros** y otro recibe como parámetros números **doubles**. <br>
+
+```
+package operaciones;
+
+
+public class Operaciones {
+    
+//Es static para no tener que instanciar objetos de la clase    
+    public static int sumar(int a, int b) {
+        System.out.println("sumar(int a, int b)");
+        return a+b;
+    }
+    
+    public static double sumar(double a, double b){
+        System.out.println("sumar(double a, double b)");
+        return a+b;
+    }
+
+}
+```
+
+En mi *clase principal* voy a llamar a mis dos métodos: <br>
+
+```
+package testOperaciones;
+
+import operaciones.Operaciones;
+
+public class TestOperaciones {
+    
+    public static void main(String[] args) {
+        
+        int resultado = Operaciones.sumar(1, 2);
+        System.out.println("resultado = " + resultado);
+        
+        System.out.println("-------------------------");
+        
+        double resultado2 = Operaciones.sumar(2.0, 3);
+        System.out.println("resultado2 = " + resultado2);
+    }
+    
+}
+
+```
+
 ---
 
 💻 Se puede ver todo el ejercicio en código en la carpeta **SobrecargaMetodos** en el paquete **operaciones** y en la clase **Operaciones.java**. <br>
