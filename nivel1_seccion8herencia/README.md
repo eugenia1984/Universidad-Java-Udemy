@@ -61,4 +61,13 @@ public class Empleado extends Persona{
 }
 ```
 
+
+
 ## Uso de superclases y subclases en Java
+
+Las **clases hijas** acceden a los constructores de su clase padre mediante la palabra reservada **super**. <br>
+
+Y dependiendo de los argumentos que se pasen por *super* es el constructor que se va autilizar: <br>
+-Si no se pasan argumentos se utiliza el constructor de la clase padre vacío. <br>
+-Si se pasa un argumento se utiliza el constructor de la clase padre con un argumento. <br>
+Y así cada constructor que deseamos utilizar. <br>
