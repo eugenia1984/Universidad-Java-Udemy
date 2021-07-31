@@ -173,7 +173,7 @@ Y también se puede ver el modelo UML. <br>
 # Sobrecarga de métodos
 
 Es definir dos o más veces el método a utilizar, pero poniendo el mismo nombre. <br>
-Y para ahcer diferencia, ya que se llaman iguales, la diferencia lo hace la cantidad de argumentos. <br>
+Y para hacer diferencia, ya que se llaman iguales, la diferencia lo hace la cantidad de argumentos. <br>
 
 ---
 
