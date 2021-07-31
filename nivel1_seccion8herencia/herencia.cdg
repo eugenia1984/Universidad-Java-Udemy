@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="herencia">
+  <ClassDiagramComponents>
+    <Class name="Persona" package="" visibility="public" xPosition="171.0" yPosition="19.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="genero" type="char" visibility="private"/>
+        <Field name="edad" type="int" visibility="private"/>
+        <Field name="direccion" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cliente" package="" visibility="public" xPosition="285.0" yPosition="279.0">
+      <Fields>
+        <Field name="idCliente" type="int" visibility="private"/>
+        <Field name="fechaRegistro" type="Date" visibility="private"/>
+        <Field name="vip" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getIdCliente" returnType="int" visibility="public"/>
+        <Method name="getFechaRegistro" returnType="void" visibility="public"/>
+        <Method name="setFechaRegistro" returnType="void" visibility="public"/>
+        <Method name="idVip" returnType="boolean" visibility="public"/>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Empleado" package="" visibility="public" xPosition="23.0" yPosition="279.0">
+      <Fields>
+        <Field name="idEmpleado" type="int" visibility="private"/>
+        <Field name="sueldo" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getIdEmpleado" returnType="int" visibility="public"/>
+        <Method name="getSueldo" returnType="double" visibility="public"/>
+        <Method name="setSueldo" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation name="extends" source="Empleado" target="Persona" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="extends" source="Cliente" target="Persona" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
