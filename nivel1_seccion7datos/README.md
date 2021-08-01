@@ -242,6 +242,71 @@ for (int f = 0; f < frutas.length; f++) {
 }
 ```
 
+Y se imprime: <br>
+
+Frutas : 0 -  0 : Naranja <br>
+Frutas : 0 -  1 : Limón <br>
+Frutas : 1 -  0 : Frutillas <br>
+Frutas : 1 -  1 : Arándanos <br>
+
+
+## Matriz de tipo Objetos
+
+Creo una nueva matriz de tipo Objeto. <br>
+```
+Persona personas [][] = new Persona[2][3];
+```
+
+
+Les asigno los valores a la primer fila <br>
+
+```
+    personas[0][0] = new Persona("Juan"); 
+    personas[0][1] = new Persona("Ana"); 
+    personas[0][2] = new Persona("Mara"); 
+```
+
+Les asigno los valores a la segunda fila <br>
+
+```
+    personas[1][0] = new Persona("Juana"); 
+    personas[1][1] = new Persona("Analia"); 
+    personas[1][2] = new Persona("Maria");  
+```
+
+## Creo un metodo para imprimir mi matriz
+
+Fuera del método principal: <br>
+
+```
+ public static void imprimir(Object matriz[][]) {
+      for (int i = 0; i < matriz.length; i++) { 
+            
+        for (int j = 0; j < matriz[i].length; j++) { 
+            System.out.println("Matriz : " + i + " -  " + j + " : " +  matriz[i][j]);
+        }
+    }
+  
+  } 
+```  
+  
+Llamo mi método imprimir() para ver el arreglo de Persona  : <br>
+```  
+    System.out.println("Matriz personas : ");
+    imprimir(personas);
+    
+``` 
+
+Y veo por consola: <br>
+
+Matriz personas :  <br>
+Matriz : 0 -  0 : Pesona{nombre = Juan} <br>
+Matriz : 0 -  1 : Pesona{nombre = Ana} <br>
+Matriz : 0 -  2 : Pesona{nombre = Mara} <br>
+Matriz : 1 -  0 : Pesona{nombre = Juana} <br>
+Matriz : 1 -  1 : Pesona{nombre = Analia} <br>
+Matriz : 1 -  2 : Pesona{nombre = Maria} <br>
+
 ---
 
 :computer: Ver el proyecto **Matrices**
