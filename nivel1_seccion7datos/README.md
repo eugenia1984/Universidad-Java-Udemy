@@ -49,7 +49,18 @@ Para acceder a los elementos del arreglo y modificarlos: <br>
 edades[0] = 10;
 ``` 
     
-    
+## ¿ Cómo recorro mi arreglo ?
+
+Con un ciclo **FOR**. <br>
+
+
+```
+for (int i = 0; i < edades.length; i++) {
+     System.out.println("Arreglo edades con índice : " + i + " de valor: " + edades[i]);
+}
+```
+
+
 ---
 
 :computer: Se pueden ver los ejercicios de la carpeta **Arreglos**, con su clase **TestArreglos** dentro del paquete **test**. <br>
