@@ -77,8 +77,11 @@ Sobrecarga de constructores. <br>
 
 ### Lección 10 - Uso de la palabra final
 
-:computer: ver le directorio: **nivel1_seccion10final** <br>
+:computer: ver el directorio: **nivel1_seccion10final** <br>
 
+### Lección 11 - Diseño de clases
+
+:computer: ver el directorio: **nivel1_seccion11diseniodeclases** <br>
 
 ## Laboratorio Final del Nivel <br>
 
