@@ -157,3 +157,93 @@ public class TestArreglosObject {
 ---
 
 # Manejo de Matrices en Java
+
+Es un arreglo de arreglos, tiene **filas** y **columnas**. <br>
+
+Ejemplo de **matriz** de tipo **int**. <br>
+
+fila 0 : 35 - 78 - 34 - 50 - 41 - 15 - 18 <br>
+fila 1 : 27 - 90 - 24 - 48 - 56 - **89** - 78 <br>
+fila 2 : 3 - 47 - 79 - 28 - 64 - 40 - 52 <br>
+fila 3 : 56 - 2 - 31 - 75 - 36 - 13 - 49 <br>
+
+El elemento **89** es de índice [1][5], porque ocupa la fila 1 y columna 5
+
+## ¿ Cómo declaro mi matriz ?
+
+Los [][] me indican que va a ser una matriz. Por ejemplo: <br>
+
+
+``` 
+int edades[][]= new int[3][2];
+```  
+
+[3] me indica que va a tener 3 filas. <br>
+[2] me indica que va a tener 2 columnas. <br>
+
+Voy a tener una matriz con estos índices: <br>
+
+[0,0] - [0,1] <br>
+[1,0] - [1,1] <br>
+[2,0] - [2,1] <br>
+
+
+## ¿ Cómo asignarle valores manualmente ?
+
+Si quiero asigna la edad al elemento con índice: fila 0, colomna 0: <br>
+
+```  
+edades[0][0] = 10;
+edades[0][1] = 2;
+
+edades[1][0] = 60;
+edades[1][1] = 12;
+
+edades[2][0] = 3;
+edades[2][1] = 4;
+```  
+
+Me va a quedar: <br>
+
+10 - 2 <br>
+60 - 12 <br>
+3 - 4 <br>
+
+
+## ¿ Cómo asignar valores iterando con dos ciclos FOR?
+
+Utilizo un **FOR ANIDADO**, porque primero voy a ir recorreindo las filas, y dentro de cada fila voy a ir recorriendo las columnas ( aca va a estar mi for anidado). <br>
+
+``` 
+for (int fila = 0; fila < edades.length; fila++) { ///para recorrer las filas
+            
+    for (int columna = 0; columna < edades[fila].length; columna++) {      ///para recorrer las columnas
+         System.out.println("edades : " + fila + " -  " + columna);
+    }
+}
+
+``` 
+
+## Sintaxis simplificada en matrices
+
+
+```
+String frutas[][] = {{"Naranja", "Limón"}, {"Frutillas", "Arándanos"}};
+```
+
+Para recorrer mi matriz y mostrarla, utilizo for anidados: <br>
+
+```
+for (int f = 0; f < frutas.length; f++) { 
+            
+   for (int columna = 0; columna < frutas[f].length; columna++) { 
+      System.out.println("Frutas : " + f + " -  " + columna + " : " +  frutas[f][columna]);
+   }
+}
+```
+
+---
+
+:computer: Ver el proyecto **Matrices**
+
+---
