@@ -25,54 +25,62 @@ INICIO -> EXPRESION A EVALUAR ( tengo varios caminos ) : <br>
 -> CASO 3 -> SENTENCIA 3 -> FIN <br>
 -> DEFAULT -> SENTENCIA DEFAULT - > FIN <br>
 
-La sentencia DEFAULT es como el ELSE , va a ejecutarse cuando no coincida con ninguno de los demás casos. <br>
+La sentencia DEFAULT es como el ELSE , va a ejecutarse cuando no coincida con ninguno de los demás casos.
+
 En cada caso, luego de ejecutar la sentencia tengo un BREAK, para cortar el ciclo y salir del switch (no sigue evaluando los demás casos, ahorra memoria). <br>
-Se usa cuando se tiene entre 3 a 5 opciones <br>
+Se usa cuando se tiene entre 3 a 5 opciones 
 
-La expresión a evaluar es de tipo **numérica** o **String o Char** . <br>
+La expresión a evaluar es de tipo **numérica** o **String o Char** . 
 
 
-:computer:   Ver **SentenciasDeControlSwitch.java** <br>
+:computer:   Ver [**SentenciasDeControlSwitch.java**](https://github.com/eugenia1984/Universidad-Java-Udemy/blob/main/nivel1_seccion3y4/SentenciasDeControl.java)
 
 
 ---
 
 # Lección 4 - Manejo de Ciclos en Java
 
-Son repetición de líneas de código. <br>
-Se revisa una **condición**, si es **verdadera (True)** se ejecuta el código, y se vuelve a evaluar al condición, mientras siga siendo verdadera se ejecutará el código; cuando pasa a **Falsa (False)** se llega al fin del ciclo.<br>
+Son repetición de líneas de código. 
+
+Se revisa una **condición**, si es **verdadera (True)** se ejecuta el código, y se vuelve a evaluar al condición, mientras siga siendo verdadera se ejecutará el código; cuando pasa a **Falsa (False)** se llega al fin del ciclo
 
 ## Uso del ciclo for y su uso
 
-Se revisa la CONDICION, se ejecuta la LÍNEA DE CÓDIGO, hay un INCREMENTO / DECREMENTO, y se vuelve a evaluar. Cuando al condición es FALSE termina de ejecutarse. <br>
+Se revisa la CONDICION, se ejecuta la LÍNEA DE CÓDIGO, hay un INCREMENTO / DECREMENTO, y se vuelve a evaluar. Cuando al condición es FALSE termina de ejecutarse. 
 
-El CONTADOR va a estar dentro de la condición del FOR, donde tengo: <br>
-inicialización ( esta variable es de alcance LOCAL, no se puede ejecutar fuera del for) <br>
-condicion <br>
-incremento/decremento <br>
+El CONTADOR va a estar dentro de la condición del FOR, donde tengo: 
 
-La variable de inicialización solo se ejecuta en el primer ciclo, luego se va evaluando su valor moficiado conel incremento o decremento. <br>
+inicialización ( esta variable es de alcance LOCAL, no se puede ejecutar fuera del for) 
+
+condicion 
+
+incremento/decremento 
+
+La variable de inicialización solo se ejecuta en el primer ciclo, luego se va evaluando su valor moficiado conel incremento o decremento. 
 
 ## Uso del ciclo while y cómo aplicarlo
 
-Tiene una **variable** que es un **contador** que se va a ir modificando para en un momento pasar a False. <br>
-Siempre PRIMERO EVALUA LA CONDICIÓN  y si es TRUE se ejecuta, es decir que si desde el principio la condición es False el bloque de código nunca se ejecutará. <br>
+Tiene una **variable** que es un **contador** que se va a ir modificando para en un momento pasar a False. 
+
+Siempre PRIMERO EVALUA LA CONDICIÓN  y si es TRUE se ejecuta, es decir que si desde el principio la condición es False el bloque de código nunca se ejecutará. 
 
 ## Uso del ciclo do-while y cuando utilizarlo
 
-Va a ejecutar el bloque de código AL MENOS UNA VEZ, por más que la condición sea FALSE; ya que siempre primero se ejecuta y luego ve si se cumple la condición. <br>
+Va a ejecutar el bloque de código AL MENOS UNA VEZ, por más que la condición sea FALSE; ya que siempre primero se ejecuta y luego ve si se cumple la condición. 
+
 
 ## Break
 
-Nos corta el ciclo, hace que salgamos del mismo, como en el caso del Switch. <br> 
+Nos corta el ciclo, hace que salgamos del mismo, como en el caso del Switch. 
 
 ## Continue
 
-No ejecuta y nos manda a la siguiente iteración del ciclo. <br>
+No ejecuta y nos manda a la siguiente iteración del ciclo. 
 
 ## Etiquetas
 
-Permite indicar a las palabras CONTINUE y BREAK ir a un lugar particular del programa. <br>
+Permite indicar a las palabras CONTINUE y BREAK ir a un lugar particular del programa. 
+
 No es tan recomendable utilizarlo, puede romper nuestra lógica dle programa, no es buena práctica, pero se muestra por si se la ve, entenderla.<br>
 
 
@@ -88,4 +96,4 @@ for (int contador = 0; contador < 3; contador++ ) {
 ```
 
 
-:computer:   Ver **Ciclos.java** <br>
+:computer:   Ver [**Ciclos.java**](https://github.com/eugenia1984/Universidad-Java-Udemy/blob/main/nivel1_seccion3y4/SentenciasDeControlSwitch.java) 
