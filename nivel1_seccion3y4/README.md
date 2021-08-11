@@ -75,8 +75,10 @@ No ejecuta y nos manda a la siguiente iteración del ciclo. <br>
 Permite indicar a las palabras CONTINUE y BREAK ir a un lugar particular del programa. <br>
 No es tan recomendable utilizarlo, puede romper nuestra lógica dle programa, no es buena práctica, pero se muestra por si se la ve, entenderla.<br>
 
-```
-inicio:
+
+Inicio:
+
+```JAVA
 for (int contador = 0; contador < 3; contador++ ) {
   if( contador % 2 != 0 ) {
     continue inicio;
