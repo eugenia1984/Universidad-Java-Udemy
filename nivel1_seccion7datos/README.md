@@ -1,12 +1,13 @@
 # Uso de Arreglos en Java
 
 
-Un **array** es un conjunto de elementos de diferentes tipos, pueden ser int, String, objects, boolean, double, etc.<br>
+Un **array** es un conjunto de elementos de diferentes tipos, pueden ser int, String, objects, boolean, double, etc.
 
-Los **elementos** comienzan con el **índice** 0. <br>
-Siempre el length va a ser igual a length-1 .<br>
+Los **elementos** comienzan con el **índice** 0. 
 
-Ejemplo: <br>
+Siempre el length va a ser igual a length-1 .
+
+Ejemplo: 
 
 Arreglo de tipos INT: <br>
 indices:  0  -  1  -  2  -  3  4<br>
@@ -15,48 +16,49 @@ El largo (**length**) es de : 4 <br>
 
 ## ¿ Cómo declaro un array ?
 
-Los corchetes pueden estar antes o después del nombre de la viariable. <br>
+Los corchetes pueden estar antes o después del nombre de la viariable.
 
-*tipo de dato* + *nombre de la variable de tipo areglo* + *corchetes* : <br>
+*tipo de dato* + *nombre de la variable de tipo areglo* + *corchetes* :
 
-En general el nombre de la variable suele estar en plural: edades, personas, y aclara que es lo que almacena. <br>
+En general el nombre de la variable suele estar en plural: edades, personas, y aclara que es lo que almacena. 
 
-```
+```JAVA
 //Arreglo de tipo entero
 int edades[];
 ```      
  
- *tipo de dato* + *corchetes* + *nombre de la voriable de tipo arraeglo* : <br>
+ *tipo de dato* + *corchetes* + *nombre de la voriable de tipo arraeglo* : 
  
- ```
+ ```JAVA
 //Arreglo de tipo entero
 int []edades;
 ```  
 
 ## ¿ Cómo le doy dimesión al arreglo ?
 
-Una vez que tiene una dimensión, es fija, no puede modificarse. <br>
+Una vez que tiene una dimensión, es fija, no puede modificarse. 
 
-``` 
+```JAVA 
 int edades[] = new int[3];
 ``` 
 
-Si lo mando a imprimir por consola voy a ver que ya ocupa un lugar en memoria, por más que todavía no tenga sus elementos. <br>
+Si lo mando a imprimir por consola voy a ver que ya ocupa un lugar en memoria, por más que todavía no tenga sus elementos. 
 
 
-Para acceder a los elementos del arreglo y modificarlos: <br>
-*nombre del arreglo* + *corchetes con el índice del elemento que quiero modificar* = *valor a asignar* ; <br>
+Para acceder a los elementos del arreglo y modificarlos: 
 
-``` 
+*nombre del arreglo* + *corchetes con el índice del elemento que quiero modificar* = *valor a asignar* ; 
+
+```JAVA 
 edades[0] = 10;
 ``` 
     
 ## ¿ Cómo recorro mi arreglo ?
 
-Con un ciclo **FOR**. <br>
+Con un ciclo **FOR**. 
 
 
-```
+```JAVA
 for (int i = 0; i < edades.length; i++) {
      System.out.println("Arreglo edades con índice : " + i + " de valor: " + edades[i]);
 }
@@ -64,15 +66,15 @@ for (int i = 0; i < edades.length; i++) {
 
 ## Arreglos: sintaxis resumida
 
-Ya al declarar mi arreglo **le asigno los valores**. <br>
+Ya al declarar mi arreglo **le asigno los valores**. 
 
-```
+```JAVA
 String frutas[] = {"Naranja", "Banana", "Uva"};
 ```
 
-Mando por consola mi arreglo de frutas: <br>
+Mando por consola mi arreglo de frutas: 
 
-```
+```JAVA
 for (int i = 0; i < frutas.length; i++) {
     System.out.println("Arreglo frutas, indice: " + i);
 } 
@@ -80,18 +82,20 @@ for (int i = 0; i < frutas.length; i++) {
     
 ---
 
-:computer: Se pueden ver los ejercicios de la carpeta **Arreglos**, con su clase **TestArreglos.java** dentro del paquete **test**. <br>
+:computer: Se pueden ver los ejercicios de la carpeta [**Arreglos**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_seccion7datos/Arreglos), con su clase **TestArreglos.java** dentro del paquete **test**. 
 
 ---
 
 
 ## Arreglos con elementos de tipo objetos
 
-Voy a tener a mi **clase Persona** con el *atributo* privado de tipo String **nombre** , su contructor y sus getters y setters. <br>
+Voy a tener a mi **clase Persona** con el *atributo* privado de tipo String **nombre** , su contructor y sus getters y setters. 
 
-Y en mi paquete *test* voy a tener la clase **TestArreglosObject.java**. <br>
 
-``` 
+Y en mi paquete *test* voy a tener la clase **TestArreglosObject.java**. 
+
+
+```JAVA 
 package domain;
 
 
@@ -124,7 +128,7 @@ public class Persona {
 ``` 
 
 
-```  
+```JAVA  
 package test;
 
 import domain.Persona;
@@ -151,16 +155,16 @@ public class TestArreglosObject {
 
 ---
 
-:computer: Se pueden ver los ejercicios de la carpeta **Arreglos**, con su clase **Persona.java** dentro del paquete **domain**. <br>
+:computer: Se pueden ver los ejercicios de la carpeta [**Arreglos**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_seccion7datos/Arreglos), con su clase **Persona.java** dentro del paquete **domain**.
 
 
 ---
 
 # Manejo de Matrices en Java
 
-Es un arreglo de arreglos, tiene **filas** y **columnas**. <br>
+Es un arreglo de arreglos, tiene **filas** y **columnas**.
 
-Ejemplo de **matriz** de tipo **int**. <br>
+Ejemplo de **matriz** de tipo **int**. 
 
 fila 0 : 35 - 78 - 34 - 50 - 41 - 15 - 18 <br>
 fila 1 : 27 - 90 - 24 - 48 - 56 - **89** - 78 <br>
@@ -171,10 +175,10 @@ El elemento **89** es de índice [1][5], porque ocupa la fila 1 y columna 5
 
 ## ¿ Cómo declaro mi matriz ?
 
-Los [][] me indican que va a ser una matriz. Por ejemplo: <br>
+Los [][] me indican que va a ser una matriz. Por ejemplo: 
 
 
-``` 
+```JAVA 
 int edades[][]= new int[3][2];
 ```  
 
@@ -190,9 +194,9 @@ Voy a tener una matriz con estos índices: <br>
 
 ## ¿ Cómo asignarle valores manualmente ?
 
-Si quiero asigna la edad al elemento con índice: fila 0, colomna 0: <br>
+Si quiero asigna la edad al elemento con índice: fila 0, colomna 0: 
 
-```  
+```JAVA  
 edades[0][0] = 10;
 edades[0][1] = 2;
 
@@ -212,9 +216,9 @@ Me va a quedar: <br>
 
 ## ¿ Cómo asignar valores iterando con dos ciclos FOR?
 
-Utilizo un **FOR ANIDADO**, porque primero voy a ir recorreindo las filas, y dentro de cada fila voy a ir recorriendo las columnas ( aca va a estar mi for anidado). <br>
+Utilizo un **FOR ANIDADO**, porque primero voy a ir recorreindo las filas, y dentro de cada fila voy a ir recorriendo las columnas ( aca va a estar mi for anidado).
 
-``` 
+``` JAVA
 for (int fila = 0; fila < edades.length; fila++) { ///para recorrer las filas
             
     for (int columna = 0; columna < edades[fila].length; columna++) {      ///para recorrer las columnas
@@ -227,13 +231,13 @@ for (int fila = 0; fila < edades.length; fila++) { ///para recorrer las filas
 ## Sintaxis simplificada en matrices
 
 
-```
+```JAVA
 String frutas[][] = {{"Naranja", "Limón"}, {"Frutillas", "Arándanos"}};
 ```
 
-Para recorrer mi matriz y mostrarla, utilizo for anidados: <br>
+Para recorrer mi matriz y mostrarla, utilizo for anidados: 
 
-```
+```JAVA
 for (int f = 0; f < frutas.length; f++) { 
             
    for (int columna = 0; columna < frutas[f].length; columna++) { 
@@ -242,7 +246,7 @@ for (int f = 0; f < frutas.length; f++) {
 }
 ```
 
-Y se imprime: <br>
+Y se imprime: 
 
 Frutas : 0 -  0 : Naranja <br>
 Frutas : 0 -  1 : Limón <br>
@@ -252,23 +256,24 @@ Frutas : 1 -  1 : Arándanos <br>
 
 ## Matriz de tipo Objetos
 
-Creo una nueva matriz de tipo Objeto. <br>
-```
+Creo una nueva matriz de tipo Objeto. 
+
+```JAVA
 Persona personas [][] = new Persona[2][3];
 ```
 
 
-Les asigno los valores a la primer fila <br>
+Les asigno los valores a la primer fila 
 
-```
+```JAVA
     personas[0][0] = new Persona("Juan"); 
     personas[0][1] = new Persona("Ana"); 
     personas[0][2] = new Persona("Mara"); 
 ```
 
-Les asigno los valores a la segunda fila <br>
+Les asigno los valores a la segunda fila 
 
-```
+```JAVA
     personas[1][0] = new Persona("Juana"); 
     personas[1][1] = new Persona("Analia"); 
     personas[1][2] = new Persona("Maria");  
@@ -276,9 +281,9 @@ Les asigno los valores a la segunda fila <br>
 
 ## Creo un metodo para imprimir mi matriz
 
-Fuera del método principal: <br>
+Fuera del método principal: 
 
-```
+```JAVA
  public static void imprimir(Object matriz[][]) {
       for (int i = 0; i < matriz.length; i++) { 
             
@@ -290,14 +295,15 @@ Fuera del método principal: <br>
   } 
 ```  
   
-Llamo mi método imprimir() para ver el arreglo de Persona  : <br>
-```  
+Llamo mi método imprimir() para ver el arreglo de Persona  
+
+```JAVA  
     System.out.println("Matriz personas : ");
     imprimir(personas);
     
 ``` 
 
-Y veo por consola: <br>
+Y veo por consola:
 
 Matriz personas :  <br>
 Matriz : 0 -  0 : Pesona{nombre = Juan} <br>
@@ -309,6 +315,6 @@ Matriz : 1 -  2 : Pesona{nombre = Maria} <br>
 
 ---
 
-:computer: Ver el proyecto **Matrices**
+:computer: Ver el proyecto [**Matrices**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_seccion7datos/Matrices)
 
 ---
