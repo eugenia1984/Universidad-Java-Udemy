@@ -6,88 +6,117 @@ Curso de Udemy en Java
 
 # Contenido
 
-## Nivel 1. Fundamentos de Java 
+---
 
-### Lección 1 - Comenzando con la Tecnología Java
-El asombroso mundo de la programación en Java <br>
-Qué es la tecnología Java (desde un enfoque práctico) <br>
-Nuestro primer programa en Java desde cero <br>
+# Nivel 1. Fundamentos de Java 
 
 
-### Lección 2 - Variables y Operadores en Java
+## Lección 1 - Comenzando con la Tecnología Java
 
-Uso de Variables en Java y para qué las utilizamos <br>
-Tipos de Datos en Java y cómo se clasifican <br>
-Manejo y Clasificación de operadores en Java <br>
+El asombroso mundo de la programación en Java 
 
-:computer: ver el directorio: **nivel1_leccion1y2** <br>
+Qué es la tecnología Java (desde un enfoque práctico)
 
-
-### Lección 3 - Sentencias de Control en Java
-
-Uso de la estructura if-else y dónde utilizarla <br>
-Manejo de la esctrutura switch y cuando aplicarla <br>
+Nuestro primer programa en Java desde cero
 
 
-### Lección 4 - Manejo de Ciclos en Java
+## Lección 2 - Variables y Operadores en Java
 
-Uso del ciclo for y su uso <br>
-Uso del ciclo while y cómo aplicarlo <br>
-Uso del ciclo do-while y cuando utilizarlo <br>
+Uso de Variables en Java y para qué las utilizamos
 
-:computer: ver el directorio: **nivel1_seccion3y4** <br>
+Tipos de Datos en Java y cómo se clasifican
 
+Manejo y Clasificación de operadores en Java 
 
-### Lección 5 - Programación Orientada a Objetos
-
-**Introducción a la Programación Orientada a Objetos (POO)** <br>
-
-Manejo de Clases en Java <br>
-Uso de Objetos en Java <br>
-
-:computer: ver el directorio: **nivel1_seccion5** <br>
+:computer: ver el directorio: [**nivel1_leccion1y2**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_leccion1y2) 
 
 
-### Lección 6 - Funciones en Java
+## Lección 3 - Sentencias de Control en Java
 
-Declaración de Métodos o Funciones en Java <br>
-Uso y llamado de Funciones en Java <br>
+Uso de la estructura if-else y dónde utilizarla
 
-:computer: ver el directorio: **nivel1_seccion6** <br>
+Manejo de la esctrutura switch y cuando aplicarla 
 
 
-### Lección 7 - Manejo de Datos en Java
+## Lección 4 - Manejo de Ciclos en Java
 
-Uso de Arreglos en Java <br>
-Manejo de Matrices en Java<br>
+Uso del ciclo for y su uso 
 
-:computer: ver el directorio: **nivel1_seccion7datos** <br>
+Uso del ciclo while y cómo aplicarlo 
 
-### Lección 8 - Herencia en Java
+Uso del ciclo do-while y cuando utilizarlo
 
-Manejo de Herencia en Java <br>
-Uso de superclases y subclases en Java <br>
-Sobrecarga de constructores. <br>
 
-:computer: ver el directorio: **nivel1_seccion8herencia** <br>
+:computer: ver el directorio: [**nivel1_seccion3y4**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_seccion3y4)
 
-### Lección 9 - Paquetes
 
-:computer: ver el directorio: **nivel_seccion9paquetes** <br>
+## Lección 5 - Programación Orientada a Objetos
 
-### Lección 10 - Uso de la palabra final
+**Introducción a la Programación Orientada a Objetos (POO)** 
 
-:computer: ver el directorio: **nivel1_seccion10final** <br>
+Manejo de Clases en Java
 
-### Lección 11 - Diseño de clases
+Uso de Objetos en Java 
 
-:computer: ver el directorio: **nivel1_seccion11diseniodeclases** <br>
+:computer: ver el directorio: [**nivel1_seccion5**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_seccion5) 
 
-## Laboratorio Final del Nivel <br>
 
-Ejercicio Final donde se integra todo lo aprendido en este Nivel <br>
 
-:computer: ver el directorio: **proyecto_laboratorio1** <br>
+## Lección 6 - Funciones en Java
+
+Declaración de Métodos o Funciones en Java 
+
+Uso y llamado de Funciones en Java 
+
+:computer: ver el directorio: [**nivel1_seccion6**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_seccion6)
+
+
+
+## Lección 7 - Manejo de Datos en Java
+
+Uso de Arreglos en Java 
+
+Manejo de Matrices en Java
+
+:computer: ver el directorio: [**nivel1_seccion7datos**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_seccion7datos) 
+
+
+## Lección 8 - Herencia en Java
+
+Manejo de Herencia en Java 
+
+Uso de superclases y subclases en Java
+
+Sobrecarga de constructores. 
+
+:computer: ver el directorio: [**nivel1_seccion8herencia**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_seccion8herencia)
+
+
+
+## Lección 9 - Paquetes
+
+:computer: ver el directorio: [**nivel_seccion9paquetes**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_seccion9paquetes) 
+
+
+
+## Lección 10 - Uso de la palabra final
+
+:computer: ver el directorio: [**nivel1_seccion10final**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_seccion10final) 
+
+
+
+## Lección 11 - Diseño de clases
+
+:computer: ver el directorio: [**nivel1_seccion11diseniodeclases**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_seccion11diseniodeclases)
+
+
+
+## Laboratorio Final del Nivel 
+
+Ejercicio Final donde se integra todo lo aprendido en este Nivel 
+
+:computer: ver el directorio: [**proyecto_laboratorio1**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/proyecto_laboratorio1) 
+
 
 ---
 
