@@ -34,7 +34,7 @@
 
 Puedo reasignar valores a la variable, por ejemplo: <br>
 
-```
+```JAVA
 
 public class MiPrimerVariable {
   
@@ -49,15 +49,20 @@ public class MiPrimerVariable {
 Una variable que fue definada dentro de un **método**, en este caso del método main, no va a poder ser usada fuera del mismo. Esto es el **alcance (scope)** de la variable. No vamos a poder acceder a ella desde cualquier parte del programa, sino que va a depender dónde fue definida.<br>
 
 Un ejemplo de variable de tipo **String**, que no es de tipo primitivo, sino de clase: <br>
-```
+
+```JAVA
 String miVariableCadena = "Saludos";
 ```
-También puedo reasignarle valor: <br>
-```
+
+También puedo reasignarle valor: 
+
+```JAVA
 String miVariableCadena = "Adios"";
 ```
-Y puedo imprimir concatenando String con variable usando + : <br>
-```
+
+Y puedo imprimir concatenando String con variable usando + :
+
+```JAVA
 System.out.print.ln("El nuevo valor de mi variable miVariableCadena es : " + miVariableCadena);
 ```
 
@@ -79,7 +84,7 @@ Algunos ejemplos: miVariable , _miVariable, $miVariable.
 
 Al utilizar **var** ya no se necesita definir el tipo de variable, pero si se debe asignar un valor para que se entienda de qué tipo es. <br>
 
-```
+```JAVA
 var miVariableEntera2 = 25;
 var miVariableCadena2 = "Nueva cadena";
 ```
@@ -99,8 +104,9 @@ var miVariableCadena2 = "Nueva cadena";
  Un ejemplo de número long: <br>
  var numeroLong = 922337203685477580L;
  **Con LONG puedo indicar con L al final, solo con long, con los demás tipo de números no debo indicar con la letra al final.**
+ 
 
-```
+```JAVA
 public class Enteros {
     
     public static void main(String args[])  {
@@ -144,7 +150,7 @@ public class Enteros {
 Un ejemplo de FLOAT : var numeroFLotante = 10.0F; <br>
 **Puedo indicar con una F al final que es flotante.** <br>
 
-```
+```JAVA
 public class FloatDouble {
      public static void main(String args[])  {
          
@@ -159,7 +165,7 @@ public class FloatDouble {
 Un ejemplo de DOUBLE : var numeroDouble = 1.7976931348623157E308D . <br>  
 **Puedo indicar con una D que es de tipo double**. <br>
 
-```
+```JAVA
 public class FloatDouble {
      public static void main(String args[])  {
         //Double
@@ -177,7 +183,7 @@ public class FloatDouble {
 
    * char : 16 bits . Default: \u0000 . Es solamente un cracter, se usan comillas simples. Son los caracteres uniocode. También se puede usar el valor decimal, tiene 16 bits, mismo tamaño que un short.
    
-```
+```JAVA
 public class Char {
     public static void main(String args[])  {
         
@@ -211,7 +217,7 @@ El tipo boolean también es un tipo primitivo y puede almacenar solo el valor de
 Su valor por default es false. <br>
 Valores de tipo bandera, si está en verde (true) podemos continuar, si está en rojo (false) no. Por eso se los conoce como **tipo de datos bandera** . <br>
 
-```
+```JAVA
 public class Boolean {
     
     public static void main( String args[]) {
@@ -224,7 +230,7 @@ public class Boolean {
 
 Se usan mucho en los **algoritmos**. <br>
 
-```
+```JAVA
 public class Boolean {
     
     public static void main( String args[]) {
@@ -260,7 +266,7 @@ public class Boolean {
 
 Para convertir de **String** a **Entero** uso el método **.parseInt()**. <br>
 
-```
+```JAVA
 public class ConversionTipoPrimitivos {
     
     public static void main( String args[]) {
@@ -289,7 +295,7 @@ public class ConversionTipoPrimitivos {
 
 Para convertir de **String** a **Entero** uso el método **.parseInt()**. <br>
 
-```
+```JAVA
 public class ConversionTipoPrimitivos {
     
     public static void main( String args[]) {
@@ -309,14 +315,14 @@ public class ConversionTipoPrimitivos {
 
 Y para pasar de **String** a **Double** con **Double.parseDouble()**  <br>
 
-```
+```JAVA
 var valorPI = Double.parseDouble("3.1416");
 System.out.println("Valor "  + valorPI );         // pasa 3.1416 a double
 ```
 
 Cuando se pide un dato por consola, ingresa como **String** y hay que pasalo a **int**  con **Integer.parseInt()** <br>
 
-```
+```JAVA
 var consola = new Scanner(System.in);
 system.out.println("Indica tu edad - en números : " );
 edad = Integer.parseInt( consola.nextLine() );
@@ -327,19 +333,19 @@ Como al momento no manejamos excepciones, si ingresa algo distinto a números da
 
 Convertir de **int** a **String**  con **valueOf** <br>
 
-```
+```JAVA
 var edadtexto = String.valueOf(10);
 ```
 
 Convertir de **String** a **char** con **.charAt()** <br>
 
-```
+```JAVA
 var caracter = "hola".charAt(0);  //imprimie h
 ```
 
 Cuando se ingresan los datos por consola entran como **String**, para pasrlo a **char** : <br>
 
-```
+```JAVA
 Systemo.out.println("Ingresa una palabra para mostrar la primer letra: ");
 caracter = consola.nextLine().charAt(0);
 ```
