@@ -148,8 +148,11 @@ La importancia y uso del operador this <br>
 
 ### Lección 3 - Manejo de Bloques de Código en Java
 
-Alcance de Variables (Scope) <br>
-Uso de bloques estáticos y no estáticos <br>
+Alcance de Variables (Scope) 
+
+Uso de bloques estáticos y no estáticos 
+
+:computer:  ver en el directorio [**nivel2_leccion3_bloques**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion3_bloques)
 
 
 ### Lección 4 - Uso de Clases Abstractas e Interfaces en Java
