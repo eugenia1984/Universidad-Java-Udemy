@@ -361,6 +361,35 @@ Es similar al rest de JS.
 
 Con los ... la variable va a ser un arreglo, se trata como un arreglo de manera interna, solo que no tiene una DIMENSION fija, sino que es VARIABLE.
 
+Se pueden definir más de un parámetro dentro de la variable, para que no de error, el PARAMETRO VARIABLe debe estar al final, por ejemplo:
+
+**private static void variosParametros(String nombre, int... numeros)**
+
+
+```JAVA
+package test;
+
+public class TestArgumentosVariables {
+    
+    public static void main(String[] args) {
+        imprimirNumeros(3, 4, 5);
+        imprimirNumeros(1,2);
+        variosParametros("Juan", 8, 9 , 10);
+    }
+    
+    private static void variosParametros(String nombre, int... numeros){
+        System.out.println("nombre = " + nombre);
+        imprimirNumeros(numeros);
+    }
+    
+    private static void imprimirNumeros(int... numeros){
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.println("elemento:" + numeros[i]);
+        }
+    }
+}
+```
+
 :computer: [ver aca el ejercicio](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_seccion6/vararg)
 
 
