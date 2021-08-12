@@ -516,6 +516,7 @@ simplemente usamos la variable c definida en el ciclo forEach.
 
 
 
+ :computer: Se pueden ver los ejercicios en la carpeta [Enumeraciones](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_seccion7datos/Enumeraciones)
  
  ---
 
