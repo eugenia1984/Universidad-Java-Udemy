@@ -318,3 +318,204 @@ Matriz : 1 -  2 : Pesona{nombre = Maria} <br>
 :computer: Ver el proyecto [**Matrices**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_seccion7datos/Matrices)
 
 ---
+
+## Enumeraciones
+
+Los tipos **enumerados** son un tipo especial de *clase*, el cual nos permite asociar una serie de valores de tipo final, es decir que son constantes. 
+
+Por ejemplo podemos observar el la lámina las constantes de los días de la semana.
+
+Vemos que es como crear una clase de Java, solo que en lugar de la palabra class, utilizamos la palabra reservada **enum**
+
+Debido a que los elementos de una enumeración son **constantes**, se escriben con mayúsculas
+
+``` JAVA
+public enum Dias {
+//Son valores constantes por eso van en mayuscula
+ LUNES,
+ MARTES,
+ MIERCOLES,
+ JUEVES,
+ VIERNES,
+ SABADO,
+ DOMINGO
+}
+``` 
+
+Podemos utilizar una clase de tipo enumeración cada vez que **necesitemos declarar una serie de valores constantes y que conozcamos
+previamente**, como los días de la semana, los puntos cardinales, el conjunto de planetas, continentes, y en si cualquier conjunto de datos
+que son constantes.
+
+
+## ¿ Cómo lo utilizo en Java  ?
+
+``` JAVA
+
+public class EjemploEnumeraciones {
+
+ public static void main(String[] args) {
+  //Valores de la enumeracion
+  System.out.println("Valor 1:" + Dias.LUNES);
+ 
+  //Hacemos un test del dia utilizado
+  indicar(Dias.LUNES);
+  }
+  
+  public static void indicarDia(Dias dias) {
+   swithc (dias) {
+    //Podemos usar algun valor constante de la enumeracion directamente
+     case LUNES:
+      System.out.println("Primer día de la semana");
+      break;
+   }
+  }
+ 
+}
+``` 
+ 
+ Lo que hacemos es indicar el nombre de la enumeración, en este caso Dias, y posteriormente utilizamos alguno de los valores constantes de la enumeración, por ejemplo: Dias.LUNES, con eso estaremos utilizando alguno de los valores de enumeración según necesitemos.
+ 
+ Sin embargo no es su único uso, podemos utilizar una enumeración para comprobar algunos de los casos de una estructura switch, la cual sabemos que seleccionará alguno de los casos según coincida con la entrada de la sentencia switch
+ 
+ Para probar alguno de los casos de la estructura switch, debemos proporcionar ya un valor de la enumeración, como puede ser Dias.LUNES o Dias.MARTES, etc.
+ 
+ Y dentro del switch en cada uno de los casos podemos especificar los valores ya sin especificar el nombre de la enumeración, sino simplemente indicando la constante de la enumeración, por ejemplo case LUNES, o case MARTES, etc.
+ 
+ 
+ ### Otro ejemplo de uso:
+ 
+ 
+ ```JAVA
+ public enum Continentes {
+  AFRICA(53),
+  EUROPA(46),
+  ASIA(44),
+  AMERICA(34),
+  OCEANIA(14);
+  
+  //ATRIBUTO DE CADA ELEMENTO DE UNA ENUMERACION
+  private final int paises;
+  
+  //CONSTRUCTOR DE CADA ELEMENTO DE LA ENUMERACION
+  Continentes( int paies) {
+   this.paises = paises;
+  }
+ 
+  public int getPaises(){
+   retunr paises;
+  }
+ }
+ 
+ ```
+ 
+ Sin embargo el tipo enumeración es más complejo que eso. Podemos además de definir simples valores
+constantes, valores a cada una de las constantes.
+
+
+Para ello debemos crear un constructor para inicializar cada uno de los valores asociado a cada constante.
+
+Por ejemplo en el código podemos observar que estamos creando una enumeración de los continentes
+existentes, sin embargo nos interesaría indicar el número de países existentes por cada continente.
+
+Para ello cuando definimos cada constante de la enumeración, podemos proporcionar los valores que
+deseemos separados por comas, en este caso es sólo un valor entero el que estamos proporcionado, el
+cual significa el número de países por cada continente que declaramos.
+
+
+ Sin embargo para poder crear este tipo de enumeraciones más complejas, necesitamos crear un
+constructor para poder crear cada uno de los elementos de la enumeración, y además los atributos que se
+asociarán con los valores proporcionados por cada constante de la enumeración.
+
+Por ello vemos en el código, que no basta con crear las constantes de la enumeración, sino que debemos
+además declarar el atributo países de tipo entero, y posteriormente declaramos un constructor, el cual se
+llamará de manera automática por cada uno de los elementos de la enumeración.
+
+Y finalmente, debido a que cada uno de los elementos de la enumeración contiene definido el numero de
+países, es posible declarar un método getPaises para recuperar precisamente el atributo países declarado
+en el tipo enumeración.
+
+A continuación vamos a ver cómo utilizar una enumeración de este tipo.
+ 
+ ```JAVA
+ public static void main(String[] args0 0){
+ 
+  //UTILIZAMOS LA ENUMERACION DE PAISES
+  System.out.println("Continente nro 4:" + Continentes.AMERICA);
+  System.out.println(Paises en Amercia" + Continentes.AMERICA.getPaises());
+  
+  //HACEMOS EL TEST DEL NUMERO DE PAISES POR CONTINENTES
+  System.out.println("");
+  indicarPaises(Continentes.AFRICA);
+  
+  public static void indicarPaises(Continentes continentes) {
+  
+   switch(continentes) {
+   //PODEMOS USAR ALGUN VALOR CONSTANTE DE LA ENUMERACION
+    case AFRICA:
+      System.out.println("Nro Paises en: " + continentes + " : " + continentes.getPaises()); 
+   }
+  }
+  
+ 
+ }
+
+ ```
+ 
+ Como podemos observar, el uso básico es de las constantes de una enumeración es
+el mismo que hemos estudiado, por ejemplo, para acceder a alguna de las
+constantes especificamos el nombre de la enumeración seguido del nombre de la
+constante, por ejemplo: Continentes.AMERICA, y si deseamos acceder a los
+atributos de cada constante definida, podemos llamar el método para recuperar el
+atributo de cada constante, por ejemplo: Contienentes.AMERICA.getPaises()
+
+Con esto podemos observar que el uso del tipo enumeraciones puede ser más
+completo que simplemente asociar algunas constantes, sino que también podemos
+definir atributos y por tanto agregar métodos para recuperar los atributos para cada
+una de las constantes definidas de una enumeración.
+ 
+ 
+```JAVA
+public class EjemploEnumeraciones {
+
+ public static void mian(String[] args) {
+ 
+  //IMPRIMIR LOS CONTINENTES
+  System.out.println("");
+  imprimirContinentes();
+  }
+ 
+ 
+ public static void imprimirContinentes() {
+  //UTILIZAMOS UN FOREACH
+  for(Continentes c: Contienentes.values()) {
+   System.out.println("Continente: " + c + " continente " + c.getPaises() + " paises");
+  }
+  
+ }
+ 
+}
+
+  
+```
+   
+   El método values se agrega por default cada que creamos una enumeración. El
+objetivo de este método es que nos regrese una lista de cada una de las constantes
+definidas en una enumeración.
+
+En el código podemos ver en el método imprimirContinentes, el uso de este
+método, apoyados de un ciclo forEach, lo que hacemos es definir una variable de
+tipo enumeración que estas utilizando, en este caso Continentes c, y
+posteriormente indicamos los valores de la enumeración llamando precisamente al
+método Continentes.values().
+
+Una vez que estamos iterando cada uno de los elementos, tenemos la variable c
+para recuperar el atributo de la constante que estamos iterando, por ello podemos
+pedir el método c.getPaises para recuperar el número de países del continente
+seleccionado y si queremos imprimir el continente que estamos iterando
+simplemente usamos la variable c definida en el ciclo forEach.
+
+
+
+ 
+ ---
+
