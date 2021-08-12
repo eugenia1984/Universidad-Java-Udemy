@@ -118,6 +118,13 @@ Ejercicio Final donde se integra todo lo aprendido en este Nivel
 :computer: ver el directorio: [**proyecto_laboratorio1**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/proyecto_laboratorio1) 
 
 
+## Laboratorio Final 2
+
+Ejercicio Final donde se integra todo lo aprendido en este Nivel 
+
+:computer: ver en el directorio **laboratorio final 2**
+
+
 ---
 
 ## Nivel 2. Programación con Java
