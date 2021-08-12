@@ -68,6 +68,8 @@ Declaración de Métodos o Funciones en Java
 
 Uso y llamado de Funciones en Java 
 
+Argumentos variables en Java -> [varargs](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_seccion6/vararg)
+
 :computer: ver el directorio: [**nivel1_seccion6**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_seccion6)
 
 
