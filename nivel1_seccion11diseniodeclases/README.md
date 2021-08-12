@@ -13,4 +13,4 @@ Paquete **mx.com.gm.ventas.test** con la clase **Ventas.Test.java**.
 
 ---
 
-:computer: Ver carpeta ^[**Ventas**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_seccion11diseniodeclases/Ventas) 
+:computer: Ver carpeta [**Ventas**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_seccion11diseniodeclases/Ventas) 
