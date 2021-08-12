@@ -527,7 +527,10 @@ Es **un FOR mejorado** que simplifica la forma de recorrer los arreglos o colecc
 Sintaxis del for Each:
 
 **for (tipo_variable identificador : que_quiero_iterar) {**
+
 **}**
+
+Ya no se tiene acceso a un CONTADOR, si se quiere escribir el índice hay que usar la sintaxis clásica dle ciclo for.
 
 Ejemplo iterando un array de edades:
 
@@ -539,6 +542,20 @@ int edades[] = {5, 6, 8, 9};
         }
 ```
 
-:computer: Se pueden ver los ejercicios en la carpeta  **ForEach**
+:computer: Se pueden ver los ejercicios en la carpeta  [**ForEach**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_seccion7datos/ForEach)
+
+
+Dentro en el paquete **domain** tengo la clase persona, para ver un ejemplo de iteración de tipo Object el cual se va a ejecutar en el paquete **test** en la main class TestForEach.
+
+Ejemplo:
+
+```JAVA
+Persona personas[] = {new Persona("Eugenia"), new Persona("Juan")};
+        
+        for( Persona persona : personas) {
+            System.out.println(persona);
+        }
+```
+
 
 ---
