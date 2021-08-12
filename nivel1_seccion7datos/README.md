@@ -518,5 +518,27 @@ simplemente usamos la variable c definida en el ciclo forEach.
 
  :computer: Se pueden ver los ejercicios en la carpeta [Enumeraciones](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_seccion7datos/Enumeraciones)
  
- ---
+---
 
+## forEach
+
+Es **un FOR mejorado** que simplifica la forma de recorrer los arreglos o colecciones
+
+Sintaxis del for Each:
+
+**for (tipo_variable identificador : que_quiero_iterar) {**
+**}**
+
+Ejemplo iterando un array de edades:
+
+```JAVA
+int edades[] = {5, 6, 8, 9};
+        
+        for(int edad : edades) { 
+            System.out.println(edad);
+        }
+```
+
+:computer: Se pueden ver los ejercicios en la carpeta  **ForEach**
+
+---
