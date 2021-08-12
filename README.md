@@ -122,7 +122,7 @@ Ejercicio Final donde se integra todo lo aprendido en este Nivel
 
 Ejercicio Final donde se integra todo lo aprendido en este Nivel 
 
-:computer: ver en el directorio **laboratorio final 2**
+:computer: ver en el directorio [**proyecto_laboratorio2**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/proyecto_laboratorio2)
 
 
 ---
