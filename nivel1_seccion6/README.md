@@ -351,3 +351,17 @@ Siempre que esté el **return** finaliza el método, y se pasa al sigueinte bloq
 
 
 ---
+
+## Argumentos variables en Java VARARGS
+
+
+Se pasan *argumentos* a un *metodo*, sin aclarar cuantos argumentos se pasan.
+
+Es similar al rest de JS.
+
+Con los ... la variable va a ser un arreglo, se trata como un arreglo de manera interna, solo que no tiene una DIMENSION fija, sino que es VARIABLE.
+
+:computer: [ver aca el ejercicio](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_seccion6/vararg)
+
+
+---
