@@ -80,5 +80,52 @@ Se permite a las clases hijas que accedan a sus constructores o atributos de la 
 Recordar que protected no aplica para clases.
 
 
+Mi **Clase1** va a seguir PUBLIC porque el modificador PROTECTED no está permitido  a nivel de clases
+
+-tengo un atributo PROTECTED, al cual voy a poder acceder desde las clases hijas y si estoy dentro del mismo paquete -> ```JAVA    protected String atributoProtected = "Valor atributo protected";```
+
+-Agrego un constructor publico porque si solo tengo el protected no voy a poder instanciar objetos ->
+
+```JAVA
+    public Clase1(String arg) {
+        System.out.println("Constructor public");
+    }
+```
+
+-constructor protected -> desde otra clase, sin restriccion puedo acceder a este constructor
+
+```JAVA
+    protected Clase1() {
+        System.out.println("Constructor protected");
+    }
+ ```   
+
+-un metodo public se va a poder acceder desde otra clase ->
+
+```JAVA
+    protected void metodoProtected(){
+        System.out.println("Metodo protected");
+    }
+```
+
+
+Tengo mi **ClaseHija** que hereda (**extends**) de Clase1
+
+Y tiene:
+
+```JAVA
+public ClaseHija(){
+    //Se puede mandar a llamar al constructor protegido de la clase padre
+        super();
+    //en la clase hija con .this accedo al atributo protected de la clase padre    
+        this.atributoProtected = "Modificacion atributo protected";
+        System.out.println("atributo protegido : " + this.atributoProtected);
+    //se puede tambien acceder al metodo protegido de la clase padre
+        this.metodoProtected();
+ }
+ ```
+
+
+
 :computer: [ver Modificadores Acceso](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_leccion12_modificadores_acceso/ModificadoresAccesoProtected)
 
