@@ -137,3 +137,43 @@ Y en mi **paquete test** :
 
 :computer: [ver Modificadores Acceso](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_leccion12_modificadores_acceso/ModificadoresAccesoProtected)
 
+---
+
+
+### Modificador de acceso DEFAULT o PACKAGE
+
+Ausencia del modificador, puede aplicar desde la clase (desde la definición de la clase) pero da error en la clase hija si está en otro paquete.
+
+Por esto una clase hija de una clase Default o Package no puede ser utilizada fuera del paquete.
+
+Solo se puede utilizar a la clase hija dentro dle mismo paquete de la clase super default o package.
+
+Es más restrictivo que los anteriores, sol ose trabaja en el mismo paquete.
+
+Entonces en mi **CLase1** tengo:
+
+-atributo default o package -> al no tener modificador es default
+
+```JAVA
+String atributoDefault = "Atributo Default";
+```
+
+-constructor defualt o package -> no tiene atributo de acceso
+
+```JAVA
+  Clase1(){
+        System.out.println("Constructor Default");
+  }
+```  
+
+-metodod default o packege -> no tiene atributo de acceso
+
+```JAVA
+  void metodoDefault(){
+        System.out.println("Metodo Default");
+  }
+```  
+
+
+
+---
