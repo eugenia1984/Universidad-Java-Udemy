@@ -37,16 +37,42 @@ Esta Clase3 va a EXTENDER de la Clase1
 
 Clase4 no tiene relación con ninguna otra clase
 
+
+### Modificador de acceso PUBLIC:
+
 Mi **CLase1** :
 
--tiene el MODIFICADOR DE PUBLIC -> **public class Clase1** -> puede ser  utilizada en otra clase del mismo paquete o paquete externo.
+-tiene el MODIFICADOR DE PUBLIC -> ```JAVA  public class Clase1 ```  -> puede ser  utilizada en otra clase del mismo paquete o paquete externo.
 
--tiene un atributo PUBLIC -> **public String atributoPublico = "Valor atributo publico";** -> voy a poder acceder a este atributo desde otra clase. <br>
+-tiene un ATRIBUTO PUBLIC -> ```JAVA  public String atributoPublico = "Valor atributo publico";``` -> voy a poder acceder a este atributo desde otra clase. <br>
 En mi TestModificadorAcceso voy a poder acceder al atributo -> ```JAVA System.out.println("clase1: " + clase1.atributoPublico);```
+
+-tiene un CONSTRUCTOR PUBLIC  -> que se me va a mandar a llamar en mi clase TestModificadores e accesos al instanciar (crear) el objeto: ```JAVA Clase1 clase1 = new Clase1(); ``` . Voy a poder utlizar este constructor en cualquier otra clase sin restricciones.
+
+```JAVA 
+public Clase1() {
+        System.out.println("Constructor publico");
+    }
+```    
+
+-tiene un METODO PUBLIC -> se va a poder usar desde otra clase. En mi clase testModificadoresAccesos lo mando a llamar: ```JAVA  clase1.metodoPublico(); ```
+
+```JAVA
+public void metodoPublico(){
+        System.out.println("Metodo publico");
+    }
+```
 
 
 Voy a tener el **paquete test** con la **clase TestModificadoresAcceso** para en el mismo probar acceder a mi Clase1 que es PUBLIC.
 
-Entonces en i Clase TestModificadoresAcceso creo instancio al objeto clase1 a partir de Clase1 y solo importo **import paquete1.Clase1;** y trabajo sin inconvenientes.
+Entonces en i Clase TestModificadoresAcceso creo instancio al objeto clase1 a partir de Clase1 y solo importo ```JAVA  import paquete1.Clase1;``` y trabajo sin inconvenientes.
+
+:computer: [ver ModificadoresAcceso]()
+### Modificador de acceso PROTECTED :
+
+Se permite a las clases hijas que accedan a sus constructores o atributos de la clase padre, aunque los constructores no se heredan, con super() los podemos invocar.
+
+Recordar que protected no aplica para clases.
 
 
