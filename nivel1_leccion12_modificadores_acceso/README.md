@@ -68,7 +68,9 @@ Voy a tener el **paquete test** con la **clase TestModificadoresAcceso** para en
 
 Entonces en i Clase TestModificadoresAcceso creo instancio al objeto clase1 a partir de Clase1 y solo importo ```JAVA  import paquete1.Clase1;``` y trabajo sin inconvenientes.
 
-:computer: [ver ModificadoresAcceso]()
+:computer: [ver Modificadores Acceso](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_leccion12_modificadores_acceso/ModificadoresAcceso)
+
+
 ### Modificador de acceso PROTECTED :
 
 Se permite a las clases hijas que accedan a sus constructores o atributos de la clase padre, aunque los constructores no se heredan, con super() los podemos invocar.
