@@ -9,7 +9,7 @@ Para donde aplican (SI):
 | default * | SI | SI | SI | SI |
 | private | No | SI | SI | SI |
 
-Estan moencionados del menos restrictivo al más restrictivo
+Estan mencionados del menos restrictivo al más restrictivo
 
 *es la ausencia de cualquier modificador, si no ponemos ninguno va el default
 
@@ -30,6 +30,10 @@ PAQUETE 2:
 | Clase3 |
 | ------ |
 
+Esta Clase3 va a EXTENDER de la Clase1
+
 | Clase4 |
 | ------ |
+
+Clase4 no tiene relación con ninguna otra clase
 
