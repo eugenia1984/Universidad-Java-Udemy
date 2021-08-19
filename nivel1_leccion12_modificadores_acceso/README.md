@@ -135,7 +135,7 @@ Y en mi **paquete test** :
 ```
 
 
-:computer: [ver Modificadores Acceso](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_leccion12_modificadores_acceso/ModificadoresAccesoProtected)
+:computer: [ver Modificadores Acceso Protected](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_leccion12_modificadores_acceso/ModificadoresAccesoProtected)
 
 ---
 
