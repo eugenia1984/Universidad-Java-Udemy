@@ -126,6 +126,14 @@ public ClaseHija(){
  ```
 
 
+Y en mi **paquete test** :
+
+```JAVA
+ //Instancio un nuevo objeto de la ClaseHija
+        ClaseHija claseHija = new ClaseHija();
+        System.out.println("Clase Hija: " + claseHija);
+```
+
 
 :computer: [ver Modificadores Acceso](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_leccion12_modificadores_acceso/ModificadoresAccesoProtected)
 
