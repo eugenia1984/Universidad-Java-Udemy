@@ -37,8 +37,9 @@ Esta Clase3 va a EXTENDER de la Clase1
 
 Clase4 no tiene relación con ninguna otra clase
 
+---
 
-### Modificador de acceso PUBLIC:
+### Modificador de acceso PUBLIC :
 
 Mi **CLase1** :
 
@@ -70,6 +71,7 @@ Entonces en i Clase TestModificadoresAcceso creo instancio al objeto clase1 a pa
 
 :computer: [ver Modificadores Acceso](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_leccion12_modificadores_acceso/ModificadoresAcceso)
 
+---
 
 ### Modificador de acceso PROTECTED :
 
