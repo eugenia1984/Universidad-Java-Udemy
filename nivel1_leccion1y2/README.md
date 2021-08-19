@@ -32,7 +32,7 @@
 2do : **nombro** a la variable con **camelCase**.<br>
 3ro : **asigno** su valor mediante el operador de asignación: **=**.<br>
 
-Puedo reasignar valores a la variable, por ejemplo: <br>
+Puedo reasignar valores a la variable, por ejemplo: 
 
 ```JAVA
 
@@ -46,9 +46,9 @@ public class MiPrimerVariable {
   }
 }
 ```
-Una variable que fue definada dentro de un **método**, en este caso del método main, no va a poder ser usada fuera del mismo. Esto es el **alcance (scope)** de la variable. No vamos a poder acceder a ella desde cualquier parte del programa, sino que va a depender dónde fue definida.<br>
+Una variable que fue definada dentro de un **método**, en este caso del método main, no va a poder ser usada fuera del mismo. Esto es el **alcance (scope)** de la variable. No vamos a poder acceder a ella desde cualquier parte del programa, sino que va a depender dónde fue definida.
 
-Un ejemplo de variable de tipo **String**, que no es de tipo primitivo, sino de clase: <br>
+Un ejemplo de variable de tipo **String**, que no es de tipo primitivo, sino de clase: 
 
 ```JAVA
 String miVariableCadena = "Saludos";
@@ -74,7 +74,7 @@ System.out.print.ln("El nuevo valor de mi variable miVariableCadena es : " + miV
   
 Algunos ejemplos: miVariable , _miVariable, $miVariable.  
 
-:heavy_check_mark:     **Ver el archivo HolaMundo.java**
+:heavy_check_mark:     [**Ver el archivo HolaMundo.java**](https://github.com/eugenia1984/Universidad-Java-Udemy/blob/main/nivel1_leccion1y2/HolaMundo.java)
 
 
 ---
@@ -82,7 +82,7 @@ Algunos ejemplos: miVariable , _miVariable, $miVariable.
 
 ## Palabra reservada var
 
-Al utilizar **var** ya no se necesita definir el tipo de variable, pero si se debe asignar un valor para que se entienda de qué tipo es. <br>
+Al utilizar **var** ya no se necesita definir el tipo de variable, pero si se debe asignar un valor para que se entienda de qué tipo es. 
 
 ```JAVA
 var miVariableEntera2 = 25;
@@ -92,7 +92,7 @@ var miVariableCadena2 = "Nueva cadena";
 ---
 
 
-## Tipos de Datos en Java y cómo se clasifican <br>
+## Tipos de Datos en Java y cómo se clasifican 
 
 ## Tipos primitivos en Java : BYTE , SHORT, INTEGER, LONG
 
@@ -101,8 +101,10 @@ var miVariableCadena2 = "Nueva cadena";
    * int : 32 bits . Default : 0 . -2147483648 al  2147483647
    * long : 64 bits . Default: 0 . -9223372036854775808 al  9223372036854775807
    
- Un ejemplo de número long: <br>
+ Un ejemplo de número long: 
+ 
  var numeroLong = 922337203685477580L;
+ 
  **Con LONG puedo indicar con L al final, solo con long, con los demás tipo de números no debo indicar con la letra al final.**
  
 
@@ -138,7 +140,7 @@ public class Enteros {
 }
 ```
 
-:heavy_check_mark:    **Ver el archivo Eneteros.java** 
+:heavy_check_mark:    [**Ver el archivo Enteros.java**](https://github.com/eugenia1984/Universidad-Java-Udemy/blob/main/nivel1_leccion1y2/Enteros.java) 
 
 ---
 
@@ -175,7 +177,7 @@ public class FloatDouble {
 }        
 ```
 
-:heavy_check_mark:     **Ver el archivo FloatDouble.java**
+:heavy_check_mark:     [**Ver el archivo FloatDouble.java**](https://github.com/eugenia1984/Universidad-Java-Udemy/blob/main/nivel1_leccion1y2/FloatDouble.java)
 
 ---
 
@@ -207,15 +209,17 @@ public class Char {
 }
 ```
 
-:heavy_check_mark:   **ver el archivo Char.java**
+:heavy_check_mark:   [**ver el archivo Char.java**](https://github.com/eugenia1984/Universidad-Java-Udemy/blob/main/nivel1_leccion1y2/Char.java)
    
 ---
 
 ## Tipos primitivos en Java: BOOLEAN
 
-El tipo boolean también es un tipo primitivo y puede almacenar solo el valor de **true** o **false**. <br>
-Su valor por default es false. <br>
-Valores de tipo bandera, si está en verde (true) podemos continuar, si está en rojo (false) no. Por eso se los conoce como **tipo de datos bandera** . <br>
+El tipo boolean también es un tipo primitivo y puede almacenar solo el valor de **true** o **false**. 
+
+Su valor por default es false. 
+
+Valores de tipo bandera, si está en verde (true) podemos continuar, si está en rojo (false) no. Por eso se los conoce como **tipo de datos bandera** . 
 
 ```JAVA
 public class Boolean {
@@ -228,7 +232,7 @@ public class Boolean {
 }
 ```
 
-Se usan mucho en los **algoritmos**. <br>
+Se usan mucho en los **algoritmos**. 
 
 ```JAVA
 public class Boolean {
@@ -256,7 +260,7 @@ public class Boolean {
 }
 ```
 
-:heavy_check_mark:     **Ver el archivo Boolean.java**
+:heavy_check_mark:     [**Ver el archivo Boolean.java**](https://github.com/eugenia1984/Universidad-Java-Udemy/blob/main/nivel1_leccion1y2/Boolean.java)
 
 ---
 
@@ -281,7 +285,7 @@ public class ConversionTipoPrimitivos {
 }
 ```
 
-:heavy_check_mark:     **Ver el archivo ConversionTipoPrimitivos.java**
+:heavy_check_mark:     [**Ver el archivo ConversionTipoPrimitivos.java**](https://github.com/eugenia1984/Universidad-Java-Udemy/blob/main/nivel1_leccion1y2/ConversionTipoPrimitivos.java)
 
 
 ---
@@ -310,17 +314,17 @@ public class ConversionTipoPrimitivos {
 }
 ```
 
-:heavy_check_mark:     **Ver el archivo ConversionTipoPrimitivos.java** <br>
+:heavy_check_mark:    [**Ver el archivo ConversionTipoPrimitivos.java**]https://github.com/eugenia1984/Universidad-Java-Udemy/blob/main/nivel1_leccion1y2/ConversionTipoPrimitivo.java() 
 
 
-Y para pasar de **String** a **Double** con **Double.parseDouble()**  <br>
+Y para pasar de **String** a **Double** con **Double.parseDouble()** 
 
 ```JAVA
 var valorPI = Double.parseDouble("3.1416");
 System.out.println("Valor "  + valorPI );         // pasa 3.1416 a double
 ```
 
-Cuando se pide un dato por consola, ingresa como **String** y hay que pasalo a **int**  con **Integer.parseInt()** <br>
+Cuando se pide un dato por consola, ingresa como **String** y hay que pasalo a **int**  con **Integer.parseInt()** 
 
 ```JAVA
 var consola = new Scanner(System.in);
@@ -331,19 +335,19 @@ System.out.println("edad : "  +  edad);
 
 Como al momento no manejamos excepciones, si ingresa algo distinto a números da un error.
 
-Convertir de **int** a **String**  con **valueOf** <br>
+Convertir de **int** a **String**  con **valueOf** 
 
 ```JAVA
 var edadtexto = String.valueOf(10);
 ```
 
-Convertir de **String** a **char** con **.charAt()** <br>
+Convertir de **String** a **char** con **.charAt()** <
 
 ```JAVA
 var caracter = "hola".charAt(0);  //imprimie h
 ```
 
-Cuando se ingresan los datos por consola entran como **String**, para pasrlo a **char** : <br>
+Cuando se ingresan los datos por consola entran como **String**, para pasrlo a **char** : 
 
 ```JAVA
 Systemo.out.println("Ingresa una palabra para mostrar la primer letra: ");
@@ -369,7 +373,7 @@ nombre # id  <br>
 Precio: simbolo precio  <br>
 Envio Gratuito: envioGratuito <br>
 
-:heavy_check_mark:  **ver Tarea.java** <br>
+:heavy_check_mark:  [**ver Tarea.java**](https://github.com/eugenia1984/Universidad-Java-Udemy/blob/main/nivel1_leccion1y2/Tarea.java) 
   
   
 ---
@@ -386,7 +390,7 @@ Envio Gratuito: envioGratuito <br>
 %     // MODULO  
 ```
 
-:heavy_check_mark:  **ver OperadorAritmetico.java** <br>
+:heavy_check_mark:  [**ver OperadorAritmetico.java**](https://github.com/eugenia1984/Universidad-Java-Udemy/blob/main/nivel1_leccion1y2/OperadorAritmetico.java)
 
 
 ## OPERADORES DE RELACION
@@ -400,7 +404,7 @@ Envio Gratuito: envioGratuito <br>
 = =    //igual             
 ```
 
-:heavy_check_mark:  **ver OperadoresDeIgualdadYRelacionales.java** <br>
+:heavy_check_mark:  [**ver OperadoresDeIgualdadYRelacionales.java**](https://github.com/eugenia1984/Universidad-Java-Udemy/blob/main/nivel1_leccion1y2/OperadoresDeIgualdadYRelacionales.java) 
 
 ## OPERADORES LÓGICOS
 
@@ -410,7 +414,7 @@ Envio Gratuito: envioGratuito <br>
 !    //not
 ```
 
-:heavy_check_mark:  **ver OperadoresCondicionales.java** <br>   
+:heavy_check_mark:  [**ver OperadoresCondicionales.java**](https://github.com/eugenia1984/Universidad-Java-Udemy/blob/main/nivel1_leccion1y2/OperadoresCondicionales.java)  
    
    
 ## OPERADORES UNARIOS
@@ -422,7 +426,7 @@ Envio Gratuito: envioGratuito <br>
 --
 ``` 
 
-:heavy_check_mark:  **ver OperadoresUnarios.java** <br>
+:heavy_check_mark:  [**ver OperadoresUnarios.java**](https://github.com/eugenia1984/Universidad-Java-Udemy/blob/main/nivel1_leccion1y2/OperadoresUnario.java)
 
 
 ## OPERADORES A NIVEL DE BITS
@@ -454,16 +458,20 @@ Envio Gratuito: envioGratuito <br>
 |=
 ```
 
-:heavy_check_mark:  **ver OperadorDeAsignacion.java** <br>
+:heavy_check_mark:  [**ver OperadorDeAsignacion.java**](https://github.com/eugenia1984/Universidad-Java-Udemy/blob/main/nivel1_leccion1y2/OperadorDeAsignacion.java)
 
 ## OPERADOR CONDICIONAL
 
 ```
 ?:
 ```
-condicion ? ejecuto_si_es_true : ejecuto_si_es_false; <br>
 
-:heavy_check_mark:  **ver OperadorTernario.java** <br>
+condicion ? ejecuto_si_es_true : ejecuto_si_es_false; 
+
+:heavy_check_mark: [**ver OperadorTernario.java**](https://github.com/eugenia1984/Universidad-Java-Udemy/blob/main/nivel1_leccion1y2/OperadorTernario.java) 
+
+
+
 
 ## PRIORIDAD EN EL ORDEN DE EVALUACION
 
@@ -477,7 +485,7 @@ condicion ? ejecuto_si_es_true : ejecuto_si_es_false; <br>
 
 Pedir que se ingrese por pantalla el alto y ancho de un rectángulo para calcular y mostrar su área y perímetro. <br>
 
-:heavy_check_mark:  **ver AreaYPerimetro.java** <br>
+:heavy_check_mark:  [**ver AreaYPerimetro.java**](https://github.com/eugenia1984/Universidad-Java-Udemy/blob/main/nivel1_leccion1y2/AreaYPerimetro.java)
 
 
 ---
@@ -487,6 +495,40 @@ Pedir que se ingrese por pantalla el alto y ancho de un rectángulo para calcula
 Pedir que se ingresen por pantalla dos números e indicar cuál es el mayor.<br>
 En este caso utilice un IF/ ELSE IF / ELSe anidado, para poner como primer condición del IF que son iguales, y luego si comparo si son mayor o menor. <br>
 
-:heavy_check_mark:  **ver NumeroMayor.java** <br>
+:heavy_check_mark:  [**ver NumeroMayor.java**](https://github.com/eugenia1984/Universidad-Java-Udemy/blob/main/nivel1_leccion1y2/NumeroMayor.java)
+
+---
+
+## autoboxing Unboxing
+
+Cada tipo PRIMITIVO en Java tiene la CLASE WRAPPER asociada -clase envolvente del tipo primitivo-
+
+int -> Integer
+
+long -> Long
+
+float -> Float
+
+double -> Double
+
+boolean -> Boolean
+
+byte -> Byte
+
+char -> Caracter
+
+short -> Short
+
+
+Las clases contienen atributos y  métodos, en cambio los tipos primitivos
+solo almacenan valores pero no tienen ni atributos ni metodos; para usar objetos
+usamos estas clases envolventes
+
+AUTOBOXING -> paso de un primitivo a un object
+
+UNBOXING -> paso de un object a un primitivo
+
+
+:heavy_check_mark: [ver AutoboxingUnBoxing](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel1_leccion1y2/AutoboxingUnboxing)
 
 ---
