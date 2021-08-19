@@ -150,7 +150,7 @@ Solo se puede utilizar a la clase hija dentro dle mismo paquete de la clase supe
 
 Es más restrictivo que los anteriores, sol ose trabaja en el mismo paquete.
 
-Entonces en mi **CLase1** tengo:
+Entonces en mi **Clase1** tengo:
 
 -atributo default o package -> al no tener modificador es default
 
@@ -166,7 +166,7 @@ String atributoDefault = "Atributo Default";
   }
 ```  
 
--metodod default o packege -> no tiene atributo de acceso
+-metodo default o packege -> no tiene atributo de acceso
 
 ```JAVA
   void metodoDefault(){
