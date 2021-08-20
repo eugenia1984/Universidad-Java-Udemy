@@ -249,6 +249,10 @@ class Clase1{   //una clase no puede ser PRIVATE
         public String getAtributoPrivado() {
                 return atributoPrivado;
         }
+        
+        public void setAtributoPrivado(String atributoPrivado) {
+                this.atributoPrivado = atributoPrivado;
+        }
 
 }
 ```
@@ -290,6 +294,8 @@ public class TestModificadoresAcceso {
         public static void main( String [] args) {
         
                 Clase1 clase1 = new Clase1("Publico");   //debo pasar parametro para usar el constructor publico
+                clase1.setAtributoPrivado("cambio valor ");  //mediante el set voy a modificar el atributo privado
+                System.out.println("clase 1 = " + clase1.getAtributoPrivado());  //para acceder al valor del atributoPrivado uso el get
         
        }
  }
