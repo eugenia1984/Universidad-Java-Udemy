@@ -1,3 +1,3 @@
 # Sobreescritura
 
-:compueter: [ver el proyecto sobreescritura]()
+:computer: [ver el proyecto sobreescritura]()
