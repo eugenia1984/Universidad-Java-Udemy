@@ -117,5 +117,34 @@ Si es Object voy a tener acceso a los atributos y metodos de la clase Object.
 
 ---
 
+## Clase Object
+
+Todos las clases en Java **heredan de la clase object**.
+
+La clase Object ya define algunos métodos, como por ejemplo:
+
+**toString()**
+
+**equals()** : compara el contenido de dos objetos para saber si son iguales
+
+**hashCode()** : permite comparar el contenido de los objetos, sin embargo la comparacion se realiza con un tipo entero, se genera un valor de tipo entero que se va a asignar a cada objeto generado a partir d elos valores de cada uno de los atributos de la clase. Se genera un ENTERO UNICO PARA CADA OBJETO y posteriormente se COMPARA ESE VALOR UNICO para saber si dos objetos son iguales.
+
+Si se va a implementar el método *hashCode* en la clase hay que SOBREESCRIBIR el metodo *equals*, más que nada cuando se usan algoritmos de ordenamiento como en las colecciones HashMap, HashSet, Hashtable.
+
+
+CLASE OBJECT EN JAVA:
+
+| Clase Reiaz de todos las clases -> java.lang:Object |
+| --------------------------------------------------- |
+| +toString(): String |
+| +equals(): boolean |
+| +hashCode(): int |
+
+---
+
 
 ## La importancia y uso del operador this
+
+Se vio en la seccion anterior
+
+---
