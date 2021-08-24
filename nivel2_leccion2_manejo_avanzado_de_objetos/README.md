@@ -29,6 +29,9 @@ En ambos casos es un **casteo** ó **conversión de objetos** pero dependeidno d
 
 ---
 
+◾  [ejemplo de **conversion de objetos**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion2_manejo_avanzado_de_objetos/ConversionObjetos)
+
+---
 
 ## Identificando el tipo de objeto con el operador instanceof
 
@@ -112,7 +115,7 @@ Si es Object voy a tener acceso a los atributos y metodos de la clase Object.
 
 ◾ [ver ejemplo de **instanceof**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion2_manejo_avanzado_de_objetos/InstanceOf)
 
---
+---
 
 
 ## La importancia y uso del operador this
