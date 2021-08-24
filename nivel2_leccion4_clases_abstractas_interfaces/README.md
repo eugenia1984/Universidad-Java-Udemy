@@ -50,3 +50,63 @@ Un ejemplo seria una base de datos MySQL y ORACLE que ambas tiene los metodos de
 ---
 
 ## Manejo de Interfaces en Java y cuándo utilizarlas
+
+Se las suele nombrar con una **I** al inicio que indica es una interface, por ejemplo: IAccesoDatos.
+
+Utiliza la palabra reservada **interface**.
+
+Al no ser Clase NO HEREDA DE LA CLASE OBJECT.
+
+Lo que si puede hacer una interface es EXTENDER de otra interface.
+
+Ejemplo:
+
+```JAVA
+public interface IAccesoDatos {
+     //atributo CONSTANTE ->  public static final, lo declaro y asigno valor
+    int MAX_REGISTRO = 10;
+    
+    //metodo public abstract
+    void insertar();    
+    
+    void listar();
+    
+    void actualizar();
+    
+    void eliminar();
+    
+}
+```
+
+Las clases que implementen la interface van a tener la palabra reservada **implements** y van a tener que DEFINIR el comportamiento de los METODOS abstractos de la interface. Si no los implementamos la clase debe ser ABSTRACT, pero debería tener una clase hija para poder implementar los metodos.
+
+Vamos a tener los méetodos @Override, pero en realidad esta IMPLEMENTANDO no sobreescribiendo.
+
+```JAVA
+public class ImplementacionMySql implements IAccesoDatos{
+
+    @Override
+    public void insertar() {
+        System.out.println("Insertar desde MySql");
+    }
+
+    @Override
+    public void listar() {
+        System.out.println("Listar desde MySql");
+    }
+
+    @Override
+    public void actualizar() {
+        System.out.println("Actualizar desde MySql");
+    }
+
+    @Override
+    public void eliminar() {
+        System.out.println("Eliminar desde MySql");
+    }
+```
+
+Y si quiero trabajar con otra base de datos, entonces croe otra clase que tambien sea IMPLEMENTS de  IAccesoDatos.
+
+
+---
