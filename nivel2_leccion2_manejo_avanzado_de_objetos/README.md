@@ -51,5 +51,9 @@ Me va a dar TRUE para **el mismo tipo** y para **la clase padre**, por eso es im
 
 ---
 
+◾ [ver ejemplo de **instanceof**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion2_manejo_avanzado_de_objetos/InstanceOf)
+
+--
+
 
 ## La importancia y uso del operador this
