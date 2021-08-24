@@ -140,6 +140,29 @@ CLASE OBJECT EN JAVA:
 | +equals(): boolean |
 | +hashCode(): int |
 
+
+Ejemplo en codigo:
+
+Creo dos variables que son instancia de la clase empleado
+```JAVA
+        Empleado empleado1 = new Empleado("Juan", 6000);
+        Empleado empleado2 =  new Empleado("Juan", 6000);
+```        
+        
+Aunque tengamos los **mismos valores en los atributos**, al utiliar **new** para crear cada uno de los objetos entonces se encuentran en diferente **referencia en memoria**
+
+Tenemos que ver si dos ejemplos son iguales:
+
+ ```JAVA       
+if (empleado1 == empleado2) {
+     System.out.println("Tienen la misma referencia en memoria");
+} else {
+     System.out.println("Tienen distinta referencia en memoria");
+}
+ ```
+  
+Por consola voy a ver -> Tienen distinta referencia en memoria
+  
 ---
 
 
