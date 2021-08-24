@@ -20,6 +20,13 @@ Editor   Gerente    Escritor
                       | <<extends>>
                    Corrector
 ```
+
+Si voy de una **clase superior (padre)** a una **clase inferior (hija)** -> **DOWNCASTING**
+
+Si voy  de a una **clase inferior (hija)** a una **clase superior (padre)**  -> **UPCASTING**
+
+En ambos casos es un **casteo** ó **conversión de objetos** pero dependeidno de la dirección en la que se hace se conoco como **downcasting** de una clase a una clase hija y como **upcasting** de una clase hija a una clase padre.
+
 ---
 
 
