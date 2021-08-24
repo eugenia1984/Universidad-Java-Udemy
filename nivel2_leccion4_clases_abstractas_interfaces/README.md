@@ -2,7 +2,7 @@
 
 ---
 
-## Clases ambstractas
+## Clases abstractas
 
 
 La clase abstracta tiene la palabra reservada **abstract** y tiene métodos definidos sin implementación, son los **metodos abstractos**.
@@ -18,6 +18,9 @@ public abstract class FiguraGeometrica{
   abstract void dibujar();
 }
 ```
+
+**NO** puedo instanciar objetos a partir de la clase **abstracta**, solo voy a poder trabajar con las clases hijas.
+
 
 CLASE HIJA: en cambio la clase hija ya es una clase rectangulo, se que dibujar, ella va a definir el comportamiento dle metodo dibujar.
 
