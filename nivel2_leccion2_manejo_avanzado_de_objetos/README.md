@@ -2,6 +2,29 @@
 
 ## Conversión de Objetos (cast)
 
+Cambio una variable de tipo padre a una variable de tipo hija para poder acceder a los atributos y metodos de la clase hija.
+
+Con instanceof puedo ver si los puedo convertir o no.
+
+```JAVA
+//CONVERSION DE TIPO
+    public static void determinarTipo(Empleado empleado){
+        if (empleado instanceof Gerente) {
+            System.out.println("Es de tipo gerente");
+    //Variable de tipo EMPLEADO convertida a TIPO GERENTE
+            Gerente gerente = (Gerente)empleado;
+    //con la variable empleado accedo a los atributos y metodos de la clase hija
+            gerente.getDepartamento();
+        } 
+        else if (empleado instanceof Empleado) {
+            System.out.println("Es de tipo empleado");
+        } 
+        else if (empleado instanceof Object) {
+            System.out.println("Es de tipo Object");
+        }
+    }
+```
+
 
 ---
 
