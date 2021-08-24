@@ -15,6 +15,15 @@ public class Gerente extends Empleado { //porque hereda de empleado
         this.departamento = departamento;  
     }
     
+    //GET para atributo departamento
+    public String getDepartamento() {
+        return departamento;
+    }
+    //SET para atributo departamento
+    public void setDepartamento(String departamento) {
+        this.departamento = departamento;
+    }
+    
     //Modifico el metodo del padre para que muestre departamento
     @Override
     public String obtenerDetalles(){
@@ -22,4 +31,7 @@ public class Gerente extends Empleado { //porque hereda de empleado
         //agrego el atributo d ela clase hija
         return super.obtenerDetalles() + ", departamento = " + this.departamento;
     }
+
+ 
+    
 }

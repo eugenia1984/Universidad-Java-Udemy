@@ -15,15 +15,23 @@ public class TestInstanceOf {
         Gerente gerente = new Gerente("Sandra",10000,"Contabilidad");
     }
     
-    //INSTANCE OF -> determino el tipo por tiempo de ejecucion, ver de que tipo
-    //es la referencia a la cual está apuntando la memoria, si es new Gerente/Empleado
+    //CONVERSION DE TIPO
     public static void determinarTipo(Empleado empleado){
         //Siempre empiezo preguntando si es instanceOf de CLASE HIJA
         if (empleado instanceof Gerente) {
             System.out.println("Es de tipo gerente");
-        } else if (empleado instanceof Empleado) {
+    //Variable de tipo EMPLEADO convertida a TIPO GERENTE
+            Gerente gerente = (Gerente)empleado;
+    //con la variable empleado accedo a los atributos y metodos de la clase hija
+            gerente.getDepartamento();
+        } 
+        else if (empleado instanceof Empleado) {
             System.out.println("Es de tipo empleado");
-        } else if (empleado instanceof Object) {
+             //Gerente gerente = (Gerente)empleado;
+            //gerente.getDepartamento();
+            //Esto me daria error porque ya es de tipo hija, no necesito castear
+        } 
+        else if (empleado instanceof Object) {
             System.out.println("Es de tipo Object");
         }
     }
