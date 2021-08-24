@@ -113,6 +113,56 @@ Si es Object voy a tener acceso a los atributos y metodos de la clase Object.
 
 Ahora lo que queremos COMPARAR es el CONTENIDO de los objetos -> metodo **equals** en la clase Empleado 
 
+Con **insert code...** selecciono **equals() and hashCode()**, del lado izquierdo selecciono los atributos para el equals() y del lado derecho los atributospara el hashcode()
+
+Tengo que seleccionar LOS MISMOS ATRIBUTOS en equals y en hashcode, no me puede faltar en hashcode alguno de equals.
+
+
+**hashcode** devuelve un tipo entero, lo más único posible (pero tengo una posibilidad minima de que se repita), se le asignoa un valor al hash y se le suman los valores de los atributos de la clase.
+
+Este calculo puede variar de IDE en IDE y de implementación en implementación.
+
+Lo que importa es que se trata de conseguir **un valor entero unico** para el objeto considerando los atributos del objeto.
+
+```JAVA
+  @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 47 * hash + Objects.hashCode(this.nombre);
+        hash = 47 * hash + (int) (Double.doubleToLongBits(this.sueldo) ^ (Double.doubleToLongBits(this.sueldo) >>> 32));
+        return hash;
+    }
+```
+
+
+**equals** nos devuelve TRUE o FALSE, compara el objeto con el que estamos trabajando con otro objeto que recibe por parametro (ese parametro es variable de tipo Object).
+
+**.getCLass** devuelve el tipo de la clase del objeto con el que estamos trabajando
+
+```JAVA
+ @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {  //si es el mismo objeto que paso por parametro
+            return true;
+        }
+        if (obj == null) { //si es null, son distintos
+            return false;
+        }
+        if (getClass() != obj.getClass()) {   //si el tipo de la clase son diferentes
+            return false;
+        }
+        final Empleado other = (Empleado) obj;  //hacemos un cast de la clase object a la clase empleado
+         //comparo los atributos de la clase
+        if (Double.doubleToLongBits(this.sueldo) != Double.doubleToLongBits(other.sueldo)) {
+            return false;
+        }
+        if (!Objects.equals(this.nombre, other.nombre)) {  //comparamos los atributos de nombre
+            return false;
+        }
+        return true;
+    }
+```
+
 ---
 
 ◾ [ver ejemplo de **instanceof**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion2_manejo_avanzado_de_objetos/InstanceOf)
