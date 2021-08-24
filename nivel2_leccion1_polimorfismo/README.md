@@ -16,9 +16,13 @@ Un METODO GENERICO que en tiempo de ejecucion HACE REFERENCIA A LA CLASE QUE EST
 
 Para poder aplicar el polimorfismo **ambos metodos deben llamarse igual**
 
+Si el **método de la clase padre** está marcado como **protected** en la clase hija el metodo que se va a sobreescribir **no puede ser más restrictivo** (no puede ser private) puede ser : **protected**, **default**o **package** y **public**.
+
+El **método de la clase hija que sobrrescribe NO puede ser más restrictivo**, debe ser dle mismo tipo o un tipo MENOS restrictivo.
+
 ---
 
-Diagrama que explica el polimorfismo con el ejemplo que hice en codigo:
+## Diagrama que explica el polimorfismo con el ejemplo que hice en codigo:
 
 | OBJETO TIPO EMPLEADO |
 | -------------------- |
