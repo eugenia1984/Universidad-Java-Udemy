@@ -37,4 +37,4 @@ Diagrama que explica el polimorfismo con el ejemplo que hice en codigo:
 
 ---
 
-:computer: [**ver ejemplo**](https://github.com/eugenia1984/Universidad-Java-Udemy/edit/main/nivel2_leccion1_polimorfismo/Sobrrescritura)
+:computer: [**ver ejemplo**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion1_polimorfismo/Sobreescritura)
