@@ -2,9 +2,30 @@
 
 ## Conversión de Objetos (cast)
 
+Vos a tener la SUPER CLASE **Object** de la cual va a extender la CLASE HIJA **Empleado**
 
+Y a su vez la clase **Empleado** va a ser la clase padre de sus hijas:
 
+**Editor**
 
+**Gerente**
+
+**Escritor** el cual también va a ser padre de **Corrector** 
+
+```
+            Object
+              ^
+              | <<extends>>
+           Empleado
+              ^
+              | <<extends>>
+    --------------------
+    |         |        |
+Editor   Gerente    Escritor 
+                      ^
+                      | <<extends>>
+                   Corrector
+```
 ---
 
 
