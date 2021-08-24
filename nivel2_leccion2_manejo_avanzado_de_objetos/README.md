@@ -163,6 +163,34 @@ Lo que importa es que se trata de conseguir **un valor entero unico** para el ob
     }
 ```
 
+
+Veo si los dos son iguales con equals y hashcode de la clase Empleados:
+
+```JAVA
+        if (empleado1.equals(empleado2)) {
+            System.out.println("Los objetos son iguales en contenido");
+        } else {
+            System.out.println("Los objetos son distintos en contenido");
+        }
+```
+
+Por consola tengo -> ```Los objetos son iguales en contenido```
+
+
+Y comparo los hashcode:
+
+```JAVA
+ if(empleado1.hashCode() == empleado2.hashCode()) {
+            System.out.println("El valor hashcode es igual");
+        } else {
+            System.out.println("El valor hashcode es distinto");
+        }
+```
+
+Por consola tengo -> ```El valor hashcode es igual```
+
+Esto es asi porque si el valor de **equals** entre ambos objetos es true (es porque son iguales) , entonces el valor de **hashcode** también es igual.
+
 ---
 
 ◾ [ver ejemplo de **instanceof**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion2_manejo_avanzado_de_objetos/InstanceOf)
