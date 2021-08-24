@@ -111,6 +111,6 @@ Y si quiero trabajar con otra base de datos, entonces croe otra clase que tambie
 
 ---
 
-💥 [ver ejemplo en **Interfaces**] (https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion4_clases_abstractas_interfaces/Interfaces)
+💥 [ver ejemplo en **Interfaces**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion4_clases_abstractas_interfaces/Interfaces)
 
 ---
