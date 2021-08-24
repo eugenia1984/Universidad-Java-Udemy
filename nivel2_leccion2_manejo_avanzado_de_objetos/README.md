@@ -6,6 +6,12 @@ Cambio una variable de tipo padre a una variable de tipo hija para poder acceder
 
 Con instanceof puedo ver si los puedo convertir o no.
 
+Si es padre voy a tener acceso a los atributos y metodos de la clase padre.
+
+Si es hijo voy a tener acceso  a los atributos y metodos de la clase hija.
+
+Si es Object voy a tener acceso a los atributos y metodos de la clase Object.
+
 ```JAVA
 //CONVERSION DE TIPO
     public static void determinarTipo(Empleado empleado){
@@ -21,9 +27,11 @@ Con instanceof puedo ver si los puedo convertir o no.
             //Gerente gerente = (Gerente)empleado;
             //gerente.getDepartamento();
             //Esto me daria error porque ya es de tipo hija, no necesito castear
+            System.out.println("empleado = " + empleado.getNombre());  //accedo a atributos de la clase padre
         } 
         else if (empleado instanceof Object) {
             System.out.println("Es de tipo Object");
+            //Solo tengo acceso a los metodos de tipo object
         }
     }
 ```
