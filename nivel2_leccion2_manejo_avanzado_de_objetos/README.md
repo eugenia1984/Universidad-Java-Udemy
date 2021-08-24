@@ -18,6 +18,8 @@ Con instanceof puedo ver si los puedo convertir o no.
         } 
         else if (empleado instanceof Empleado) {
             System.out.println("Es de tipo empleado");
+            Gerente gerente = (Gerente)empleado;
+            gerente.getDepartamento();
         } 
         else if (empleado instanceof Object) {
             System.out.println("Es de tipo Object");
