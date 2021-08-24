@@ -111,6 +111,59 @@ Si es Object voy a tener acceso a los atributos y metodos de la clase Object.
     }
 ```
 
+
+---
+
+◾ [ver ejemplo de **instanceof**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion2_manejo_avanzado_de_objetos/InstanceOf)
+
+---
+
+## Clase Object
+
+Todos las clases en Java **heredan de la clase object**.
+
+La clase Object ya define algunos métodos, como por ejemplo:
+
+**toString()**
+
+**equals()** : compara el contenido de dos objetos para saber si son iguales
+
+**hashCode()** : permite comparar el contenido de los objetos, sin embargo la comparacion se realiza con un tipo entero, se genera un valor de tipo entero que se va a asignar a cada objeto generado a partir d elos valores de cada uno de los atributos de la clase. Se genera un ENTERO UNICO PARA CADA OBJETO y posteriormente se COMPARA ESE VALOR UNICO para saber si dos objetos son iguales.
+
+Si se va a implementar el método *hashCode* en la clase hay que SOBREESCRIBIR el metodo *equals*, más que nada cuando se usan algoritmos de ordenamiento como en las colecciones HashMap, HashSet, Hashtable.
+
+
+CLASE OBJECT EN JAVA:
+
+| Clase Reiaz de todos las clases -> java.lang:Object |
+| --------------------------------------------------- |
+| +toString(): String |
+| +equals(): boolean |
+| +hashCode(): int |
+
+
+Ejemplo en codigo:
+
+Creo dos variables que son instancia de la clase empleado
+```JAVA
+        Empleado empleado1 = new Empleado("Juan", 6000);
+        Empleado empleado2 =  new Empleado("Juan", 6000);
+```        
+        
+Aunque tengamos los **mismos valores en los atributos**, al utiliar **new** para crear cada uno de los objetos entonces se encuentran en diferente **referencia en memoria**
+
+Tenemos que ver si dos ejemplos son iguales:
+
+ ```JAVA       
+if (empleado1 == empleado2) {
+     System.out.println("Tienen la misma referencia en memoria");
+} else {
+     System.out.println("Tienen distinta referencia en memoria");
+}
+ ```
+  
+Por consola voy a ver -> Tienen distinta referencia en memoria
+  
 Ahora lo que queremos COMPARAR es el CONTENIDO de los objetos -> metodo **equals** en la clase Empleado 
 
 Con **insert code...** selecciono **equals() and hashCode()**, del lado izquierdo selecciono los atributos para el equals() y del lado derecho los atributospara el hashcode()
@@ -190,59 +243,12 @@ Y comparo los hashcode:
 Por consola tengo -> ```El valor hashcode es igual```
 
 Esto es asi porque si el valor de **equals** entre ambos objetos es true (es porque son iguales) , entonces el valor de **hashcode** también es igual.
-
+  
 ---
 
-◾ [ver ejemplo de **instanceof**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion2_manejo_avanzado_de_objetos/InstanceOf)
 
----
+◾ [ver ejemplo de **clase object**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion2_manejo_avanzado_de_objetos/ClaseObject)
 
-## Clase Object
-
-Todos las clases en Java **heredan de la clase object**.
-
-La clase Object ya define algunos métodos, como por ejemplo:
-
-**toString()**
-
-**equals()** : compara el contenido de dos objetos para saber si son iguales
-
-**hashCode()** : permite comparar el contenido de los objetos, sin embargo la comparacion se realiza con un tipo entero, se genera un valor de tipo entero que se va a asignar a cada objeto generado a partir d elos valores de cada uno de los atributos de la clase. Se genera un ENTERO UNICO PARA CADA OBJETO y posteriormente se COMPARA ESE VALOR UNICO para saber si dos objetos son iguales.
-
-Si se va a implementar el método *hashCode* en la clase hay que SOBREESCRIBIR el metodo *equals*, más que nada cuando se usan algoritmos de ordenamiento como en las colecciones HashMap, HashSet, Hashtable.
-
-
-CLASE OBJECT EN JAVA:
-
-| Clase Reiaz de todos las clases -> java.lang:Object |
-| --------------------------------------------------- |
-| +toString(): String |
-| +equals(): boolean |
-| +hashCode(): int |
-
-
-Ejemplo en codigo:
-
-Creo dos variables que son instancia de la clase empleado
-```JAVA
-        Empleado empleado1 = new Empleado("Juan", 6000);
-        Empleado empleado2 =  new Empleado("Juan", 6000);
-```        
-        
-Aunque tengamos los **mismos valores en los atributos**, al utiliar **new** para crear cada uno de los objetos entonces se encuentran en diferente **referencia en memoria**
-
-Tenemos que ver si dos ejemplos son iguales:
-
- ```JAVA       
-if (empleado1 == empleado2) {
-     System.out.println("Tienen la misma referencia en memoria");
-} else {
-     System.out.println("Tienen distinta referencia en memoria");
-}
- ```
-  
-Por consola voy a ver -> Tienen distinta referencia en memoria
-  
 ---
 
 
