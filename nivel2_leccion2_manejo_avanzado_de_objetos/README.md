@@ -47,6 +47,8 @@ public class TestInstanceOf {
 
 Siempre hay que ir de la clase hija, a la clase padre, **siempre de tipo más específico a tipo más genérico**
 
+Me va a dar TRUE para **el mismo tipo** y para **la clase padre**, por eso es importante el orden.
+
 ---
 
 
