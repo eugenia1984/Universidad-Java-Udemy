@@ -135,7 +135,7 @@ Lo que importa es que se trata de conseguir **un valor entero unico** para el ob
 ```
 
 
-**equals** nos devuelve TRUE o FALSE, compara el objeto con el que estamos trabajando con otro objeto que recibe por parametro (ese parametro es variable de tipo Object).
+**equals** nos devuelve TRUE o FALSE, compara el objeto con el que estamos trabajando con otro objeto que recibe por parametro (ese parametro es variable de tipo Object). Compara el CONTENIDO.
 
 **.getCLass** devuelve el tipo de la clase del objeto con el que estamos trabajando
 
