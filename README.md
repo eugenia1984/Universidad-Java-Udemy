@@ -148,15 +148,21 @@ Ejercicio Final donde se integra todo lo aprendido en este Nivel
 
 ### Lección 1 - Polimorfismo en Java
 
-Qué es el polimorfismo y su aplicación <br>
-Sobreescritura en Java y su uso <br>
+Qué es el polimorfismo y su aplicación 
+
+Sobreescritura en Java y su uso 
+
+
+:computer: ver en el directorio [**nivel2_leccion1_polimorfismo**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion1_polimorfismo)
 
 
 ### Lección 2 - Manejo Avanzado de Objetos en Java
 
-Conversión de Objetos (cast) <br>
-Identificando el tipo de objeto con el operador instanceof <br>
-La importancia y uso del operador this <br>
+Conversión de Objetos (cast) 
+
+Identificando el tipo de objeto con el operador instanceof 
+
+La importancia y uso del operador this 
 
 
 ### Lección 3 - Manejo de Bloques de Código en Java
