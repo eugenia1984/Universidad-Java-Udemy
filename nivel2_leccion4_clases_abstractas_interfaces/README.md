@@ -2,7 +2,7 @@
 
 ---
 
-## Clases abstractas
+## Declaración y uso de Clases Abstractas
 
 
 La clase abstracta tiene la palabra reservada **abstract** y tiene métodos definidos sin implementación, son los **metodos abstractos**.
@@ -38,9 +38,14 @@ public class Rectangulo extends FiguraGeometrica {
 
 ## Diferencias entre Clases Abstractas e Interfaces
 
----
+Una **interface** es parecida a una clase abdtracta en el sentido de que **los métodos de una interfaz tampoco tienen una implementación**, son métodos abstractos. Sin embargo una interfaz es un nuevo tipo en Java y todos sus metodos deben ser abstractos. 
 
-## Declaración y uso de Clases Abstractas
+Si tiene **atributos** estos son **CONSTANTES** son public final static.
+
+Cuando las CARACTERISTICAS de la clase son muy parecidas hay RELACION DE HERENCIA y se usa una CLASE ABSTRACTA.
+
+Cuando la relación entre clases no es tanto por características sino por COMPORTAMIENTO se unsa una INTERFACE.
+Un ejemplo seria una base de datos MySQL y ORACLE que ambas tiene los metodos de crear, modificar y eliminar, que implementan el comportamiento de la interface.
 
 ---
 
