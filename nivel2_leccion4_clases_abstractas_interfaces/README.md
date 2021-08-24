@@ -32,6 +32,7 @@ public class Rectangulo extends FiguraGeometrica {
 }
 ```
 
+💥 [ver ejemplo en **ClasesAbstractas**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion4_clases_abstractas_interfaces/ClasesAbstractas)
 
 ---
 
