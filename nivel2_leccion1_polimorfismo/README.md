@@ -14,6 +14,8 @@ No necesitamos tener varios metodos, con uno solo podemos imprimir datos tanto d
 
 Un METODO GENERICO que en tiempo de ejecucion HACE REFERENCIA A LA CLASE QUE ESTA APUNTANDO EN MEMORIA.
 
+Para poder aplicar el polimorfismo **ambos metodos deben llamarse igual**
+
 ---
 
 Diagrama que explica el polimorfismo con el ejemplo que hice en codigo:
@@ -30,8 +32,9 @@ Diagrama que explica el polimorfismo con el ejemplo que hice en codigo:
 | ------------------- |
 | -nombre |
 | -sueldo|
-| obtenerDetalles() -heredado de EMPLEADO, está osulto y se accede con super |
+| obtenerDetalles() -heredado de EMPLEADO, está csulto y se accede con **super** |
 | obtenerDetalles() -sobreescrito por Gerente, es el que se ejecuta |
 
 ---
 
+:computer: [**ver ejemplo**](https://github.com/eugenia1984/Universidad-Java-Udemy/edit/main/nivel2_leccion1_polimorfismo/Sobrrescritura)
