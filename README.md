@@ -162,7 +162,9 @@ Conversión de Objetos (cast)
 
 Identificando el tipo de objeto con el operador instanceof 
 
-La importancia y uso del operador this 
+Clase Object
+
+La importancia y uso del operador this (se vio en la seccion anterior)
 
 :computer: ver en el directorio [**nivel2_leccion2_manejo_avanzado_de_objetos**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion2_manejo_avanzado_de_objetos)
 
