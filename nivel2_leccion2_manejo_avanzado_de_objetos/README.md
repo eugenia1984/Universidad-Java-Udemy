@@ -135,7 +135,7 @@ Si se va a implementar el método *hashCode* en la clase hay que SOBREESCRIBIR e
 
 CLASE OBJECT EN JAVA:
 
-| Clase Reiaz de todos las clases -> java.lang:Object |
+| Clase Raiz de todos las clases -> java.lang:Object |
 | --------------------------------------------------- |
 | +toString(): String |
 | +equals(): boolean |
