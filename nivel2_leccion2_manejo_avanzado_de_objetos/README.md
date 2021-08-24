@@ -2,39 +2,7 @@
 
 ## Conversión de Objetos (cast)
 
-Cambio una variable de tipo padre a una variable de tipo hija para poder acceder a los atributos y metodos de la clase hija.
 
-Con instanceof puedo ver si los puedo convertir o no.
-
-Si es padre voy a tener acceso a los atributos y metodos de la clase padre.
-
-Si es hijo voy a tener acceso  a los atributos y metodos de la clase hija.
-
-Si es Object voy a tener acceso a los atributos y metodos de la clase Object.
-
-```JAVA
-//CONVERSION DE TIPO
-    public static void determinarTipo(Empleado empleado){
-        if (empleado instanceof Gerente) {
-            System.out.println("Es de tipo gerente");
-    //Variable de tipo EMPLEADO convertida a TIPO GERENTE
-            Gerente gerente = (Gerente)empleado;
-    //con la variable empleado accedo a los atributos y metodos de la clase hija
-            gerente.getDepartamento();
-        } 
-        else if (empleado instanceof Empleado) {
-            System.out.println("Es de tipo empleado");
-            //Gerente gerente = (Gerente)empleado;
-            //gerente.getDepartamento();
-            //Esto me daria error porque ya es de tipo hija, no necesito castear
-            System.out.println("empleado = " + empleado.getNombre());  //accedo a atributos de la clase padre
-        } 
-        else if (empleado instanceof Object) {
-            System.out.println("Es de tipo Object");
-            //Solo tengo acceso a los metodos de tipo object
-        }
-    }
-```
 
 
 ---
@@ -82,6 +50,41 @@ public class TestInstanceOf {
 Siempre hay que ir de la clase hija, a la clase padre, **siempre de tipo más específico a tipo más genérico**
 
 Me va a dar TRUE para **el mismo tipo** y para **la clase padre**, por eso es importante el orden.
+
+
+Cambio una variable de tipo padre a una variable de tipo hija para poder acceder a los atributos y metodos de la clase hija.
+
+Con instanceof puedo ver si los puedo convertir o no.
+
+Si es padre voy a tener acceso a los atributos y metodos de la clase padre.
+
+Si es hijo voy a tener acceso  a los atributos y metodos de la clase hija.
+
+Si es Object voy a tener acceso a los atributos y metodos de la clase Object.
+
+```JAVA
+//CONVERSION DE TIPO
+    public static void determinarTipo(Empleado empleado){
+        if (empleado instanceof Gerente) {
+            System.out.println("Es de tipo gerente");
+    //Variable de tipo EMPLEADO convertida a TIPO GERENTE
+            Gerente gerente = (Gerente)empleado;
+    //con la variable empleado accedo a los atributos y metodos de la clase hija
+            gerente.getDepartamento();
+        } 
+        else if (empleado instanceof Empleado) {
+            System.out.println("Es de tipo empleado");
+            //Gerente gerente = (Gerente)empleado;
+            //gerente.getDepartamento();
+            //Esto me daria error porque ya es de tipo hija, no necesito castear
+            System.out.println("empleado = " + empleado.getNombre());  //accedo a atributos de la clase padre
+        } 
+        else if (empleado instanceof Object) {
+            System.out.println("Es de tipo Object");
+            //Solo tengo acceso a los metodos de tipo object
+        }
+    }
+```
 
 ---
 
