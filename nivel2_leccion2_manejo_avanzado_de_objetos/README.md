@@ -111,6 +111,8 @@ Si es Object voy a tener acceso a los atributos y metodos de la clase Object.
     }
 ```
 
+Ahora lo que queremos COMPARAR es el CONTENIDO de los objetos -> metodo **equals** en la clase Empleado 
+
 ---
 
 ◾ [ver ejemplo de **instanceof**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion2_manejo_avanzado_de_objetos/InstanceOf)
