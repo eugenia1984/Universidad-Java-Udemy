@@ -180,9 +180,13 @@ Uso de bloques estáticos y no estáticos
 
 ### Lección 4 - Uso de Clases Abstractas e Interfaces en Java
 
-Diferencias entre Clases Abstractas e Interfaces <br>
-Declaración y uso de Clases Abstractas <br>
-Manejo de Interfaces en Java y cuándo utilizarlas <br>
+Diferencias entre Clases Abstractas e Interfaces 
+
+Declaración y uso de Clases Abstractas 
+
+Manejo de Interfaces en Java y cuándo utilizarlas 
+
+:computer: ver en el directorio[**nivel2_leccion4_clases_abstractas_interfaces**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion4_clases_abstractas_interfaces)
 
 
 ### Lección 5 - Manejo de Excepciones en Java
