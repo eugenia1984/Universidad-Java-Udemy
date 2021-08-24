@@ -164,7 +164,7 @@ Identificando el tipo de objeto con el operador instanceof
 
 La importancia y uso del operador this 
 
-:computer: ver en el directorio[**nivel2_leccion2_manejo_avanzado_de_objetos**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion2_manejo_avanzado_de_objetos)
+:computer: ver en el directorio [**nivel2_leccion2_manejo_avanzado_de_objetos**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion2_manejo_avanzado_de_objetos)
 
 
 ### Lección 3 - Manejo de Bloques de Código en Java
