@@ -117,4 +117,30 @@ Y si quisiera mandar a imprimir tengo que modificar mi metodo **imprimir** que t
 
 Si quiero que sea más generico lo devuelvo como estaba en object -> ```public static void imprimir(Collection coleccion){...}```
 
+
+Puedo convertir mi **Set** en **Generic**
+
+```JAVA
+Set<String> miSet = new HashSet<>(); 
+```
+
+
+Puedo convertir mi **Map** en **Generic**, en este caso debo indicar el tipo tanto para la *key* como para el *value* de manera separada entre coma.
+
+```JAVA
+Map<String, String> miMapa = new HashMap<>(); 
+```
+
+Y ya no tenog que hacer ninguna conversion -> ```String elementos = miMapa.get("valor1");```
+
+Todos estos ejemplos los hice de tipo String, pero pueden ser de otro tipo, hicimos todos de tipo String para usar en todos el mismo método imprimir().
+
+En mi método imprimir si quería utilizar el for esch normal en vez de Object tengo que tener String
+
+```JAVA
+for(String elemento : coleccion) {
+   System.out.println("elemento = " + elemento);
+}
+```
+
 ---
