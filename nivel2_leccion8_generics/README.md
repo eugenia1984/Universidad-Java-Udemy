@@ -144,3 +144,8 @@ for(String elemento : coleccion) {
 ```
 
 ---
+
+
+👩‍💻 [ver ejemplo de **clase generica**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion8_generics/ClaseGenerica)
+
+---
