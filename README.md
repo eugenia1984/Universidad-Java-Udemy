@@ -202,8 +202,12 @@ Uso de try-catch y propagación de Excepciones
 
 ### Módulo 6 - Manejo de Colecciones en Java
 
-Uso de las colecciones en Java <br>
-Manejo de List, Set y Map y la aplicación de cada estructura <br>
+Uso de las colecciones en Java 
+
+Manejo de List, Set y Map y la aplicación de cada estructura 
+
+:computer: ver en el directorio [**nivel2_leccion6_colecciones**] (https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion6_colecciones)
+
 
 
 ### Módulo 7 - Manejo de Archivos en Java
