@@ -2,8 +2,27 @@
 
 ---
 
-## Uso de las colecciones en Java
+## Manejo de Colecciones en Java
+
+
+Un **tipo generico** en Java es como un tipo **comodín** en el cual cuando definimos la clase no indicamos el tipo de dato que va a almacenar o utilizar nuestra clase sino que hasta el momento en que creamos un objeto de esta clase entonces es que vamos a especificar el tipo de dato que vamos a utilizar.
+
+, 
+Tipos genéricos que se pueden utilizar:
+
+| Nombre Tipo Genérico | Significado del Tipo Genérico |
+| -------------------- | ----------------------------- |
+| E | Element (utilizado generalmente por el framework de Colecciones Java) |
+| K | Key (llave utilizada en mapas) |
+| N | Number(utilizado para números) |
+| T | Type (representa un tipo, una clase) |
+| V | Value (representa un valor, tambien se usa en mapas) |
+| S, U, V, etc. | usado para representar otros tipos |
+
+
 
 ---
 
-## Manejo de List, Set y Map y la aplicación de cada estructura
+## Colecciones Genéricas en Java
+
+---
