@@ -198,7 +198,7 @@ C:\Users\juan\AppData\Local\NetBeans\Cache\8.2\executor-snippets\run.xml:53: Jav
 
 ---
 
-### Ahora tenemos la duda ¿ quñe tipo de excepcion manejamos ?
+### Ahora tenemos la duda ¿ qué tipo de excepcion manejamos ?
 
 Al principio se recomendaba declarar las clases de tipo **Exception** utilizando excepciones de tipo **check Exception** pero ahora se recomienda usar excepciones dle tipo **RuntimeException** es decir las **uncheck Exception**, que limpian más nuestro código y sólo hacemos **try catch** de las excepciones que realmente estamos seguros que pueden suceder; y de no estar seguros que se arroje una excepcion entonces el código debe quedar lo más limpio posible.
 
@@ -206,5 +206,72 @@ Solo agrego clases **Exception** donde sea requerido, priorizo que sean **Runtim
 
 ---
 
+### Bloque finally
 
+**Finally** es una palabra reservada que se utiliza al final del bloque **try catch**.
+
+El bloque finally **se ejecuta siempre** independientemente de que ocurra una excepción o no.
+
+Ejemplo en codigo:
+
+```
+public class TestExcepciones {
+    public static void main(String[] args) {
+        int resultado = 0;
+	try{
+             resultado = division(10, 0);
+	} catch(Exception e){ 
+	     System.out.println("Ocurrio un error");
+             System.out.println(e.getMessage()); 
+	} finally {
+	     System.out.println("Se revisó la división entre cero");
+	}
+	System.out.println("resultado = " + resultado);
+    }
+    
+}
+```
+Voy a ver:
+
+```
+Ocurrio un error
+Division entre cero
+Se revisó la división entre cero
+```
+
+Por consola siempre voy a ver el mensaje **Se revisó la división entre cero**
+
+Este bloque **finally se utiliza para cerrar recursos**, por ejemplo si abrimos conexión a base de datos o a un archivo, con el finally lo cerramos.
+
+Dentro del bloque **try** el erro podría arrojay una o **más excepciones**. Si queremos manejar más de una excepción, entonces **agrego todos los bloques catch que necesite** uno para cada excepción a procesar, se recomeinda **empezar a procesar las excepciones de menor jerarquía** asi puedo ir pasando de catch en catch hasta tener la excepción correcta.
+
+Recordar que la clase **Exception** es la CLASE PADRE de todas las axcepciones, por llo que debe ir al final.
+
+En codigo se ve así:
+
+
+```
+import static aritmetica.Aritmetica.division;
+import excepciones.OperacionExcepcion;
+
+public class TestExcepciones {
+    public static void main(String[] args) {
+        int resultado = 0;
+	try{
+             resultado = division(10, 0);
+	} catch(OperacionExcepcion e) {
+	     System.out.println("Ocurrio un error de tipo OperacionExcepcion");
+	     System.out.println(e.getMessage()); 
+	}catch(Exception e){ 
+	     System.out.println("Ocurrio un error de tipo Exception");
+             System.out.println(e.getMessage()); 
+	} finally {
+	     System.out.println("Se revisó la división entre cero");
+	}
+	System.out.println("resultado = " + resultado);
+    }
+    
+}
+
+---
 
