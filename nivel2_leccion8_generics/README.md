@@ -44,13 +44,77 @@ public class ClaseGenerica<T> { //el tipo del atributo no lo conozco hasta que l
 }
 ```
 
-## ¿ Cómo creo un objeto a partir de **una clase genérica ?
-
-A partir de mi clase ClaseGenerica quiero instanciar un nuevo objeto.
-
 
 ---
 
 ## Colecciones Genéricas en Java
+
+## ¿ Cómo creo un objeto a partir de **una clase genérica ?
+
+A partir de mi clase ClaseGenerica quiero instanciar un nuevo objeto.
+
+En mi main voy a crear un nuevo objeto a partir de **ClaseGenerica** y entre pico parentesis (anotacion diamante) voy a indicar el tipo de Objeto, aca no pueden ser primitivos, no puedo tener *int* sino que tengo **Integer** y nombro a la variable.
+
+Instancio una nueva **new** **ClaseGenerica** y entre los paréntesis ya le asigno un valor entero.
+
+```JAVA
+ ClaseGenerica<Integer> objetoInt = new ClaseGenerica(15);
+ ```
+ 
+ Se llama al constructor:
+ 
+ ```JAVA
+ public ClaseGenerica(T objeto){  
+        this.objeto = objeto;
+    }
+```
+
+Y se hace un autoboxing se convierte a un tipo Integer porque asi lo especificamos en la variable generica objetoint
+
+Y lo mando a imprimir:
+
+```JAVA
+objetoInt.obtenerTipo();
+```
+
+Al ser generica puedo instanciar otro objeto de tipo String y mandarlo a imprimir:
+
+```JAVA
+ClaseGenerica<String> objetoString = new ClaseGenerica("Euge");
+objetoString.obtenerTipo();
+```
+ 
+ Y veo por consola -> ``` El tipo T es: String ```
+ 
+---
+
+## Generics utilizando el API de COLLECTIONS
+
+Todo el API de COLLECTIONS soporta tipos genéricos.
+
+Entonces en el main:
+
+-Creo la lista definiendo el tipo entre los pico parentesis aclaro **String** e inicializando el objeto
+
+-Agrego elementos con el metodo -> .add(String), ahora en ve de tener .add(object) ya tengo String porque lo defini antes. Entonces si ahora entre los parentesis quiero agregar enteros me va a dar errores,  así valido en tiempo de compilación y cuando agrego los alementos, también los recupero directo, sin tener que convertir (porque antes tenia que hacer: ```String elementos = (String)miMapa.get("valor1");```).
+
+```JAVA
+List<String> miLista = new ArrayList<>(); 
+        miLista.add("Lunes");
+        String elemento = miLista.get(0);
+        System.out.println(elemento);
+```
+
+Y si quisiera mandar a imprimir tengo que modificar mi metodo **imprimir** que tiene elementos de tipo *object* y necesito de tipo **String** :
+
+```JAVA
+ public static void imprimir(Collection<String> coleccion){
+      coleccion.forEach((elemento) -> {
+            System.out.println("elemento = " + elemento);
+      }); 
+}
+```
+
+Si quiero que sea más generico lo devuelvo como estaba en object -> ```public static void imprimir(Collection coleccion){...}```
 
 ---
