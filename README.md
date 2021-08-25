@@ -206,7 +206,7 @@ Uso de las colecciones en Java
 
 Manejo de List, Set y Map y la aplicación de cada estructura 
 
-:computer: ver en el directorio [**nivel2_leccion6_colecciones**] (https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion6_colecciones)
+:computer: ver en el directorio [**nivel2_leccion6_colecciones**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion6_colecciones)
 
 
 
