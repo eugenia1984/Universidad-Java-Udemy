@@ -215,11 +215,13 @@ Un MAPA es una COLECCION DE ELEMENTOS almacenados en el concepto LLAVE - VALOR, 
  
  Como heredo de la interface map voy a tener el método **.put(Object key, Object value)** y voy a tener que ir agregando de a par KEY - VALUE (llave - valor). Se puede pensar como un diccionario en el cual se agrega un termino y se le asocia un valor a dicho termino (key). Se puede asociar cualquier tipo Object a la *key*.
  
- 
+-Si duplico una key se va a sustituir el valor en vez de Ana ahora es Mia
+
 ```JAVA
 miMapa.put("valor1","Euge");
 miMapa.put("valor2", "Agus");
 miMapa.put("valor3", "Ana");
+miMapa.put("valor3", "Mia");
 ```
 
 ## ¿ Cómo accedo a los elementos ?
@@ -271,7 +273,7 @@ Y por pantalla veo:
 
 ```
 elemento = Euge
-elemento = Ana
+elemento = Mia
 elemento = Agus
 ```
 
