@@ -251,6 +251,106 @@ Esto es asi porque si el valor de **equals** entre ambos objetos es true (es por
 
 ---
 
+## JavaBeans
+
+-Dabe tener un constructor vacio y debe ser constructor PUBLIC. Puede tener más de un constructor, pero para ser considerada JavaBeans si o si debe tener el constructor vacío.
+
+-Cada atributo que definamos dentro de la clase debe ser un atributo PRIVATE. 
+
+-Cada atributo private debe de tener un método GET y SET asociado.
+
+-Debe implementar una INTERFACE llamada  **Serializable**, que nos va a permitir enviar la clase entre diferentes equipos -> ```implements Serializable``` y hay que importar la clase porque viene de otro paquete -> ```import java.io.Serializable;```
+
+-Se pueden agregar los metodos -> toString(), equals() y hashCode(), pero NO son requeridos para que mi clase se considere JavaBeans, son opcionales
+
+Si mi clase sigue la nomenclatura de JavaBeans otros Framewroks (Spring o Hibernate) o JavaEnterprise la van a poder utilizar.
+
+
+Ejemplo en codigo:
+
+```JAVA
+/*
+ * CLASE QUE SE CONSIDERA JAVABEANS
+ */
+package domain;
+
+import java.io.Serializable;
+
+//Hay que importar la clase Serializable que esta en el paquete java.io
+public class Persona implements Serializable{  
+    //Atributos PRIVATE
+    private String nombre;
+    private String apellido;
+    
+    //Debe tener un constructor vacio y debe ser PUBLIC
+    public Persona(){
+    }
+    
+    //se pueden agregar mas constructores, pero no son necesarios para ser JavaBeans
+    //en este ejemplo los agrego para poder inicializarlos
+    public Persona(String nombre, String apellido){
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+    
+    //Metodo get y set asociado por cada atributo privado
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+    
+    //se pueden agregar los metodos ->
+    //toString(), equals() y hashCode(), pero NO son requeridos
+
+    @Override
+    public String toString() {
+        return "Persona{" + "nombre = " + nombre + ", apellido = " + apellido + '}';
+    }
+    
+}
+```
+
+En mi paquete test:
+
+```JAVA
+package test;
+
+import domain.Persona;
+
+
+public class TestJavaBeans {
+
+
+    public static void main(String[] args) {
+        //Creo un objeto de la clase Persona que es JavaBeans
+        Persona persona = new Persona();  //uso el constructor vacio
+        //con el metodo set inicializo los atributos
+        persona.setNombre("Maria Eugenia");
+        persona.setApellido("Costa");
+        System.out.println("persona = " + persona);
+        //Tambien puedo acceder a sus valores con el metodo get
+        System.out.println("persona nombre = " + persona.getNombre());
+        System.out.println("persona apellido = " + persona.getApellido());
+    }
+    
+}
+```
+
+◾ [ver ejemplo de JavaBeans](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion2_manejo_avanzado_de_objetos/JavaBeans)
+
+
+---
 
 ## La importancia y uso del operador this
 
