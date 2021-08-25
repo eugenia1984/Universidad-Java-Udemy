@@ -216,9 +216,18 @@ Manejo y uso de archivos en Java <br>
 Manejo de Streams en Java y sus usos <br>
 
 
-**Laboratorio Final del Nivel** <br>
+## Módulo 8 - Manejo de Ganerics en Java
 
-Ejercicio Final donde se aplica todo lo aprendido en este nivel <br>
+Manejo de Generics en Java
+
+Colecciones Genéricas
+
+:computer: ver en el directorio [**nivel2_leccion8_generics**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion8_generics)
+
+
+## Laboratorio Final del Nivel
+
+Ejercicio Final donde se aplica todo lo aprendido en este nivel 
 
 
 ---
