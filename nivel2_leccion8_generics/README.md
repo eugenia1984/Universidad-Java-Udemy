@@ -1,4 +1,4 @@
-# Módulo 6 - Manejo de Colecciones en Java
+# Módulo 8 - Generics
 
 ---
 
