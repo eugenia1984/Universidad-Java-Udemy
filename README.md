@@ -212,8 +212,11 @@ Manejo de List, Set y Map y la aplicación de cada estructura
 
 ### Módulo 7 - Manejo de Archivos en Java
 
-Manejo y uso de archivos en Java <br>
-Manejo de Streams en Java y sus usos <br>
+Manejo y uso de archivos en Java 
+
+Manejo de Streams en Java y sus usos 
+
+:computer: ver en el directorio [**nivel2_leccion7_manejo_archivo**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion7_manejo_archivos)
 
 
 ## Módulo 8 - Manejo de Ganerics en Java
