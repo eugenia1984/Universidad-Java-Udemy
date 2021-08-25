@@ -57,4 +57,79 @@ Las clases que heredan del tipo **RunRimeException** se conocen como **uncheckEx
 
 ## Uso de try-catch y propagación de Excepciones
 
+Me creo la clase **OperacionExcepcion** que va a *extender* de **Exception** por lo que es una checkEception.
+
+Y dentro tengo el metodo **OperacionException** que lo que hace es mandar un mensaje.
+
+```JAVA
+public class OperacionExcepcion extends Exception { //va a ser del tipo checkException
+    //se manda un mensaje que se envia a la clase Excepcion(clase padre)
+    public OperacionExcepcion(String mensaje){
+        super(mensaje);
+    }
+    
+}
+```
+
+Luego me creo mi clase **Aritmetica** que va a tener el metodo **division** que es STATIC (voy a poder acceder a el desde otra clase) y tengo **throws OperacionExcepcion** lo que me avisa que puede lanzar (throw) una excepcion.
+
+Y dentro del método efectivamente lanzo la excepcion:
+
+**throw new OperacionExcepcion("Division entre cero"); **
+
+Lo que tengo como String es el mensaje que voy a mandar si el metodo **division** tiene el error.
+
+Con **.getMessage()** puedo acceder directo al mensaje
+
+
+```JAVA
+import excepciones.OperacionExcepcion;
+
+public class Aritmetica {
+//throws OperacionExcepcion -> me avisa que puede lanzar una excepcion del tipo OperacionExcepcion
+    public static int division(int numerador, int denominador) throws OperacionExcepcion{
+        //si denominador es igual a 0 voy a tener excepcion
+        if (denominador == 0) {
+            throw new OperacionExcepcion("Division entre cero"); 
+        //aca lanzo la excepcion que la mando como mensaje a OperacionExcepcion
+        } 
+        //si el denominador no es 0 ->  puedo hacer la divisionsin ningun problema
+        return numerador / denominador;
+    }
+}
+```
+
+Y entonces en mi programa main:
+
+```JAVA
+//importo Aritmetica y podria tambien importar el metodo division que es estatico
+import aritmetica.Aritmetica; 
+
+
+public class TestExcepciones {
+    public static void main(String[] args) {
+        int resultado = 0;
+        
+        try{
+            //De haber importado division ->
+            //resultado = division(resultado, resultado);
+            resultado = Aritmetica.division(10, 0);
+        } catch(Exception e) {
+        //Mando a imprimir la pila de excepciones por consola con System.out
+        //no es requerido el System.out pero el IDE lo sugiere
+            e.printStackTrace(System.out);
+            //Si quiero mandar a imprimir de manera individual el mensaje uso getMessage
+            System.out.println(e.getMessage());
+        }
+    //El resultado = 0 no es el resultado de la division sino el valor de la variable
+        System.out.println("resultado = " + resultado);
+    }
+    
+}
+```
+
+---
+
+💻 [ver ejemplo -> **ManejoExcepciones2**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion5_excepciones/ManejoExcepciones2)
+
 ---
