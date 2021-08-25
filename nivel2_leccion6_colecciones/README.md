@@ -197,3 +197,86 @@ Y si lo vuelvo a mandar a imprmir puedo tneer otro orden
 ---
 
 # Map
+
+## HashMap
+
+Un MAPA es una COLECCION DE ELEMENTOS almacenados en el concepto LLAVE - VALOR, por cada llave que se almacene se le asocia un valor.
+
+## ¿ Como lo declaro ?
+
+```JAVA
+ Map miMapa = new HashMap();
+ ```
+ 
+ 
+ ## ¿ Cómo agrego elementos ?
+ 
+ En este caso no heredo de la interface Colection por lo que no puedo usar **.add()**
+ 
+ Como heredo de la interface map voy a tener el método **.put(Object key, Object value)** y voy a tener que ir agregando de a par KEY - VALUE (llave - valor). Se puede pensar como un diccionario en el cual se agrega un termino y se le asocia un valor a dicho termino (key). Se puede asociar cualquier tipo Object a la *key*.
+ 
+ 
+```JAVA
+miMapa.put("valor1","Euge");
+miMapa.put("valor2", "Agus");
+miMapa.put("valor3", "Ana");
+```
+
+## ¿ Cómo accedo a los elementos ?
+
+
+Mediante el metodo **get** y debo indicar **el valor de la llave** -> **String elemento = miMapa.get("valor1");**
+
+Sin embargo mi variable elemento es de tippo String tengo que hacer un downcasting y pasar de tipo **Object** a tipo **String**
+
+```JAVA
+ String elemento = (String)miMapa.get("valor1");
+```
+
+Si quiero recuperar el valor de **todas las llaves** -> **miMapa.keySet();** y como regresa el Set de cada una de las llaves puedo recutilizar mi método imprmir() que maneja Collection (Set)
+
+```JAVA
+imprimir(miMapa.keySet());
+```
+
+Que invoca a:
+
+```JAVA
+ public static void imprimir(Collection coleccion){
+      coleccion.forEach((elemento) -> {
+          System.out.println("elemento = " + elemento);
+      });
+ }
+```
+
+Y por consola veo que al set un SET NO ME GARANTIZA RESPETAR EL ORDEN EN QUE FUERON AGREAGADOS por eso no tengo:
+
+valor1
+
+valor2
+
+valor3
+
+Sino que tengo:
+
+```
+elemento = valor1
+elemento = valor3
+elemento = valor2
+```
+
+Si quiero recuperar el valor de **todos los values** -> **miMapa.values()**
+
+Y por pantalla veo:
+
+```
+elemento = Euge
+elemento = Ana
+elemento = Agus
+```
+
+---
+
+❗  [ver ejemplo de List en **ApiColeccionesMap**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion6_colecciones/ApiColeccionesMap)
+ 
+---
