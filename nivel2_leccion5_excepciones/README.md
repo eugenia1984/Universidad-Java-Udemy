@@ -32,6 +32,7 @@ public class TestExcepciones {
 ---
 
 💻 [ver ejemplo -> **ManejoExcepciones1**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion5_excepciones/ManejoExcepciones1)
+
 ---
 
 ### Tipo  de excepciones en el API de Java
