@@ -8,7 +8,7 @@ Ejemplo de codigo de cuando quiero hacer una division por 0, voy a tener un erro
 
 Con el **try** voy a intentar hacer la division, voy a tner el error y no la puedo hacer, entonces mi **catch** me atrapa el error y me lo maneja, para que mi prigrama no se interrumpa y pueda seguir.
 
-```
+```JAVA
 package test;
 
 
