@@ -36,6 +36,8 @@ Tenemos **clases que utilizan la Inteface de MAP** -> HashMap, maneja el concept
 
 Una LISTA es similar al array porque puedo agregar varios elementos a mi lista, la ventaja es que **puede crecer dinamicamente**, no tengo que darle una dimensión ya que va variando (es una de las diferencias con el array).
 
+Otra diferencia es que en la List **puedo tner elementos duplicados**
+
 
 #### ¿ Cómo la creo ?
 
@@ -95,6 +97,102 @@ No se usar *var* ni se indica *Object* en : miLista.forEach((**elemento**) , de 
 ---
 
 # Set
+
+
+Similar a la lista, con la difernecia de que **sus elementos no mantienen un orden** por lo que cuando la mandamos a imprimir no vamos a ver los elementos en el mismo orden que los ingresamos, cada vez que mandemos a imprmir se ven con distinto orden.
+
+**Set** es más rápido que **List** para agregar elementos, debido a que Set no debe mantener el orden. Por lo que si no nos interesa guardar un orden se recomienda usar SET que va a ser más rápido.
+
+
+Otra diferencia con List es que el Set **no puede tener elementos duplicados**, is agrego dos veces el mismo elemento, este último elemento a agregar nunca va a ser agregado, solo va a tener un elemento el set NUNCA DUPLICA.
+
+#### ¿ Cómo la creo ?
+
+```JAVA
+Set miSet = new HashSet();
+```
+
+### ¿ Como le agrego objetos?
+
+Con el método **.add()**, entre paréntesis agrego el Objeto, puede ser de diverso tipo.
+
+Como también es clase hija de Collection tambien hereda el método **.add()**
+
+Creo una lista SET con los meses el año:
+
+
+```JAVA
+  miSet.add("Enero");
+  miSet.add("Febrero");
+  miSet.add("Marzo");
+  miSet.add("Abril");
+  miSet.add("Mayo");
+  miSet.add("Junio");
+  miSet.add("Julio");
+  miSet.add("Agosto");
+  miSet.add("Septiembre");
+  miSet.add("Octubre");
+  miSet.add("Noviembre");
+  miSet.add("Diciembre");
+```
+
+### ¿ Cómo imprimo la lista ?
+
+En este caso también con un for each mejorado o arrow function.
+
+Pero para tener otro modo voy a crear un método, para luego invocarlo, lo hago desde lo más genérico, es decir pasando por parámeto un objeto de tipo **Collection** y lo hago **static** para poder llamarlo de cualquier clase y paquete.
+
+
+```JAVA
+  public static void imprimir(Collection coleccion){
+        for(Object elemento : coleccion) {
+            System.out.println("elemento = " + elemento);
+        }
+    }
+```
+
+Entonces voy a imprimir mi Set invocando al método:
+
+```JAVA
+ public static void imprimir(Collection coleccion){
+      for(Object elemento : coleccion) {
+          System.out.println("elemento = " + elemento);
+      }
+}
+```
+
+Y otra manera de hacer el mismo método es con arrow function:
+
+```JAVA
+ public static void imprimir(Collection coleccion){
+      coleccion.forEach((elemento) -> {
+          System.out.println("elemento = " + elemento);
+      });
+}
+```
+
+Y voy a ver que no están en el mismo orden que los fui ingresando:
+
+```
+elemento = Junio
+elemento = Diciembre
+elemento = Noviembre
+elemento = Octubre
+elemento = Enero
+elemento = Abril
+elemento = Marzo
+elemento = Febrero
+elemento = Mayo
+elemento = Julio
+elemento = Agosto
+elemento = Septiembre
+```
+
+Y si lo vuelvo a mandar a imprmir puedo tneer otro orden
+
+---
+
+❗  [ver ejemplo de List en **ApiColeccionesSet**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion6_colecciones/ApiColeccionesSet)
 
 ---
 
