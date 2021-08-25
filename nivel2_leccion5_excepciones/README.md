@@ -57,6 +57,9 @@ Las clases que heredan del tipo **RunRimeException** se conocen como **uncheckEx
 
 ## Uso de try-catch y propagación de Excepciones
 
+
+### Exception
+
 Me creo la clase **OperacionExcepcion** que va a *extender* de **Exception** por lo que es una checkEception.
 
 Y dentro tengo el metodo **OperacionException** que lo que hace es mandar un mensaje.
@@ -142,14 +145,66 @@ excepciones.OperacionExcepcion: Division entre cero
 
 ---
 
+### RuntimeException
+
 Modifico a **OperacionExcepcion** para ser del tipo uncheckException por extender de RuntimeException -> **extends RuntimeException**
 
-Y la diferencia la voy a ver en **el uso de la clase** ya que el compilador no nos obliga a procesar ese tipo de excepciones, entonces en el metodo que arrojo la excepcion.
-
-En el metodo de la clase Aritmetica ya **no** tengo que aclarar -> throws OperacionExcepcion
-
-
-
+```JAVA
+package excepciones;
+//va a ser del tipo uncheckException por extender de RuntimeException
+public class OperacionExcepcion extends RuntimeException { 
+    //se manda un mensaje que se envia a la clase Excepcion(clase padre)
+    public OperacionExcepcion(String mensaje){
+        super(mensaje);
+    }
     
+}
+```
+
+Y la diferencia la voy a ver en **el uso de la clase** ya que el compilador no nos obliga a procesar ese tipo de excepciones, entonces en el metodo que arrojo la excepcion, en la clase **Aritmetica** no es necesario tener throws OperacionExcepcion  en la firma del metodo.
+
+En el metodo de la clase Aritmetica ya **no** tengo que aclarar -> **throws OperacionExcepcion**
+
+```JAVA
+public class Aritmetica {
+//throws OperacionExcepcion -> me avisa que puede lanzar una excepcion del tipo OperacionExcepcion
+    //no es necesario tener throws OperacionExcepcion  en la firma del metodo
+    public static int division(int numerador, int denominador) {
+        
+        if (denominador == 0) {  //si denominador es igual a 0 voy a tener excepcion
+            //igualmente la excepcion la creo solo que no la reporto en la firma dle metodo
+            throw new OperacionExcepcion("Division entre cero"); 
+        
+        } 
+        //si el denominador no es 0 ->  puedo hacer la division sin ningun problema
+        return numerador / denominador;
+    }
+}
+```
+
+
+Y en **TestExcepciones** podría no tener el **try catch** y el IDE no me marca ningún problema, pero...al momento de ejecutarlo si lo voy a tener y se me interrumpe el proagrama.  Por consola veo:
+
+```
+Exception in thread "main" excepciones.OperacionExcepcion: Division entre cero
+	at aritmetica.Aritmetica.division(Aritmetica.java:12)
+	at test.TestExcepciones.main(TestExcepciones.java:17)
+C:\Users\juan\AppData\Local\NetBeans\Cache\8.2\executor-snippets\run.xml:53: Java returned: 1
+```
 
 ---
+
+💻 [ver ejemplo -> **ManejoExcepciones3**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion5_excepciones/ManejoExcepciones3)
+
+---
+
+### Ahora tenemos la duda ¿ quñe tipo de excepcion manejamos ?
+
+Al principio se recomendaba declarar las clases de tipo **Exception** utilizando excepciones de tipo **check Exception** pero ahora se recomienda usar excepciones dle tipo **RuntimeException** es decir las **uncheck Exception**, que limpian más nuestro código y sólo hacemos **try catch** de las excepciones que realmente estamos seguros que pueden suceder; y de no estar seguros que se arroje una excepcion entonces el código debe quedar lo más limpio posible.
+
+Solo agrego clases **Exception** donde sea requerido, priorizo que sean **RuntimeException**
+
+---
+
+
+
