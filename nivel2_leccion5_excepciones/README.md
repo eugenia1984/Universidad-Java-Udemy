@@ -128,8 +128,28 @@ public class TestExcepciones {
 }
 ```
 
+Y la clase **Test Excepciones** me va a mostrar por pantalla que mi excepcion ahora es del tipo -> **OperacionExcepcion**
+
+```
+excepciones.OperacionExcepcion: Division entre cero
+	at aritmetica.Aritmetica.division(Aritmetica.java:11)
+	at test.TestExcepciones.main(TestExcepciones.java:17
+```
+
 ---
 
 💻 [ver ejemplo -> **ManejoExcepciones2**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion5_excepciones/ManejoExcepciones2)
+
+---
+
+Modifico a **OperacionExcepcion** para ser del tipo uncheckException por extender de RuntimeException -> **extends RuntimeException**
+
+Y la diferencia la voy a ver en **el uso de la clase** ya que el compilador no nos obliga a procesar ese tipo de excepciones, entonces en el metodo que arrojo la excepcion.
+
+En el metodo de la clase Aritmetica ya **no** tengo que aclarar -> throws OperacionExcepcion
+
+
+
+    
 
 ---
