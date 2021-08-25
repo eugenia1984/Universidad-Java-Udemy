@@ -197,7 +197,7 @@ Procesando las excepciones en Java
 
 Uso de try-catch y propagación de Excepciones 
 
-:computer: ver en el directorio[**nivel2_leccion5_excepciones**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion5_excepciones)
+:computer: ver en el directorio [**nivel2_leccion5_excepciones**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel2_leccion5_excepciones)
 
 
 ### Módulo 6 - Manejo de Colecciones en Java
