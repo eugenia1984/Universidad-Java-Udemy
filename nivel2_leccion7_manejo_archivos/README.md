@@ -78,8 +78,52 @@ String nombreArchivo = "/carpeta/prueba.txt";
 
 Hay que estar seguros de tener permisos para escribir en dicha carpeta.
 
+## ¿ Cómo le agrego información al archivo ?
+
+
+en mi clase **ManejoArchivo** :
+
+```JAVA
+public static void escribirArchivo(String nombreArchivo, String contenido){
+            File archivo = new File(nombreArchivo); 
+            try {
+                //PrintWriter puede dar Excepcion
+                //-> Agrego bloque TRY - CATCH
+                //-> Reporto la excepcion en la firma del metodo, es CheckException hay que procesarla
+                PrintWriter salida = new PrintWriter(archivo);
+                //Escribo la información en mi archivo
+                salida.println(contenido);
+                //debemos cerrar el metodo, es acá que se crea el archivo en el disco duro
+                salida.close();
+                //Mando un mensaje para mostrar que se creo bien el archivo
+                System.out.println("Se ha escrito al archivo");
+            } catch (FileNotFoundException ex) {
+                ex.printStackTrace(System.out);
+            }
+        }
+```
+
+Y en mi clase **testManejoArchivos** :
+
+```JAVA
+package test;
+
+import static manejoarchivos.ManejoArchivos.crearArchivo; //como tengo más de uno puedo usar *
+import static manejoarchivos.ManejoArchivos.escribirArchivo;
+
+public class TestManejoArchivos {
+    public static void main(String[] args) {
+        String nombreArchivo = "prueba.txt";
+        crearArchivo(nombreArchivo);
+        escribirArchivo(nombreArchivo, "Hola desde Java");
+        
+    }
+    
+}
+```
+
 ---
 
 ## Manejo de Streams en Java y sus usos
 
---
+---
