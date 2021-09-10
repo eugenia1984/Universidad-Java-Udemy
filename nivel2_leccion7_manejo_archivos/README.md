@@ -58,6 +58,26 @@ public class TestManejoArchivos {
 }
 ```
 
+En NetBeans si voy a **Window -> Files** voy a poder los files generados y veo el **prueba.txt**
+
+Al definir el nombre del archivo puedo ingresar el **path** de donde lo quieor guardar, por ejemplo:
+
+Si estamos en Windows:
+
+```JAVA
+String nombreArchivo = "C:\\carpeta\\prueba.txt";
+```
+
+\ es el caracter de escape 
+
+Si estamos en Linux o en Mac:
+
+```JAVA
+String nombreArchivo = "/carpeta/prueba.txt";
+```
+
+Hay que estar seguros de tener permisos para escribir en dicha carpeta.
+
 ---
 
 ## Manejo de Streams en Java y sus usos
