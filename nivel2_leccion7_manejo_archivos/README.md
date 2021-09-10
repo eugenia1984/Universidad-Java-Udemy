@@ -195,6 +195,35 @@ public static void leerArchivo(String nombreArchivo){
  Pero, de este modo solo leo la primer linea, para leer todas las lineas uso un ciclo while
  
  
+ ```JAVA
+ public static void leerArchivo(String nombreArchivo){
+            File archivo = new File(nombreArchivo);
+            try {
+            //BUFFERREADER para leer del archivo, almacena caracter a caracter
+            //envolvemos varios objetos archivo de tipo file -> FileReader -> BufferReader
+            //FileReader no leer lineas completas pero BufferReader si
+            //crear estos objetos puede crear excepciones
+                BufferedReader entrada = new BufferedReader(new FileReader(archivo));
+                String lectura = entrada.readLine(); //puede darme una IOException
+                
+                while(lectura != null) {
+                    //Primero leo el archivo
+                    System.out.println("Lectura = " + lectura);
+                    //lo voy concatenando guardando en mi variable lectura
+                    lectura = entrada.readLine();
+                    //mientra no lea una linea en blanco va a ir concatenando renglo por renglon
+                }
+                //para cerrar el flujo que se abrio, cierro el BufferedReader
+                //otra opcion es declarar a la varaible entrada fuera del try - catch y cerrar en bloque finally
+                entrada.close(); 
+            } catch (FileNotFoundException ex) {
+                ex.printStackTrace(System.out);
+            
+            } catch (IOException ex) {
+                ex.printStackTrace(System.out);
+            }
+        }
+  ```
 
 ---
 
