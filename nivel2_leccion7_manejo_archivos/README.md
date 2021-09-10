@@ -122,6 +122,50 @@ public class TestManejoArchivos {
 }
 ```
 
+Si llamo nuevamente al metodo, tendría el mismo archivo, solo que SOBREESCRITO, no voy a crear un nuevo archivo.
+
+```JAVA
+package test;
+
+import static manejoarchivos.ManejoArchivos.crearArchivo; //como tengo más de uno puedo usar *
+import static manejoarchivos.ManejoArchivos.escribirArchivo;
+
+public class TestManejoArchivos {
+    public static void main(String[] args) {
+        String nombreArchivo = "prueba.txt";
+        crearArchivo(nombreArchivo);
+        escribirArchivo(nombreArchivo, "Hola desde Java");
+        escribirArchivo(nombreArchivo, "Adios");
+        
+    }
+    
+}
+```
+
+Para ello en la clase **testManejoArchivos** creo le metodo **anexarArchivo**
+
+```JAVA
+public static void anexarArchivo(String nombreArchivo, String contenido ){
+            File archivo = new File(nombreArchivo); 
+            try {
+                //Escribo la información en mi archivo
+                //PrintWriter puede dar Excepcion
+                // Voy a crear un nuevo FileWriter y con TRUE para que se escriba para que apendee
+                //Puedo tener IO Exception
+                PrintWriter salida = new PrintWriter(new FileWriter(archivo, true));
+                //Escribo la información en mi archivo
+                salida.println(contenido);
+                //debemos cerrar el metodo, es acá que se crea el archivo en el disco duro
+                //Mando un mensaje para mostrar que se creo bien el archivo
+                System.out.println("Se ha escrito al archivo");
+            } catch (FileNotFoundException ex) {
+                ex.printStackTrace(System.out);
+            } catch (IOException ex) {
+                ex.printStackTrace(System.out);
+            }
+        }
+```
+
 ---
 
 ## Manejo de Streams en Java y sus usos
