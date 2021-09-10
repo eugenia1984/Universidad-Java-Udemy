@@ -49,7 +49,7 @@ public class ClaseGenerica<T> { //el tipo del atributo no lo conozco hasta que l
 
 ## Colecciones Genéricas en Java
 
-## ¿ Cómo creo un objeto a partir de **una clase genérica ?
+## ¿ Cómo creo un objeto a partir de una clase genérica ?
 
 A partir de mi clase ClaseGenerica quiero instanciar un nuevo objeto.
 
