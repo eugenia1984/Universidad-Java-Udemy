@@ -166,6 +166,36 @@ public static void anexarArchivo(String nombreArchivo, String contenido ){
         }
 ```
 
+## BUFFEREDREADER 
+
+Es para leer del archivo, almacena caracter a caracter
+
+Voy a envolvemos varios objetos archivo de tipo file -> FileReader -> BufferReader
+
+FileReader no leer lineas completas pero BufferReader si crear estos objetos puede crear excepciones, porque lo que necesito usar TRY-CATCH
+
+```JAVA
+public static void leerArchivo(String nombreArchivo){
+            File archivo = new File(nombreArchivo);
+            try {
+            //BUFFERREADER para leer del archivo, almacena caracter a caracter
+            //envolvemos varios objetos archivo de tipo file -> FileReader -> BufferReader
+            //FileReader no leer lineas completas pero BufferReader si
+            //crear estos objetos puede crear excepciones
+                BufferedReader entrada = new BufferedReader(new FileReader(archivo));
+                String lectura = entrada.readLine(); //puede darme una IOException
+            } catch (FileNotFoundException ex) {
+                ex.printStackTrace(System.out);
+            } catch (IOException ex) {
+                ex.printStackTrace(System.out);
+            }
+        }
+ ``` 
+ 
+ Pero, de este modo solo leo la primer linea, para leer todas las lineas uso un ciclo while
+ 
+ 
+
 ---
 
 ## Manejo de Streams en Java y sus usos
