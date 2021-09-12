@@ -9,7 +9,7 @@ carpeta definida por nosotros, por ejemplo en la carpeta: c:\catalogoPeliculas\p
 
 Vamos a crear varios paquetes, cada uno con tareas específicas a desarrollar en el programa.
 
-## ## DIAGRAMA DE CLASES:
+##  DIAGRAMA DE CLASES:
 
 ```
 
