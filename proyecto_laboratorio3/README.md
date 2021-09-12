@@ -9,7 +9,7 @@ carpeta definida por nosotros, por ejemplo en la carpeta: c:\catalogoPeliculas\p
 
 Vamos a crear varios paquetes, cada uno con tareas específicas a desarrollar en el programa.
 
-DIAGRAMA DE CLASES:
+## ## DIAGRAMA DE CLASES:
 
 ```
 
@@ -36,7 +36,7 @@ Pelicula                                   CatalogoPeliculas                    
 
 ```
 
-Paquetes:
+## Paquetes:
 
 1. Crear un paquete de excepciones, similar a la lección de excepciones vistas en el curso, según se
 muestra en el diagrama de clases.
@@ -52,7 +52,7 @@ muestra en el diagrama de clases.
 
 A continuación veremos a más detalle cada uno de los paquetes de la aplicación Catalogo de Peliculas a desarrollar.
 
-PELICULA.JAVA
+## PELICULA.JAVA
 
 | mx.com.gm.peliculas.domain.Pelicula |
 | ----------------------------------- |
@@ -71,7 +71,7 @@ En esta aplicación dejamos simple la definición de este objeto, sin embargo po
 
 Por ello este objeto se debe codificar con lo indicado en el diagrama de clase mostrado.
 
-ACCESODATOS.JAVA
+## ACCESODATOS.JAVA
 
 | mx.com.gm.peliculas.datos:AccesoDatos |
 | ------------------------------------- |
@@ -113,7 +113,7 @@ punto de vista de lo que necesita realizar la aplicación, pero de alguna manera
 interesa si la información se almacena o proviene de un archivo, ya que de eso se
 encargará precisamente el paquete de datos.
   
-  CATALOGOPELICULAS.JAVA
+ ## CATALOGOPELICULAS.JAVA
   
   
   | mx.com.gm.peliculas.negocio::CatalogoPeliculas |
@@ -156,7 +156,7 @@ utilizando interfaces y no utilizar directamente la implementación de la
 funcionalidad que necesitamos.
   
   
-  CLASE MAIN
+ ## CLASE MAIN
   
   
   | cpjlaboratoriofinal: CPGLaboratorioFinal |
