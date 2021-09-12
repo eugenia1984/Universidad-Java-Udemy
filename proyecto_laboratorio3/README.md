@@ -1,6 +1,6 @@
 # Nivel 2 : Laboratorio final
 
-## consigna
+## Consigna
 
 En este laboratorio final vamos a crear un ejercicio que simule un catálogo de películas. 
 
@@ -116,6 +116,23 @@ encargará precisamente el paquete de datos.
   CATALOGOPELICULAS.JAVA
   
   
+  | mx.com.gm.peliculas.negocio::CatalogoPeliculas |
+  | ---------------------------------------------- |
+  | +agregarPelicula(nombrePelicula: String, nombreArchivo: String) void|
+  | +listarPeliculas(nombreArchivo: String) void |
+  | +buscarPelicula(nombreArchivo: String, buscar: String) void |
+  | +iniciarArchivo(nombreArchivo: String) void |
+  | Responsabilities --contiene las oepraciones necesarias de la aplicacion CatalogoPeliculas |
+  
+  
+  | mx.com.gm.peliculas.negocio:CatalogoPeliculasImpl |
+  | ------------------------------------------------- |
+  | datos: AccesoDatos |
+  | +CatalogoPeliculasimpl() |
+  | +listarPelicula(nombrePelicula: String, nombreArchivo: String) void |
+  | +buscarPelicula(nombreArchivo: String, buscar: String) void |
+  | +iniciarArchivo(nombreArchiv: String) void |
+  
   
   El paquete de mx.com.gm.películas.negocio contiene las clases que
 implementarán las reglas de negocio de nuestra aplicación. Y a su vez este es el
@@ -142,6 +159,15 @@ funcionalidad que necesitamos.
   CLASE MAIN
   
   
+  | cpjlaboratoriofinal: CPGLaboratorioFinal |
+  | ---------------------------------------- |
+  | scanner: java.util.Scanner |
+  | opcion: int |
+  | nombreArchivo: String |
+  | catalogoPeliculas: CatalogoPeliculas |
+  | +main(args: String[]) void |
+  | Responsabilities --contiene el menu que permite al usuario seleccionar la acción a ejecutar sobre el catálogo de películas |
+  
   Esta clase representa la inteface con la que el usuario interactua. Esta clase solicita via consola la acción
 requerida por parte del usuario, y solicita opciones como:
   
@@ -166,16 +192,20 @@ usuario
   Y el nombre del archivo indica la ruta donde se almacenará el archivo. Por ejemplo, la cadena Java que
 se puede utilizar si estamos en Windows es:
   
+```  
 "c:\\catalogoPeliculas\\peliculas.txt“
+```  
   
 Sin embargo si es otro sistema operativo, como MacOS, la ruta podría ser:
   
+```    
 “/Volumes/gm/catalogoPeliculas/películas.txt “
+```  
   
 Debemos recordar que la carpeta sobre la que vayamos a trabajar ya debe estar creada y en caso necesario debe
 tener permisos de escritura, esto es particular de los requerimientos de cada sistema operativo.
   
-  SALIDA DEL PROGRAMA
+## SALIDA DEL PROGRAMA
   
   
   Según hemos comentado, las opciones que muestra el menú de opciones para el usuario son:
