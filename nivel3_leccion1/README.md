@@ -76,7 +76,64 @@ CREATE TABLE `test`.`persona` (
 
 ---
 
+# Sentencias DML en SQL
 
+**DML** (**Data Manipulation Languaje**) permite interactuar con los datos de una base de datos. las sentencias DML en SQL estándard son:
+
+## SELECT
+
+Recuperar registros de nuestra tabla
+
+## INSERT
+
+Agregar información a nuestra tabla
+
+Ejemplo en la tabla de persona:
+
+```
+#Agrego mi primer registro
+INSERT INTO persona(nombre, apellido, email, telefono) VALUES('Juan', 'Perez', 'email@email.com', '5411236548');
+#Agrego un segundo registro
+INSERT INTO persona(nombre, apellido, email, telefono) VALUES('Ana', 'Costa', 'email2@email.com', '5411236549');
+```
+
+```
+# Veo los registros ingresados
+SELECT * FROM persona;
+```
+
+```
+# Veo los registros ingresados de otro modo aclarando la base de datos
+SELECT * FROM text.persona;
+```
+
+## UPDATE
+
+
+Actualizar información de nuestra tabla
+
+```
+UPDATE persona
+SET telefono = '1145678958'
+WHERE ('id_persona' = '1');
+```
+
+Es importante el **WHERE** para indicar CUAL voy a actualizar, de NO tener el WHERE me va a actualizar ese telefono a TODOS los registros
+
+## DELETE
+
+Borrar información de nuestra tabla
+
+-Para eliminar TODOS los registros:
+```
+DELETE FROM persona
+```
+
+-Para eliminar un solo registro:
+```
+DELETE FROM persona WHERE id_persona = 2;
+```
+---
 
 
 
