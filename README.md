@@ -257,10 +257,15 @@ Sentencias DML en SQL
 :computer: [ver en **nivel3_leccion1**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel3_leccion1)
 
 
+
 ### Lección 2 - Conectando a la Base de Datos (BD)
 
-Pasos para conectarnos a una base de datos relacional<br>
-Código JDBC para conectarnos a la base de datos <br>
+Pasos para conectarnos a una base de datos relacional
+
+Código JDBC para conectarnos a la base de datos 
+
+:computer: [ver en **nivel3_leccion2**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel3_leccion2)
+
 
 
 ### Lección 3 - Sentencia Select
