@@ -242,9 +242,19 @@ Ejercicio Final donde se aplica todo lo aprendido en este nivel
 
 ### Lección 1 - Comenzando con JDBC (Java Database Connectivity)
 
-La necesidad de una base de datos <br>
-Instalando MySql y Oracle <br>
-Descarga de controladores (drivers) para conectarnos a la base <br>
+La necesidad de una base de datos 
+
+Instalando MySql y Oracle 
+
+Descarga de controladores (drivers) para conectarnos a la base 
+
+Creación e Base de datos
+
+Creación de tablas
+
+Sentencias DML en SQL
+
+:computer: [ver en **nivel3_leccion1**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel3_leccion1)
 
 
 ### Lección 2 - Conectando a la Base de Datos (BD)
