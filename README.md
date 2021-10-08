@@ -8,7 +8,7 @@ Curso de Udemy en Java
 
 ---
 
-# Nivel 1. Fundamentos de Java 
+# 📚 Nivel 1. Fundamentos de Java 
 
 
 ## Lección 1 - Comenzando con la Tecnología Java
@@ -144,7 +144,7 @@ Ejercicio Final donde se integra todo lo aprendido en este Nivel
 
 ---
 
-## Nivel 2. Programación con Java
+##  📚 📚 Nivel 2. Programación con Java
 
 ### Lección 1 - Polimorfismo en Java
 
@@ -237,7 +237,7 @@ Ejercicio Final donde se aplica todo lo aprendido en este nivel
 ---
 
 
-## Nivel 3. Conexión a Bases de Datos con JDBC
+## 📚 Nivel 3. Conexión a Bases de Datos con JDBC
 
 
 ### Lección 1 - Comenzando con JDBC (Java Database Connectivity)
@@ -298,7 +298,7 @@ Patrón de Diseño DTO (Data Transfer Object) o VO (Value Object) <br>
 
 ---
 
-## Nivel 4 - Servlets y JSPs
+## 📚 Nivel 4 - Servlets y JSPs
 
 
 ### Lección 1 - Introducción a la Tecnología Web con Java
@@ -355,7 +355,7 @@ Este nivel les permite conseguir empleo desde becario o programador Java Jr <br>
 --- 
 
 
-## Nivel 5 - Java Server Faces
+## 📚  Nivel 5 - Java Server Faces
 
 
 ### Lección 1 - Introducción a JavaServer Faces
@@ -404,7 +404,7 @@ El uso y la importancia de Faceltes en JSF <br>
 ---
 
 
-## Nivel 6 - Java EE (ncluye EJB's y JPA, Web Services y Seguridad)
+## 📚 Nivel 6 - Java EE (ncluye EJB's y JPA, Web Services y Seguridad)
 
 
 ### Lección 1 - Introducción a Java EE
@@ -492,7 +492,7 @@ Autenticación del Cliente SOAP y REST Web Service <br>
 ---
 
 
-## Nivel - Struts Framework 
+## 📚 Nivel 7 - Struts Framework 
 
 
 ### Lección 1 - Introducción a Struts Framework
@@ -563,7 +563,7 @@ Conclusión del Curso con Struts <br>
 ---
 
 
-## Nivel - Hibernate Framework y JPA (JavaPersistence API)
+## 📚 Nivel 8 - Hibernate Framework y JPA (JavaPersistence API)
 
 
 ### Lección 1 - Introducción a Hibernate Framework
@@ -623,7 +623,7 @@ Aplicaremos todo lo aprendido en este Nivel <br>
 ---
 
 
-## Nivel - Spring Framework
+## 📚 Nivel 9 - Spring Framework
 
 
 ### Lección 1. Introducción a Spring Framework y la Universidad Spring:
@@ -685,9 +685,7 @@ Mejoraremos visualmente nuestra aplicación, aplicando todos los conceptos apren
 ---
 
 
-Además hemos incluido:
-
-Angular con Java EE, esta integración de tecnologías te permitirá convertirte en un Full Stack Java Developer. <br>
+### Además hemos incluido: Angular con Java EE, esta integración de tecnologías te permitirá convertirte en un Full Stack Java Developer. 
 
 
 ---
@@ -697,7 +695,7 @@ Y por si fuera poco, te obsequiamos como bono de regalo los cursos de "Angular, 
 ---
 
 
-# Bono Regalo: HTML, CSS y JavaScript
+# 📚 Bono Regalo: HTML, CSS y JavaScript
 
 
 ### Lección 1 - Introducción a HTML
