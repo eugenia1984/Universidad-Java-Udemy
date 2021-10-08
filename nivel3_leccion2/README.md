@@ -74,6 +74,7 @@ String url ="jdbc:mysql://localhost:3306/test?useSSL=false&useTimezone=true&serv
 
 ## Mejores prácticas
 
+La conexion a la base de Datos se hace mediante el DAO mi capa de **datos**, por eso creo un paquete **dato** y creo la clase **Conexion** (no la nombro Conection en inglés, porque Java ya tiene una clase Conection).
 
 ---
 
