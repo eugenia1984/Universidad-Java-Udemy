@@ -144,7 +144,7 @@ Ejercicio Final donde se integra todo lo aprendido en este Nivel
 
 ---
 
-##  📚 📚 Nivel 2. Programación con Java
+##  📚 Nivel 2. Programación con Java
 
 ### Lección 1 - Polimorfismo en Java
 
