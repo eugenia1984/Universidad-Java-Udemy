@@ -70,8 +70,11 @@ String url ="jdbc:mysql://localhost:3306/test?useSSL=false&useTimezone=true&serv
             ex.printStackTrace(System.out);
         }
     ```
-    
-    
+---
+
+## Mejores prácticas
+
+
 ---
 
 ## Pasos para conectarnos a una base de datos relacional
