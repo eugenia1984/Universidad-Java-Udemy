@@ -287,6 +287,12 @@ Separación de funciones select, insert, update y delete con JDBC
 
 :computer: [ver en **nivel3_leccion2**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel3_leccion2)
 
+⭐: 
+[se puede ver aca el ejercicio de practica completo **introduccionJDBC](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel3_leccion2/introduccionJDBC)
+
+:star: 
+[se puede ver aca el ejercicio de practica completo **introduccionJDBC2](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel3_leccion2/introduccionJDBC2)
+
 
 ### Lección 5 - Metadatos con JDBC
 
