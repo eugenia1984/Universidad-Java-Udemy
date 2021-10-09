@@ -321,6 +321,122 @@ public class TestManejoPersonas {
 ```
 
 ---
+## Insertar datos
+
+
+En mi clase **PersonaDAO**:
+
+```JAVA
+//Agrego el metodo para insertar una persona
+    public int insertar(Persona persona){
+        //declaro mis variables
+        Connection conn = null;
+        PreparedStatement stmt = null;
+        int registros = 0;
+        //inicializo mi varaible conn, que me puede dar una exception -> try-catch
+        try {
+            conn = Conexion.getConnection();
+            //inicializo stmtm
+            stmt = conn.prepareStatement(SQL_INSERT);
+            //sustituyo cada uno de los parametros, con sus indices
+            // 1 -> nombre
+            stmt.setString(1, persona.getNombre());
+            //2 -> apellido
+            stmt.setString(2, persona.getApellido());
+            // 3 -> email
+            stmt.setString(3, persona.getEmail());
+            //4 -> telefono
+            stmt.setString(4, persona.getTelefono());
+            //hago el update en mi base de datos, asi se actualiza el estado en 
+            //la bd, .executeUpdate() puede realizar sentencias de tipo: 
+            //UPDATE, DELETE e INSERT
+            registros = stmt.executeUpdate();
+        } catch (SQLException ex) {
+             ex.printStackTrace(System.out);
+        } finally {
+            //cierro los objetos que abri
+            try {
+                //cierro los objetos y como me puede dar exception la encierro en bloqeu try-catch
+                //cierro en el orden inverso en que se fueron abriendo
+                Conexion.close(stmt);
+                Conexion.close(conn);
+            } catch (SQLException ex) {
+                ex.printStackTrace(System.out);
+            }
+        }
+        return registros;
+    }
+```
+  
+Lo pruebo en mi clase **TestmanejoPersonas**:
+
+```JAVA
+        //creo un nuevo objeto de tipo persona y lo INSERTO en mi BD
+        //con el constructor que tiene todos los parametros menos el id_persona
+        Persona personaNueva = new Persona("Maria", "Sanchez", "msanchez@gmail.com","541145678956");
+        personaDAO.insertar(personaNueva);
+```        
+---
+
+## Para modificar un registro
+
+
+En clase **PersonaDAO**:
+
+```JAVA
+    //Agrego el metodo para actualizar una persona
+    public int actualizar(Persona persona){
+        //declaro mis variables
+        Connection conn = null;
+        PreparedStatement stmt = null;
+        int registros = 0;
+        //inicializo mi varaible conn, que me puede dar una exception -> try-catch
+        try {
+            conn = Conexion.getConnection();
+            //inicializo stmtm
+            stmt = conn.prepareStatement(SQL_UPDATE);
+            //sustituyo cada uno de los parametros, con sus indices
+            // 1 -> nombre
+            stmt.setString(1, persona.getNombre());
+            //2 -> apellido
+            stmt.setString(2, persona.getApellido());
+            // 3 -> email
+            stmt.setString(3, persona.getEmail());
+            //4 -> telefono
+            stmt.setString(4, persona.getTelefono());
+            //5 ->  id_persona
+            stmt.setInt(5, persona.getIdPersona());
+            //hago el update en mi base de datos, asi se actualiza el estado en 
+            //la bd, .executeUpdate() puede realizar sentencias de tipo: 
+            //UPDATE, DELETE e INSERT
+            registros = stmt.executeUpdate();
+        } catch (SQLException ex) {
+             ex.printStackTrace(System.out);
+        } finally {
+            //cierro los objetos que abri
+            try {
+                //cierro los objetos y como me puede dar exception la encierro en bloqeu try-catch
+                //cierro en el orden inverso en que se fueron abriendo
+                Conexion.close(stmt);
+                Conexion.close(conn);
+            } catch (SQLException ex) {
+                ex.printStackTrace(System.out);
+            }
+        }
+        return registros;
+    }
+```
+
+Lo pruebo en test:
+
+```JAVA
+ //Hago la prueba de modificar una persona existente
+        Persona personaModificar = new Persona(3, "Mirta", "Sanchez", "m.sanchez@gmail.com","541112345678");
+        personaDAO.actualizar(personaModificar);
+```
+
+
+---
 
 ## Pasos para conectarnos a una base de datos relacional
 
