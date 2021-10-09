@@ -270,27 +270,36 @@ Código JDBC para conectarnos a la base de datos
 
 ### Lección 3 - Sentencia Select
 
-Pasos para ejecutar la sentencia Select de SQL con JDBC <br>
-Uso de la sentencia select para leer la información de la BD <br>
+Pasos para ejecutar la sentencia Select de SQL con JDBC 
+
+Uso de la sentencia select para leer la información de la BD 
+
+:computer: [ver en **nivel3_leccion2**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel3_leccion2)
 
 
 ### Lección 4 - Manipulando Datos con JDBC
 
-Pasos para ejecutar las sentencias insert, update y delete <br>
-Uso de las sentencias insert,update y delete para manipular información <br>
-Separación de funciones select, insert, update y delete con JDBC <br>
+Pasos para ejecutar las sentencias insert, update y delete 
+
+Uso de las sentencias insert,update y delete para manipular información
+
+Separación de funciones select, insert, update y delete con JDBC 
+
+:computer: [ver en **nivel3_leccion2**](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel3_leccion2)
 
 
 ### Lección 5 - Metadatos con JDBC
 
-Conocimiendo la estructura de las tablas de BD con JDBC <br>
-La importancia del uso de Metadatos en JDBC <br>
+Conocimiendo la estructura de las tablas de BD con JDBC 
+
+La importancia del uso de Metadatos en JDBC 
 
 
 ### Lección 6 - Patrones de Diseño
 
-Patrón de Diseño DAO (Data Access Object) <br>
-Patrón de Diseño DTO (Data Transfer Object) o VO (Value Object) <br>
+Patrón de Diseño DAO (Data Access Object) 
+
+Patrón de Diseño DTO (Data Transfer Object) o VO (Value Object) 
 
 
 **Laboratorio Final con la integración de todo lo visto en este Nivel**
