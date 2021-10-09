@@ -79,6 +79,8 @@ String url ="jdbc:mysql://localhost:3306/test?useSSL=false&useTimezone=true&serv
 La conexion a la base de Datos se hace mediante el DAO mi capa de **datos**, por eso creo un paquete **dato** y creo la clase **Conexion** (no la nombro Conection en inglés, porque Java ya tiene una clase Conection).
 
 
+## Código JDBC para conectarnos a la base de datos
+
 **CLASE CONEXION**
 
 ```JAVA
@@ -288,12 +290,34 @@ public class PersonaDAO {
 }
 ```
 
+En mi paquete **test** creo la clase **TestManejoPersonas** para testear la conexion a la base de datos
+
+```JAVA
+
+package test;
+
+import datos.PersonaDAO;
+import domain.Persona;
+import java.util.List;
+
+
+public class TestManejoPersonas {
+    public static void main(String[] args) {
+        PersonaDAO personaDAO = new PersonaDAO();
+        //recupero todos los objetos de tipo persona
+        List<Persona> personas = personaDAO.seleccionar();
+        //imprimo le listado con un foreach
+        for (Persona persona : personas) {
+            System.out.println("persona = " + persona);
+        }
+    }
+}
+```
+
 ---
 
 ## Pasos para conectarnos a una base de datos relacional
 
 ---
 
-## Código JDBC para conectarnos a la base de datos
 
----
