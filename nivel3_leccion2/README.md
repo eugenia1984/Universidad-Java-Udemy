@@ -252,7 +252,7 @@ public class PersonaDAO {
             stmt = conn.prepareStatement(SQL_SELECT);
             //ejecuto la query
             rs = stmt.executeQuery();
-            //voy iterando siempre que tenga un sigueinte (.netx())
+            //voy iterando siempre que tenga un siguiente (.next())
             while(rs.next()){
                 //voy recuperando los datos de cada variable
                 //en vez de poner el nombre de la columna de mi bd lo puedo 
@@ -327,6 +327,11 @@ public class TestManejoPersonas {
 En mi clase **PersonaDAO**:
 
 ```JAVA
+
+//Agrego como ATRIBUTO de la clase
+        //mis ? van a ser parametros a sustituir
+        private static final String SQL_INSERT = "INSERT INTO persona(nombre, apellido, email, telefono) VALUES (?,?,?,?)";
+    
 //Agrego el metodo para insertar una persona
     public int insertar(Persona persona){
         //declaro mis variables
@@ -384,6 +389,10 @@ Lo pruebo en mi clase **TestmanejoPersonas**:
 En clase **PersonaDAO**:
 
 ```JAVA
+     //Agrego como ATRIBUTO (constante) de la clase
+     //setencia de tipo UPDATE
+    private static final String SQL_UPDATE ="UPDATE persona SET nombre = ?, apellido = ?, email = ?, telefono = ? WHERE id_persona = ?";
+    
     //Agrego el metodo para actualizar una persona
     public int actualizar(Persona persona){
         //declaro mis variables
@@ -433,6 +442,61 @@ Lo pruebo en test:
  //Hago la prueba de modificar una persona existente
         Persona personaModificar = new Persona(3, "Mirta", "Sanchez", "m.sanchez@gmail.com","541112345678");
         personaDAO.actualizar(personaModificar);
+```
+
+
+---
+
+## Para eliminar un registro
+
+En clase **PersonaDAO**:
+
+```JAVA
+        //agrego el atributo CONSTANTE
+        private static final String SQL_DELETE = "DELETE FROM persona WHERE id_persona = ?";   
+        
+        //metodo
+        public int eliminar(Persona persona){
+        //declaro mis variables
+        Connection conn = null;
+        PreparedStatement stmt = null;
+        int registros = 0;
+        //inicializo mi varaible conn, que me puede dar una exception -> try-catch
+        try {
+            conn = Conexion.getConnection();
+            //inicializo stmtm
+            stmt = conn.prepareStatement(SQL_DELETE);
+            //1 ->  id_persona
+            stmt.setInt(1, persona.getIdPersona());
+            //hago el update en mi base de datos, asi se actualiza el estado en 
+            //la bd, .executeUpdate() puede realizar sentencias de tipo: 
+            //UPDATE, DELETE e INSERT
+            registros = stmt.executeUpdate();
+        } catch (SQLException ex) {
+             ex.printStackTrace(System.out);
+        } finally {
+            //cierro los objetos que abri
+            try {
+                //cierro los objetos y como me puede dar exception la encierro en bloqeu try-catch
+                //cierro en el orden inverso en que se fueron abriendo
+                Conexion.close(stmt);
+                Conexion.close(conn);
+            } catch (SQLException ex) {
+                ex.printStackTrace(System.out);
+            }
+        }
+        return registros;
+    }
+
+```
+
+
+Hago la prueba en test:
+
+```JAVA
+         //hago la prueba de eliminar un registro
+        Persona personaEliminar = new Persona(1);
+        personaDAO.eliminar(personaNueva);
 ```
 
 
