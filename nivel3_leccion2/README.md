@@ -310,6 +310,12 @@ public class TestManejoPersonas {
         for (Persona persona : personas) {
             System.out.println("persona = " + persona);
         }
+        /*
+        * Puedo usar la FUNCION LAMBDA
+        * personas.forEach(persona->) {
+        *     System.out.println("persona = " + persona);
+        * }
+        */
     }
 }
 ```
