@@ -496,7 +496,7 @@ Hago la prueba en test:
 ```JAVA
          //hago la prueba de eliminar un registro
         Persona personaEliminar = new Persona(1);
-        personaDAO.eliminar(personaNueva);
+        personaDAO.eliminar(personaEliminar);
 ```
 
 
