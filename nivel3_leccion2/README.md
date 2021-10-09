@@ -502,7 +502,9 @@ Hago la prueba en test:
 
 ---
 
-## Pasos para conectarnos a una base de datos relacional
+## :star: Ejercicio completo
+
+[se puede ver aca](https://github.com/eugenia1984/Universidad-Java-Udemy/tree/main/nivel3_leccion2/introduccionJDBC2)
 
 ---
 
