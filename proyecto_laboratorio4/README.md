@@ -32,7 +32,7 @@ CREATE TABLE `test`.`usuario` (
 SELECT * FROM test.usuario
 ```
 
-**3.** Agreo usuario:
+**3.** Agrego usuario:
 
 ```SQL
 INSERT INTO `test`.`usuario` (`usuario`, `password`) VALUES ('ana.costa', '123456');
@@ -238,6 +238,8 @@ public int update(Usuario usuario){
     }
 ```
 
+
+**7.** Agrego la clase **manejoUsuario** en el paquete de *test*.
 
 
 
