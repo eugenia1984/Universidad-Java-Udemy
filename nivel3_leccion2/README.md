@@ -69,8 +69,10 @@ String url ="jdbc:mysql://localhost:3306/test?useSSL=false&useTimezone=true&serv
         } catch (SQLException ex) {
             ex.printStackTrace(System.out);
         }
-    ```
+```
+
 ---
+
 
 ## Mejores prácticas
 
